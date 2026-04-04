@@ -5,9 +5,9 @@ Este plan se divide en **5 Bloques Temáticos**. Cada sesión está numerada par
 
 *Objetivo: Fundamentar el sistema numérico y la inducción 3, 4\.*
 
-* **S1:** Teoría de los números naturales y los Axiomas de Peano 5\.  
-* **S2:** Práctica: El principio de inducción matemática (método del dominó) 6\.  
-* **S3:** Ejercicios avanzados de inducción (sumatorios y desigualdades) 7, 8\.  
+* **S1:** Teoría de los números naturales y los Axiomas de Peano.  
+* **S2:** Práctica: El principio de inducción matemática (método del dominó).  
+* **S3:** Ejercicios avanzados de inducción (sumatorios y desigualdades).  
 * **S4:** Construcción de los números enteros ($\mathbb{Z}$) y racionales ($\mathbb{Q}$) como clases de equivalencia 9, 10\.  
 * **S5:** El cuerpo de los números reales ($\mathbb{R}$): Axiomas algebraicos y de orden 10, 11\.  
 * **S6:** Práctica: Resolución de desigualdades y uso del valor absoluto 4, 12\.  

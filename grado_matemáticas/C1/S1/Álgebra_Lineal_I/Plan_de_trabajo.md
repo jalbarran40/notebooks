@@ -1,4 +1,4 @@
-Entendido. He reajustado el plan de trabajo para que la duración y agrupación de las sesiones se adapte a la densidad conceptual de cada tema, tal como se presenta en la bibliografía básica de **Borobia y Estrada** 1, 2\.  
+Entendido. He reajustado el plan de trabajo para que la duración y agrupación de las sesiones se adapte a la densidad conceptual de cada tema, tal como se presenta en la bibliografía básica de **Borobia y Estrada**.  
 Este plan está diseñado para cubrir los contenidos de **Álgebra Lineal I** en 50 sesiones de 45 minutos. He agrupado bloques teóricos para asentar la base abstracta antes de pasar a la resolución técnica, especialmente en el Bloque 3 (el más extenso) 3, 4\.
 
 ### Bloque 1: Matrices y Determinantes
