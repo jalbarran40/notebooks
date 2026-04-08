@@ -26,5 +26,7 @@ Para entender estos axiomas, vamos a razonar con la **función sucesor**. Intuit
 1. Empujas la primera ficha (compruebas la propiedad para el 1).  
 2. Si una ficha cae, tira a la siguiente (si $n$ cumple la propiedad, $s(n)$ también).**Resultado:** Caen todas las fichas (la propiedad es válida para todo $\mathbb{N}$).
 
-**Sugerencia del Tutor:** He generado la **presentación de refuerzo** para que puedas visualizar estos axiomas de forma esquemática. Te recomiendo revisarla antes de nuestra próxima sesión, donde empezaremos a hacer demostraciones reales.  
-
+### Materiales de apoyo 
+- **Sugerencia del Tutor:** He generado la [**presentación de refuerzo**](Sesión01_Teoría_de_los_números_naturales_y_los_Axiomas_de_Peano.pptx) para que puedas visualizar estos axiomas de forma esquemática. Te recomiendo revisarla antes de nuestra próxima sesión, donde empezaremos a hacer demostraciones reales.  
+- [Audio](Sesión01_Teoría_de_los_números_naturales_y_los_Axiomas_de_Peano.m4a)
+-

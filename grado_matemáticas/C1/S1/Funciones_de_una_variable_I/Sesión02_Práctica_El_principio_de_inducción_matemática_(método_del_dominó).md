@@ -28,8 +28,5 @@ Un error típico es intentar demostrar $P(n+1)$ sin usar la Hipótesis de Inducc
 
 ### Recursos de apoyo generados:
 
-* **Presentación de soporte:** He creado un conjunto de diapositivas que esquematizan los pasos de la inducción y el ejemplo de la suma de cuadrados para que visualices mejor el proceso algebraico.  
-* **Resumen de audio (Podcast):** He generado una conversación entre dos expertos que discuten la lógica del "dominó" y por qué la hipótesis de inducción no es un razonamiento circular, sino una implicación lógica fundamental.
-
-
-
+* [**Presentación de soporte:**](Sesión02_Práctica_El_principio_de_inducción_matemática_(método_del_dominó).pptx) He creado un conjunto de diapositivas que esquematizan los pasos de la inducción y el ejemplo de la suma de cuadrados para que visualices mejor el proceso algebraico.  
+* [**Resumen de audio (Podcast):**](Sesión02_Práctica_El_principio_de_inducción_matemática_(método_del_dominó).m4a) He generado una conversación entre dos expertos que discuten la lógica del "dominó" y por qué la hipótesis de inducción no es un razonamiento circular, sino una implicación lógica fundamental.
