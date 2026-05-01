@@ -1,4 +1,4 @@
-Este es tu plan de trabajo completo para la asignatura **Funciones de una variable I**, diseñado para cubrir el semestre con sesiones diarias de **45 minutos** (alternando teoría y práctica) y siguiendo la cronología de los contenidos oficiales 1, 2\.  
+	Este es tu plan de trabajo completo para la asignatura **Funciones de una variable I**, diseñado para cubrir el semestre con sesiones diarias de **45 minutos** (alternando teoría y práctica) y siguiendo la cronología de los contenidos oficiales 1, 2\.  
 Este plan se divide en **5 Bloques Temáticos**. Cada sesión está numerada para que podamos referirnos a ella fácilmente en nuestras tutorías.
 
 ### BLOQUE 1: Números Reales (Sesiones 1 \- 15\)
