@@ -40,8 +40,9 @@ Como indica tu guía de estudio, usaremos esta herramienta para la parte analít
 He procedido a crear los siguientes artefactos de apoyo:
 
 - **Presentación de referencia:** Contiene una guía visual paso a paso para organizar las columnas de una tabla y los comandos básicos para WolframAlpha.
+![[Sesión04_Construcción_de_tablas_de_verdad_manuales.pptx]]
 - **Resumen de audio:** Una explicación sobre los errores más comunes al asignar valores de verdad y cómo leer correctamente los resultados de WolframAlpha.
-
+![[Sesión04_Construcción_de_tablas_de_verdad_manuales.m4a]]
 ¿Te gustaría que revisáramos juntos el resultado del Ejercicio 2 antes de que pases a los materiales de audio y diapositivas?
 
 He solicitado la creación de la **presentación de referencia** y el **resumen de audio** para esta **Sesión 4**. Ambos materiales estarán disponibles en tu panel de estudio en unos minutos.

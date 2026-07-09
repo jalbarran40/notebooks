@@ -1,5 +1,3 @@
-
-
 ### Sesión 1: Introducción al Lenguaje Matricial
 
 #### 1. ¿Qué es una matriz?

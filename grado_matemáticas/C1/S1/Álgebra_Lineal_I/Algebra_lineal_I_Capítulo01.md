@@ -4,13 +4,13 @@
 
 Las matrices son uno de los objetos matemáticos más destacados en el estudio del Álgebra Lineal, tanto por sus propiedades como por su versatilidad. En los siguientes capítulos veremos que las matrices se utiliimn para representar y manipular de forma cómoda otros objetos propios del Álgebra Lineal como sistemas lineales, conjuntos de vectores, aplicaciones lineales ... de manera que se pueden deducir propiedades de éstos a partir del estudio matricial. Además. las matrices se pueden manipular e implementar de forma muy natural en los ordenadores, lo que permite resolver con ellas muchos problemas de índole algorítmico y computacional. En este capítulo presentaremos formalmente las matrices y estudiaremos sus propiedades más importantes.
 
-- Una **matriz** $A$ de tamaño o de orden m x n es un conjunto de m· n escalares o elementos de un cuerpo $\mathbb{K}$ [^1] que están ordenados en m filas y *n* columnas de la forma 
+- Una **matriz** $A$ de tamaño o de orden $m \times n$ es un conjunto de $m · n$ escalares o elementos de un cuerpo $\mathbb{K}$ [^1] que están ordenados en $m$ filas y $n$ columnas de la forma 
 
 $$
 A = \begin{pmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ a_{21} & a_{22} & \cdots & a_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{m1} & a_{m2} & \cdots & a_{mn} \end{pmatrix}
 $$
 
-La **entrada** _(i, j)_ es el elemento de A que se encuentra en la **fila** _i_ y en la **columna** _j_, y lo denotamos por $a_{ij}$ o $[A]_{ij}$ . Podemos ver una matriz como una tabla que recoge información que depende de dos índices. Una matriz se puede escribir de forma abreviada como $A = (a_{ij})$ con i = 1, ... ,m y j = 1,...,n o. cuando se sobreentienda su tamaño, simplemente $A = (a_{ij})$. La matriz
+La **entrada** _(i, j)_ es el elemento de A que se encuentra en la **fila** _i_ y en la **columna** _j_, y lo denotamos por $a_{ij}$ o $[A]_{ij}$ . Podemos ver una matriz como una tabla que recoge información que depende de dos índices. Una matriz se puede escribir de forma abreviada como $A = (a_{ij})$ con i = 1, ... ,m y j = 1,...,n 0. cuando se sobreentienda su tamaño, simplemente $A = (a_{ij})$. La matriz
 
 $$
 \begin{pmatrix}1 & -1 & 1 & 5 \\
@@ -18,7 +18,7 @@ $$
 1 & 4 & -1 & -3\end{pmatrix}
 $$
 
-tiene 3 filas y 4 columnas. y su entrada (2. 3) es $a_{23} = 7$.
+tiene 3 filas y 4 columnas. y su entrada (2, 3) es $a_{23} = 7$.
 
 [^1]:  A lo largo de todo el texto consideraremos que $\mathbb{K}= \mathbb{R}$ (cuerpo de los números reales) o $\mathbb{K}= \mathbb{C}$ (cuerpo de los números complejos).
 
@@ -76,77 +76,77 @@ A^t =
 $$
 La fila $i$ de $A$ se convierte en la columna $i$ de $A^t$ y la columna $j$ de $A$ se convierte en la fila $j$ de $A^t$.  El tamaño de $A$ coincide con el tamaño de $A^t$ si y sólo si $m = n.$ En particular $(A^t)^t = A$. 
 
-	(SEGUIR AQUI)
-- U na **matriz simétrica** es una matriz cuadrada que coincide con su traspuesta. Esto es, $A$ E 9Jl, (JK) es mm matriz simétrica si $A$<sup>1</sup>= *A.* Un ejemplo de matriz simNric:a es
+- Una **matriz simétrica** es una matriz cuadrada que coincide con su traspuesta. Esto es, $A \in \mathfrak{M}_{n}(\mathbb{K})$ es una matriz simétrica si $A^{t}=A$. Un ejemplo de matriz simétrica es
 
 $$
-\left(\begin{array}{ccc}\n1 & -2 & 5 \\
+\left(\begin{array}{ccc}1 & -2 & 5 \\
 -2 & 4 & 7 \\
-5 & 7 & 0\n\end{array}\right)
+5 & 7 & 0\end{array}\right)
 $$
 
-Una **matriz antisimétrica** es una matriz cuadrada que coincide con su matriz traspuesta cambiada de signo. Esto es, $A$ E 9Jl11 (JK) es una matriz antisim(~trica si *A'* = *-A.* Por ejemplo,
+Una **matriz antisimétrica** es una matriz cuadrada que coincide con su matriz traspuesta cambiada de signo. Esto es, $A \in \mathfrak{M}_{n}(\mathbb{K})$ es una matriz antisimétrica si $A^{t}=-A$. Por ejemplo,
 
 $$
 \left(\begin{array}{ccc} 0 & -2 & 5 \\ 2 & 0 & 7 \\ -5 & -7 & 0 \end{array}\right)
 $$
 
-es una matriz antisimétrica. Observamos que las entradas situadas en la diagonal principal son iguales <sup>a</sup>O. Esta propiedad es válida para cualquier matriz antisimótrica, ¡,por quU
+es una matriz antisimétrica. Observamos que las entradas situadas en la diagonal principal son iguales a 0. Esta propiedad es válida para cualquier matriz antisimétrica, ¿por qué?
 
-- La **matriz traspuesta conjugada** de la matriz A E 9Jl111 x, (CC) es la matriz A\* E 9Jl, <sup>x</sup>*m* (CC) cuya entrada *(i, .J)* es el número complejo conjugado de la entrada (.i, *i)* de A, esto es, *a;¡* = a.~;. (recordamos que *o+ ib* = *o- bi).* Por ejemplo,
+- La **matriz traspuesta conjugada** de la matriz $A \in \mathfrak{M}_{n \times m}(\mathbb{C})$ es la matriz $A^{*} \in \mathfrak{M}_{m \times n}(\mathbb{C})$) cuya entrada $(i, j)$ es el número complejo conjugado de la entrada $(j, i)$ de A, esto es, $a^{*}_{i,j} = \overline{a_{j,i}}$ (recordamos que $\overline{a+ib}=a-bi$). Por ejemplo,
 
 $$
 A = \begin{pmatrix} i & -3-i & 1 & 2 \\ 2 & 4+i & 4 & 3 \\ 5i & -1 & 7 & -1+i \end{pmatrix} \implies A^* = \begin{pmatrix} -i & 2 & -5i \\ -3+i & 4-i & -1 \\ 1 & 4 & 7 \\ 2 & 3 & -1-i \end{pmatrix}
 $$
 
-Los tamaüos de A E 9:1lmxn(CC) y A\* E 9:1lnxm(CC) coiuciden si y sólo si ·m= *n.* 
+Los tamaños de $A \in \mathfrak{M}_{m \times n}(\mathbb{C})$ y $A^{*} \in \mathfrak{M}_{n \times m}(\mathbb{C})$ coinciden si y sólo si $m=n$.
 
-- Una **matriz hermítica** es una matriz cuadrada que coincide con su matriz traspuesta conjugada. Esto es, $A$ E 9Jl, (CC) es una matriz hennítica si A\* = *A.* Por ejemplo, la siguiente matriz es hermítica:
+- Una **matriz hermítica** es una matriz cuadrada que coincide con su matriz traspuesta conjugada. Esto es, $A \in \mathfrak{M}_{n}(\mathbb{C})$  es una matriz hermítica si $A^{*}=A$. Por ejemplo, la siguiente matriz es hermítica:
 
 $$
 \left(\begin{array}{ccc}3 & -3+i & i\\-3-i & 4 & 1\\-i & 1 & 0\end{array}\right)
 $$
 
-Observamos que los elementos de la diagonal principal son reales. Esta propiedad es válida para cualquier matriz henuítica, ¿por qu{~?
+Observamos que los elementos de la diagonal principal son reales. Esta propiedad es válida para cualquier matriz hermítica, ¿por qué?
 
-- Una **matriz triangular superior** es una matriz de onleu n con todas las entrada situadas por debajo de su diagonal principal iguales a O. Y una **matriz triangular inferior** es una matriz de ordcu *n* con todas las entradas situadas por encima de su diagonal principal iguales a O. Seau
+- Una **matriz triangular superior** es una matriz de orden $n$ con todas las entrada situadas por debajo de su diagonal principal iguales a 0. Y una **matriz triangular inferior** es una matriz de orden $n$ con todas las entradas situadas por encima de su diagonal principal iguales a 0. Sean
 
 $$
 A = \begin{pmatrix} 4 & 7 - 3i & i \\ 0 & 1 + i & -2 \\ 0 & 0 & 5 \end{pmatrix} \quad \text{y} \quad B = \begin{pmatrix} 4 & 0 & 0 \\ 3 & 5 & 0 \\ 1 & 2 & 9 \end{pmatrix},
 $$
 
-la matriz A E 9n:1(CC) es triangular superior y la matriz BE 9n:1(1R) es triangular iuferior.
+la matriz $A \in \mathfrak{M}_{n}(\mathbb{C})$ es triangular superior y la matriz $B \in \mathfrak{M}_{n}(\mathbb{R})$ es triangular inferior.
 
-- Una **matriz diagonal** es una matriz de orden *n* tal que toda entrada de $A$ situada fuera de su diagonal principal es igual a O. Denotaremos por cliag(d1 •.... *dn)* a la matriz diagonal de orden *n* tal que las entradas situadas en su diagonal principal son d¡, .... *dn.* Por ejemplo
+- Una **matriz diagonal** es una matriz de orden $n$ tal que toda entrada de $A$ situada fuera de su diagonal principal es igual a 0. Denotaremos por $diag(d_{1}....d_{n})$ a la matriz diagonal de orden $n$ tal que las entradas situadas en su diagonal principal son $d_{1}....d_{n}$. Por ejemplo
 
-diag(2, -5, 1, 6) = 
+
 $$
-\begin{pmatrix} 2 & 0 & 0 & 0 \ 0 & -5 & 0 & 0 \ 0 & 0 & 1 & 0 \ 0 & 0 & 0 & 6 \end{pmatrix}
+diag(2, -5, 1, 6) = \begin{pmatrix} 2 & 0 & 0 & 0 \\ 0 & -5 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 6 \end{pmatrix}
 $$
 
 Toda matriz diagonal es triangular superior y triangular inferior.
 
-- La **identidad** de orden *n.* que denotamos por J,. es la matriz diagonal de orden *n* cm1 todas las entradas situadas en la diagonal principal iguales a l. Por ejemplo
+
+
+- La **identidad** de orden $n$ que denotamos por $I_n$, es la matriz diagonal de orden $n$ con todas las entradas situadas en la diagonal principal iguales a 1. Por ejemplo
 
 $$
-I_1 = \begin{pmatrix} 1 \\ 1 \end{pmatrix}, I_2 = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}, I_3 = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix}, I_4 = \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \end{pmatrix}, \dots
+I_1 = \begin{pmatrix} 1\end{pmatrix},\ I_2 = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix},\ I_3 = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix},\ I_4 = \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \end{pmatrix}, \dots
 $$
 
-- 1J na **matriz nula** es una matriz con todas sus entradas iguales a O. Denotaremos por 0, *xn* a la matriz nula de tamaüo *rn* x *n* o, cuando no se produzca ambigiieclacl. simplemente O. Por ejemplo.
+- Una **matriz nula** es una matriz con todas sus entradas iguales a 0. Denotaremos por $0_{m\times n}$ a la matriz nula de tamaño ${m \times n}$ o, cuando no se produzca ambigüedad. simplemente 0. Por ejemplo.
 
 $$
 0_{3\times3} = \begin{pmatrix} 0 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{pmatrix}
 $$
+Una matriz nula de orden $n$ es un matriz diagonal con ceros en la diagonal principal.
 
-Una matriz nula de orden *n* es un matriz diagonal cou ceros en la diagonal principal.
-
-- L na fila de una matriz es una **fila nula** si todas sus entradas son iguales a O. y una columna es una **columna nula** si todas sus entradas iguales a O. Sea
+- Una fila de una matriz es una **fila nula** si todas sus entradas son iguales a 0, y una columna es una **columna nula** si todas sus entradas iguales a 0. Sea
 
 $$
 A = \begin{pmatrix} 3 & -1 & 0 & 4 \\ 0 & 0 & 0 & 0 \\ 1 & 4 & 0 & -3 \end{pmatrix}
 $$
 
-la segunda fila de A es una fila nula ~· la tercera columna de A es una columna nula.
+la segunda fila de A es una fila nula y la tercera columna de A es una columna nula.
 
 - Una **submatriz** de $A$ es cualquier matriz que se obtenga a partir de $A$ eliminando una o varias de sus filas y o columnas. También se considera a A como una submatriz de A. Por ejemplo. si
 
@@ -156,31 +156,30 @@ $$
 
 entonces *B* es una subrnatriz de $A$ que se obtiene eliminando de $A$ las filas 2 y 4 y la columna 3.
 
-- Submatrices fila y columna de una matriz A. Denotaremos por F¡ (A) a la matriz fila formada por las entradas de la fila i-ésima de A. y por C¡(A) a la matriz columna formada por las entradas de la columna j-ésima de *A.* Si $A$ es una matriz de tamaüo *m* x *n* entonces
+- **Submatrices fila y columna** de una matriz $A$. Denotaremos por $F_{i} (A)$ a la matriz fila formada por las entradas de la fila i-ésima de $A$. y por $C_{j}(A)$ a la matriz columna formada por las entradas de la columna j-ésima de *A.* Si $A$ es una matriz de tamaño $m \times n$ entonces
 
 $$
 F_i(A) = (a_{i1} \dots a_{in}) \quad \text{y} \quad C_j(A) = \begin{pmatrix} a_{1j} \\ \vdots \\ a_{mj} \end{pmatrix}
 $$
 
-Cuando se sobreentienda la matriz a la que nos estamos rcfirieudo, las matrices fila y columna se llamarán simplemente *F*<sup>1</sup> , ... , *F*<sup>11</sup> , y C1 •.... *Cn.* Por ejemplo, para
+Cuando se sobreentienda la matriz a la que nos estamos refiriendo, las matrices fila y columna se llamarán simplemente $F_{1} , ... , F_{m}$ $ , y $C_{1}, ... C_{n}$. Por ejemplo, para
 
 $$
-A = \begin{pmatrix} 3 & -1 & 1 & 4 \\ 2 & 3 & 2 & -2 \\ 1 & 4 & 6 & -3 \end{pmatrix}
+A = \begin{pmatrix} 3 & -1 & 1 & 4 \\ 2 & 3 & 2 & -2 \\ 1 & 4 & 6 & -3 \end{pmatrix} \; \mathrm{tenemos} \;  F_2 = \begin{pmatrix} 2 & 3 & 2 & -2 \end{pmatrix} \; \mathrm{y} \; C_3 = \begin{pmatrix} 1 \\ 2 \\ 6 \end{pmatrix} 
 $$
- tenemos  $F_2 = \begin{pmatrix} 2 & 3 & 2 & -2 \end{pmatrix}$  y  $C_3 = \begin{pmatrix} 1 \\ 2 \\ 6 \end{pmatrix}$ 
+## 1.1. Operaciones con matrices
 
-# l. l. Operaciones con matrices
 
 El contenido de esta sección es esencial, aunque pueda resultar un poco árido, ya que en ella se presentan las operaciones elementales que se pueden realizar con matrices y se demuestran todas las propiedades fundamentales que debe cumplir dicha operativa.
 
-## Suma de matrices y del producto por escalares
+### Suma de matrices y del producto por escalares
 
-- La suma de dos matrices $A$ y *B* del mismo tamaüo es la matriz *A+ B* cuya entrada (i. *j)* es
+- La **suma de dos matrices** $A$ y $B$ del mismo tamaüo es la matriz $A+B$ cuya entrada $(i,j)$ es
 
 $$
 [A + B]_{ij} = a_{ij} + b_{ij}
 $$
-
+(SEGUIR AQUÍ)
 Es decir,
 
 $$
@@ -278,7 +277,7 @@ $$
 A = \begin{pmatrix} a_{11} & \dots & a_{1n} \\ \vdots & \ddots & \vdots \\ a_{m1} & \dots & a_{mn} \end{pmatrix} \quad \text{y} \quad B = \begin{pmatrix} b_{11} & \dots & b_{1p} \\ \vdots & \ddots & \vdots \\ b_{n1} & \dots & b_{np} \end{pmatrix}
 $$
 
-de tcunaños *m* x *n* y *n* x p respectivamente, el producto *AB* es la matriz AB de tamaüo m x p cuya entrada (i. j) se obtiene multiplicawlo la fila i de $A$ por la colunma j de *B* según la regla
+de tcunaños *m* x $n$ y $n$ x p respectivamente, el producto *AB* es la matriz AB de tamaüo m x p cuya entrada (i. j) se obtiene multiplicawlo la fila i de $A$ por la colunma j de *B* según la regla
 
 $$
 [AB]_{ij} = F_i(A) C_j(B) = (a_{i1} \cdots a_{in}) \begin{pmatrix} b_{1j} \\ \vdots \\ b_{nj} \end{pmatrix} = a_{i1}b_{1j} + \ldots + a_{in}b_{nj} = \sum_{k=1}^n a_{ik}b_{kj}
@@ -476,7 +475,7 @@ $$
 
 con A11 , $i$ = l. ... , *p* matrices cuadradas y el resto de bloques matrices nulas.
 
-Si $A$ y *B* son matrices diagonales por bloques de orden *n* y para í = l ..... p los bloques *A;¡* y *B*1; son del mismo orden n;. con n <sup>1</sup>+ · · · + *n* Jl = 11. entonces su cálculo se simplifica mucho
+Si $A$ y *B* son matrices diagonales por bloques de orden $n$ y para í = l ..... p los bloques *A;¡* y *B*1; son del mismo orden n;. con n <sup>1</sup>+ · · · + $n$ Jl = 11. entonces su cálculo se simplifica mucho
 
 $$
 AB = \begin{pmatrix} A_{11} & \dots & 0 \\ \vdots & \ddots & \vdots \\ 0 & \dots & A_{pp} \end{pmatrix} \begin{pmatrix} B_{11} & \dots & 0 \\ \vdots & \ddots & \vdots \\ 0 & \dots & B_{pp} \end{pmatrix} = \begin{pmatrix} A_{11}B_{11} & \dots & 0 \\ \vdots & \ddots & \vdots \\ 0 & \dots & A_{pp}B_{pp} \end{pmatrix}
@@ -484,7 +483,7 @@ $$
 
 #### **Las potencias de una matriz cuadrada**
 
-La **potencia** k~ésima de una matriz A de orden *n* es el producto de A por sí misma k yeces
+La **potencia** k~ésima de una matriz A de orden $n$ es el producto de A por sí misma k yeces
 
 $$
 A^k = A \stackrel{k}{\cdots} A \quad \text{para} \quad k \ge 1 \qquad \text{y por convenio} \quad A^0 = I_n
@@ -700,7 +699,7 @@ En esta sección describiremos un proceso de transformación de una matriz media
 
 **Definición 1.10**  Sean F 1 ..... F~c E 9Jl <sup>1</sup>x" (!K) matrices filas. La matri:~~ fila es una **combinación lineal** de F 1 ..... F~c con **coeficientes** n 1 ....- n~.:. Las matrices fila F 1 ..... F~,: son **dependientes** (o linealmente dependientes) si alguna de ellas es combinación lineal de las demás. En caso contrario se dice que F 1 ..... F~; son **independientes**  (o linealmente independientes).
 
-Cada fila de A E 9nmxn(\mathbb{K}) es una matriz fila de tamaüo 1 x *n.* De las propiedades de la suma de matrices y del producto por escalares se deduce que una combinación lineal de filas de A es un matriz fila de tamaüo 1 x *n.* 
+Cada fila de A E 9nmxn(\mathbb{K}) es una matriz fila de tamaüo 1 x $n$ De las propiedades de la suma de matrices y del producto por escalares se deduce que una combinación lineal de filas de A es un matriz fila de tamaüo 1 x $n$ 
 
 # **Ejemplo 1.11** En la matriz
 
@@ -724,7 +723,7 @@ Las filas de A son dependientes pues. como se ve, F~ es combinación lineal de F
 
 <sup>2</sup> .Johann Carl Friedrich Gauss (Brunswick. 1777- Gotinga. 1855).
 
-Una **combinación lineal trivial** de matrices fila es aquélla en la que todos los coeficientes son O.
+Una **combinación lineal trivial** de matrices fila es aquélla en la que todos los coeficientes son 0.
 
 | Proposición 1.12    |                                                                                                                                          |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------|
@@ -749,7 +748,7 @@ $$
 
 que es una combinación lineal no trivial de F 1, ••- , FA:, dado que o¡,. <sup>=</sup>-1 #O.
 
-{=) Ahora, supongamos que existe una combinación lineal no trivial n <sup>1</sup>F1 + · · · + *od'k* = O, es decir que algún o¡ *#* O. Entones, podemos despejar *F;* obteniendo:
+{=) Ahora, supongamos que existe una combinación lineal no trivial n <sup>1</sup>F1 + · · · + *od'k* = O, es decir que algún o¡ *#* 0. Entones, podemos despejar *F;* obteniendo:
 
 $$
 F_i = \frac{-\alpha_1}{\alpha_i} F_1 + \dots + \frac{-\alpha_{i-1}}{\alpha_i} F_{i-1} + \frac{-\alpha_{i+1}}{\alpha_i} F_{i+1} + \dots + \frac{-\alpha_k}{\alpha_i} F_k
@@ -779,7 +778,7 @@ Tipo **1:** l11tcrcambiar las filas i ~· j. Se denota *f¡* H .fj.
 
 Tipo **11:** Sumar a la fila i la fila j umltiplicada por 1m escalar. Se denota *.f,* -+ *f¡* + .J.fj.
 
-Tipo **111:** l\Iultiplicar la fila i por un escalar no nulo. Se denota *.f¡-+ .Jf¡* co11 j *el* O.
+Tipo **111:** l\Iultiplicar la fila i por un escalar no nulo. Se denota *.f¡-+ .Jf¡* co11 j *el* 0.
 
 ## <sup>1</sup>Ejemplo 1.14 Vemos m1 ejemplo de cada m1o de los tipos de operaciones eleme11talcs de filas:
 
@@ -802,7 +801,7 @@ Asociadas a las operaciones dementaks de filas están las denominadas matrices e
 
 ## **Definición 1.15**
 
-U na **matriz elemental** de orden *n* es una matriz resultante de aplicar a la matrit~ identidad I, una operación elemental de filas. Las hay de tres tipos:
+U na **matriz elemental** de orden $n$ es una matriz resultante de aplicar a la matrit~ identidad I, una operación elemental de filas. Las hay de tres tipos:
 
 - Ef,+-+!*1* : 1\Iatri;.-: resultante de aplicar a *111* la operación elemental *j;* +-+ *fJ·* 
 
@@ -816,7 +815,7 @@ $$
 I_n \xrightarrow[\ f_i \to f_i + \beta f_j]{} E_{f_i \to f_i + \beta f_j}
 $$
 
-## - Ef,--+df, : Matriz resultante de aplicar a!, la operación elemental *f¡--+ ¡)j;. ¡)fe* O.
+## - Ef,--+df, : Matriz resultante de aplicar a!, la operación elemental *f¡--+ ¡)j;. ¡)fe* 0.
 
 $$
 I_n \xrightarrow[\ f_i \to \beta f_i]{f_i} E_{f_i \to \beta f_i}
@@ -868,7 +867,7 @@ La matriz A es **escalonada** (o escalonada por filas) si cumple las siguientes 
 La matriz $A$ es **escalonada reducida** si es escalonada y además cumple que:
 
 - Todos los pivotes de $A$ son iguales a l.
-- Toda entrada de $A$ situada en la misma columna que un pivote es igual a O.
+- Toda entrada de $A$ situada en la misma columna que un pivote es igual a 0.
 
 **Ejemplo 1.19** 
 
@@ -895,7 +894,7 @@ $$
 0 & 0 & 0 & 0 & 0 & 0\n\end{pmatrix}
 $$
 
-son escalonadas, pero no son escalonadas reducidas: la primera porque no todo pivote es igual a 1, y la segunda porque no toda entrada situada en la misma columna que un pivote es igual a O. La matriz
+son escalonadas, pero no son escalonadas reducidas: la primera porque no todo pivote es igual a 1, y la segunda porque no toda entrada situada en la misma columna que un pivote es igual a 0. La matriz
 
 $$
 \begin{pmatrix} 0 & 1 & 9 & 0 & 7 & 0 & 0 \\ 0 & 0 & 0 & 1 & 2 & 0 & 0 \\ 0 & 0 & 0 & 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 0 & 0 & 0 & 1 \end{pmatrix}
@@ -905,7 +904,7 @@ es escalonada reducida. O
 
 Observaciones: l. La matriz nula es escalonada y escalonada reducida.
 
-2. La única matriz escalonada reducida de orden *n* con *n* filas no nulas es la identidad *In.* 
+2. La única matriz escalonada reducida de orden $n$ con $n$ filas no nulas es la identidad *In.* 
 
 ## Matrices equivalentes por filas
 
@@ -1000,7 +999,7 @@ Toda matriz es equivalente por filas a una matriz escalonada.
 
 Demostración: Detallamos en forma de algoritmo los pasos que se deben seguir para transformar $A$  en una matriz escalonada utilizando únicamente operaciones elementales de Tipo 1 y 11:
 
-- l. Buscamos la primera columna de $A$ que tenga algún elemento distinto de O. Supongamos que es la columna j. Buscarnos en esta columna j de A el primer elemento distinto de O. Supongamos que éste se encuentra eu la fila *h* :v que es igual a ,\ *#* O. Entonces aplicamos la operación elemental de Tipo 1: f¡ H *fh* y obtenemos una matriz que tiene un pivote igual a ,\ en la posición ( 1, *j).*
+- l. Buscamos la primera columna de $A$ que tenga algún elemento distinto de 0. Supongamos que es la columna j. Buscarnos en esta columna j de A el primer elemento distinto de 0. Supongamos que éste se encuentra eu la fila *h* :v que es igual a ,\ *#* 0. Entonces aplicamos la operación elemental de Tipo 1: f¡ H *fh* y obtenemos una matriz que tiene un pivote igual a ,\ en la posición ( 1, *j).*
 - 2. Para cada *i #* 1 sea~, *el* elemento que se encuentra en la posición *(i.j).* Si~, #O realizamos la operación elemental de Tipo 11: *f¡* -+ *f¡* - 3; *h.* De esta forma obtenemos una matriz con pivote igual a,\ en la posición (1,j) ~·ceros por debajo. Si~~= O no se hace nada en la fila i.
 - 3. Si la matriz que hemos obtenido es escalonada entonces ya hemos terminado. Eu caso contrario lo que hacemos es dejar fijadas la primera fila ~· las primeras j columnas. y con el el resto de la matriz comenzar de nuevo el proceso nJ!vicndo al paso l. D
 
@@ -1020,7 +1019,7 @@ $$
 \begin{pmatrix} 0 & 0 & 2 & 6 \\ 3 & 6 & 1 & 2 \\ 3 & 6 & 0 & -1 \\ 0 & 0 & 1 & 5 \end{pmatrix} \xrightarrow[\overline{f_1} \leftrightarrow \overline{f_2}]{} \begin{pmatrix} 3 & 6 & 1 & 2 \\ 0 & 0 & 2 & 6 \\ 3 & 6 & 0 & -1 \\ 0 & 0 & 1 & 5 \end{pmatrix}
 $$
 
-2. Hacemos ceros por debajo del primer pivote. Como ha~· un único elemento distinto de O. que se encuentra en la fila 3. sólo necesitamos una transformación de Tipo 11:
+2. Hacemos ceros por debajo del primer pivote. Como ha~· un único elemento distinto de 0. que se encuentra en la fila 3. sólo necesitamos una transformación de Tipo 11:
 
 $$
 \frac{1}{f_3 \to f_3 - f_1} \begin{pmatrix} 3 & 6 & 1 & 2 \\ 0 & 0 & 2 & 6 \\ 0 & 0 & -1 & -3 \\ 0 & 0 & 1 & 5 \end{pmatrix}
@@ -1150,7 +1149,7 @@ Si $A$ y *B* son matrices escalonadas reducidas y $A$ ~ *¡ B* entonces $A$ = *B
 
 **Demostración:** Recordemos que si $A$ ""'.f *B* entonces cada fila de $A$ es combinación liueal de filas de *B.* y viceversa. cada fila de *B* es combiuación lineal de las de A.
 
-Vamos a demostrar que si el pivote en la primera fila de A está en la columna i y el pivote de la primera fila de *B* está en la columna j entonces i = j. Procedemos por reduccióu al absurdo suponieudo que i < j. En tal caso la primera fila de $A$ no se podría escribir como combinación lineal de las filas de *B.* ya que todos los elementos de la columna i de *B* seríau iguales a O. Un argumento similar. intercambiando los papeles de $A$ y *B.* valdría para descartar que i > *j.* Luego $i$ = *j.* 
+Vamos a demostrar que si el pivote en la primera fila de A está en la columna i y el pivote de la primera fila de *B* está en la columna j entonces i = j. Procedemos por reduccióu al absurdo suponieudo que i < j. En tal caso la primera fila de $A$ no se podría escribir como combinación lineal de las filas de *B.* ya que todos los elementos de la columna i de *B* seríau iguales a 0. Un argumento similar. intercambiando los papeles de $A$ y *B.* valdría para descartar que i > *j.* Luego $i$ = *j.* 
 
 Observamos que si expresamos las filas F2 ( *B) .* .... *Fm* ( *B)* de *B* como combinación lineal de las filas de *A.* en ninguna de ellas aparecerá la primera fila de *A,* F <sup>1</sup>*(A),* ya que eso haría que apareciera una entrada distinta de O debajo del pivote de la primera fila de B. Se puede hacer un argumento similar intercambiando los papeles de $A$ y *B.* De manera que podemos eliminar la primera fila de $A$ y la primera de *By* obtendremos dos matrices A1 y B1 que son escalonadas reducidas~· que preservan la propiedad de que cada fila de cada una de ellas es combinacióu lineal de las filas de la otra.
 
@@ -1259,7 +1258,7 @@ $$
 f_2 \to f_2 - \frac{1}{2}f_1
 $$
 
-Aparentemente hemos realizado correctamente cada una de las operaciones elementales de filas teniendo en cuenta la matriz original. sin embargo el resultado al que hemos llegado no es correcto ~·a que no es posible cmncnz¡u con una matriz distinta de O y tras aplicarle una serie dC' o¡wraciones elementales de filas acabar en la matriz O.
+Aparentemente hemos realizado correctamente cada una de las operaciones elementales de filas teniendo en cuenta la matriz original. sin embargo el resultado al que hemos llegado no es correcto ~·a que no es posible cmncnz¡u con una matriz distinta de O y tras aplicarle una serie dC' o¡wraciones elementales de filas acabar en la matriz 0.
 
 Vamos a ver la diferencia que existe al realizar esas mismas operaciones elementales de filas de forma
 
@@ -1271,13 +1270,13 @@ $$
 
 Evitaremos el problema que acabamos de describir si imponemos que ninguna fila que se va a modificar se puede a sus vez emplear en la misma operación para modificar a otra fila. De esta forma el resultado será el mismo que *el* que se obtcudría aplicando operaciones elementales de filas de forma sccuew:ial.
 
-Otros errores frecuentes ocurre u al realizar la operación elemental *f¡* ---+ *f¡* + ~ *f¡* o bien *.f¡* ---+ *of¡,*  siendo *o* un parámetro que pueda llegar a ser O. Por ejemplo. la operación elemental
+Otros errores frecuentes ocurre u al realizar la operación elemental *f¡* ---+ *f¡* + ~ *f¡* o bien *.f¡* ---+ *of¡,*  siendo *o* un parámetro que pueda llegar a ser 0. Por ejemplo. la operación elemental
 
 $$
 \begin{pmatrix} \alpha & 3 \\ 1 & 4 \end{pmatrix} \xrightarrow[f_2 \to f_2 - \frac{1}{\alpha} f_1] \begin{pmatrix} \alpha & 3 \\ 0 & 4 - \frac{3}{\alpha} \end{pmatrix}
 $$
 
-no es correcta si existe la posibilidad de que o = O.
+no es correcta si existe la posibilidad de que o = 0.
 
 ## Operaciones elementales por columnas
 
@@ -1287,9 +1286,9 @@ Tipo 1: Intercambiar dos colmnnas. Se denota e¡ +-+ *r·;.*
 
 Tipo 11: Sumar a mm columna otra multiplicada por 1111 escalar. Se deuota r·¡ ---+ e¡ + *,dr·¡.* 
 
-Tipo 111: 1\Iultiplicar una colmmm por m1 escalar no nulo. Se dcuota e¡ ---+ de¡ cou *¡) fe* O.
+Tipo 111: 1\Iultiplicar una colmmm por m1 escalar no nulo. Se dcuota e¡ ---+ de¡ cou *¡) fe* 0.
 
-U na matriz elemental de orden *n* que opera por columnas se obticue al aplicar a la matriz identidad *In* la correspondiente operación elemental por colummts. Las hay de tres tipos:
+U na matriz elemental de orden $n$ que opera por columnas se obticue al aplicar a la matriz identidad *In* la correspondiente operación elemental por colummts. Las hay de tres tipos:
 
 - *Fe,* He.~ es la matriz resultante de aplicar a *In* la operación clcmt'ntal e¡ +-+ e¡.
 
@@ -1304,7 +1303,7 @@ $$
 I_n \xrightarrow[c_i \to c_i + \beta c_j]{c_i \to c_i + \beta c_j}
 $$
 
-- *Fc, <sup>4</sup> dc,* es la matriz resultauk de aplicar a *In* la opcrac:i{m clnneu!al e·¡ ---+ /)e¡ con f) *fe* O.
+- *Fc, <sup>4</sup> dc,* es la matriz resultauk de aplicar a *In* la opcrac:i{m clnneu!al e·¡ ---+ /)e¡ con f) *fe* 0.
 
 $$
 I_n \xrightarrow[c_i \to \beta c_i]{} F_{c_i \to \beta c_i}
@@ -1424,7 +1423,7 @@ Eu esta sección vamos a estudiar c:aractcrizacioues *y* propiedades del rango d
 
 El **rango** de una matriz *A.* rg(A). l'S el máximo n(uuero de filas independientes qne tiene *A.* 
 
-**Observación:** El rango de mm matriz que ticue 11 filas serú m1 Yalor cutre O y 11. En un extremo tenemos, por ejemplo. a la ideutidad I, ya quP rg(I<sup>11</sup> ) = *n* al ser sns 11 filas iudepcudientcs. En el otro extremo el rango es O y tenemos úuicamcutc' a la matriz nnla. ya qnc uua fila müa no forma parte de niugún conjuuto de filas ilHlepclHlientcs.
+**Observación:** El rango de mm matriz que ticue 11 filas serú m1 Yalor cutre O y 11. En un extremo tenemos, por ejemplo. a la ideutidad I, ya quP rg(I<sup>11</sup> ) = $n$ al ser sns 11 filas iudepcudientcs. En el otro extremo el rango es O y tenemos úuicamcutc' a la matriz nnla. ya qnc uua fila müa no forma parte de niugún conjuuto de filas ilHlepclHlientcs.
 
 El método de Gauss sirve para detectar precisamente el número de filas ilHle¡wudientes de mm matriz. Si nua fila *F;* de uua matriz $A$ l'S combinación lineal de otras filas. *F;* = n 1 <sup>F</sup> 1 + ... + o, *Fk.* l'ntouces podemos obtener nua matriz eqnin1lcutc por filas *A'* cuyas filas sean todas ignales a las de $A$ salvo *F;*  que será uula. Lo podemos hacer aplicauclo las operaciones l'lcmeutalcs agrnpadas
 
@@ -1444,13 +1443,13 @@ $$
 \alpha_1 F_1 + \dots + \alpha_t F_t = 0
 $$
 
-Sea 1: d llll'!lor natnral para el que n *k* c/c O. Entmln's
+Sea 1: d llll'!lor natnral para el que n *k* c/c 0. Entmln's
 
 $$
 \alpha_1 F_1 + \dots + \alpha_{k-1} F_{k-1} + \alpha_k F_k + \dots + \alpha_t F_t = \alpha_k F_k + \dots + \alpha_t F_t = 0
 $$
 
-\_va que n 1 = · · · = n k- <sup>1</sup>= O. Sin embargo. la fila resultante de la comhinacióu lineal *nkFk* + · · · + n <sup>1</sup>F*<sup>1</sup>* u o puede ser mil a ~·a que si *o h-.¡* es el pivote de la fila }~ .. por ser la matriz cscalouada. no hay uiugúu *e* lemcnto distiHto de O, sah·o (•L e u la columna j de las filas F,+ 1 •.... F1 - Así. n~,.F,. + · · · + n 1 *F*1 teHdrú m1 dcmeuto no 1mlo *O¡,Jlk.J* en la posicióll j. lo que nos llcYa a mm contradiccióu. EHtonccs. todas las filas !lO nulas de la matriz cscalouada sou illd!'j)('lldielltes. como queríamos demostrar. D
+\_va que n 1 = · · · = n k- <sup>1</sup>= 0. Sin embargo. la fila resultante de la comhinacióu lineal *nkFk* + · · · + n <sup>1</sup>F*<sup>1</sup>* u o puede ser mil a ~·a que si *o h-.¡* es el pivote de la fila }~ .. por ser la matriz cscalouada. no hay uiugúu *e* lemcnto distiHto de O, sah·o (•L e u la columna j de las filas F,+ 1 •.... F1 - Así. n~,.F,. + · · · + n 1 *F*1 teHdrú m1 dcmeuto no 1mlo *O¡,Jlk.J* en la posicióll j. lo que nos llcYa a mm contradiccióu. EHtonccs. todas las filas !lO nulas de la matriz cscalouada sou illd!'j)('lldielltes. como queríamos demostrar. D
 
 ## Matrices equivalentes por filas y rango
 
@@ -1536,7 +1535,7 @@ $$
 \text{Sean } A \text{ y } H_r = \left(\frac{I_r}{0} \mid \frac{0}{0}\right) \text{ matrices de igual tamaño. Entonces } A \sim H_r \text{ si y solo si rg}(A) = r.
 $$
 
-**Demostración:** ~ Supongamos que el rango de $A$ es *T.* Sea *H¡(A)* = *(hi1 )* la forma escalonada reducida de *A.* Como A~¡ *H¡(A),* entonces *H¡(A)* tiene exactamente *T* filas no nulas y los pivotes de *H ¡* (A) se encuentran en las posiciones (l .. h), ... , *('r, j,.).* Para cada k: = 1, ... , *r* la columna *j k*  de *H¡(A)* tiene como única entrada no nula a hkJ¡ = l. Para cada fila k: con 1 "S *k* "S *r,* mediante operaciones elementales de columnas c1 --+ Cz - hkl eh con l > j k; haremos que todas las entradas de la fila k. salvo hkJ;, sean iguales a O. Con estas operaciones obtenemos una matriz *e* con r entradas iguales a 1 en las posiciones (l,j¡), ... , *(r,j,.)* de los pivotes y con el resto de entradas iguales a O. Mediante intercambio de columnas podemos transformar *e* en *H,..* Luego $A$ 1 *H¡(A)* ~e *e* ~eH,. y, por lo tanto, $A$ ~ *H,.* como queríamos demostrar.
+**Demostración:** ~ Supongamos que el rango de $A$ es *T.* Sea *H¡(A)* = *(hi1 )* la forma escalonada reducida de *A.* Como A~¡ *H¡(A),* entonces *H¡(A)* tiene exactamente *T* filas no nulas y los pivotes de *H ¡* (A) se encuentran en las posiciones (l .. h), ... , *('r, j,.).* Para cada k: = 1, ... , *r* la columna *j k*  de *H¡(A)* tiene como única entrada no nula a hkJ¡ = l. Para cada fila k: con 1 "S *k* "S *r,* mediante operaciones elementales de columnas c1 --+ Cz - hkl eh con l > j k; haremos que todas las entradas de la fila k. salvo hkJ;, sean iguales a 0. Con estas operaciones obtenemos una matriz *e* con r entradas iguales a 1 en las posiciones (l,j¡), ... , *(r,j,.)* de los pivotes y con el resto de entradas iguales a 0. Mediante intercambio de columnas podemos transformar *e* en *H,..* Luego $A$ 1 *H¡(A)* ~e *e* ~eH,. y, por lo tanto, $A$ ~ *H,.* como queríamos demostrar.
 
 =? Supongamos que A~ *H,.* y sea rg(A) = s. Según acabamos de ver A~ *H,.* Luego *H,.* ~ *Hs* y del Lemma 1.47 se sigue que *8* = *r.* O
 
@@ -1592,7 +1591,7 @@ El rango de la matriz traspuesta
 
 Teorema l. <sup>51</sup>
 
-Sean $A$ y *B* dos matrices de tamaño *m* x *n.* Son ciertas las afirmaciones:
+Sean $A$ y *B* dos matrices de tamaño *m* x $n$ Son ciertas las afirmaciones:
 
 - l. $A$ "' *B* si y sólo si $A$ 1 "' *B <sup>1</sup> .*
 - 2. Si $A$ es cuadrada entonces $A$ rv *A1 .*
@@ -1623,13 +1622,13 @@ $$
 
 :v por ser "' una relación de equivalencia se tien(' A rv .4<sup>1</sup> .
 
-:l. Sea $A$ E 9Jl, x "(OC). El resultado para 111 = *n* se sigue del apartado anterior y del Teorema 1.49. Supongamos ahora, sin perdida <k generalidad. que *m* < *n.* Sea *e* la matriz de orden 11 que se obtiene añadiéndole a *A n* - *m* filas nulas. La matriz *C1* es la matriz que se ohtieue añadiónclole a $A$1 11-m. columuas nulas. Se cumple que rg(A) = rg(C) y rg(A1 ) = rg(C1) . Por otro lado. como *e* es una matriz cuadrada. aplicando la propiedad (2) rg(C) = rg(C1), y por tanto
+:l. Sea $A$ E 9Jl, x "(OC). El resultado para 111 = $n$ se sigue del apartado anterior y del Teorema 1.49. Supongamos ahora, sin perdida <k generalidad. que *m* < $n$ Sea *e* la matriz de orden 11 que se obtiene añadiéndole a *A n* - *m* filas nulas. La matriz *C1* es la matriz que se ohtieue añadiónclole a $A$1 11-m. columuas nulas. Se cumple que rg(A) = rg(C) y rg(A1 ) = rg(C1) . Por otro lado. como *e* es una matriz cuadrada. aplicando la propiedad (2) rg(C) = rg(C1), y por tanto
 
 $$
 rg(A) = rg(C) = rg(Ct) = rg(At)
 $$
 
-4. Por la definición de rango tenemos que rg(A) <;:: m. Y corno A*<sup>1</sup>*E 9nnxm(\mathbb{K}) tenemos que rg(A1 ) <;:: *n.* E! resultado se sigue entonces ya que rg(A) = rg(A1 ). O
+4. Por la definición de rango tenemos que rg(A) <;:: m. Y corno A*<sup>1</sup>*E 9nnxm(\mathbb{K}) tenemos que rg(A1 ) <;:: $n$ E! resultado se sigue entonces ya que rg(A) = rg(A1 ). O
 
 El uúmcro de columnas linealmente indcpewlientes de $A$ es igual al número de filas linealmente independientes de A1 . Teniendo en cueuta que rg(A) = rg(A <sup>1</sup> ) llegamos a la conclusión de que **el rango de una matriz también es el máximo número de columnas linealmente independientes que tiene.** Esto es anúlogo a la Dcfinci{m 1.41 de raugo de mm matriz utilizando su estructura por columnas en lugar de por filas. Todos los resultados que rclacionau el raugo de uua matriz con su estructura de filas ¡nwdcu ser enmwiados en relación a su estructura de c:o 1 umn as.
 
@@ -1710,7 +1709,7 @@ $$
 rg(A+B) \ge \max\{rg(A) - rg(B), rg(B) - rg(A)\} = |rg(A) - rg(B)|
 $$
 
-- 2. Las matrices $A$ y *nA* son equivalentes por filas ya que podernos pasar de $A$ a oA mediante una sucesión de operaciones elementales de filas que consisten en multiplicar cada fila de $A$ por o. El resultado es, por tanto, consecuencia del Teorema 1.49.
+- 2. Las matrices $A$ y *nA* son equivalentes por filas ya que podernos pasar de $A$ a oA mediante una sucesión de operaciones elementales de filas que consisten en multiplicar cada fila de $A$ por 0. El resultado es, por tanto, consecuencia del Teorema 1.49.
 - 3. Sean *H* = *H¡(A)* y *G* = *He(D)* las formas de Hennite por filas de $A$ y por columnas de *D.*  Entonces
 
 $$
@@ -1729,7 +1728,7 @@ $$
 rg(AD) = rg(HG) \le \min\{r, s\}
 $$
 
-- 4. Si rg( C) = *n* entonces, Teorema 1.4G, C = E <sup>1</sup>···E *k* donde E 1 •.... E *k* son matrices elementales. Luego *AC* = *AE*1 - - - *Ek* y *AC* "'e *A.* Dado que *AC* "'e $A$ entonces tambión se tiene que *AC"' A*  y aplicando el Teorema 1.49 se deduce que rg(AC) = rg(A).
+- 4. Si rg( C) = $n$ entonces, Teorema 1.4G, C = E <sup>1</sup>···E *k* donde E 1 •.... E *k* son matrices elementales. Luego *AC* = *AE*1 - - - *Ek* y *AC* "'e *A.* Dado que *AC* "'e $A$ entonces tambión se tiene que *AC"' A*  y aplicando el Teorema 1.49 se deduce que rg(AC) = rg(A).
 - 5. Se demuestra de manera análoga al apartado anterior (vóase Ejercicio 1.13.). D
 
 #### La inversa de una matriz cuadrada $1.4.$
@@ -1846,12 +1845,12 @@ Caracterización de las matrices invertibles
 
 ## Teorema **1.60**
 
-Sea $A$ una matriz de orden *n.* Son equivalentes las afirmaciones:
+Sea $A$ una matriz de orden $n$ Son equivalentes las afirmaciones:
 
 - l. $A$ tiene inversa.
 - 2. Si *BA =CA* entonces *B =C.*
-- 3. Si *BA* = O entonces *B* = O.
-- 4. $A$ tiene rango *n.*
+- 3. Si *BA* = O entonces *B* = 0.
+- 4. $A$ tiene rango $n$
 
 Demostración: 1 =? 2. Supongamos que $A$ tiene inversa !' *BA* = *e A,* entonces SP deduce que *B* ~ *e* tienen el mismo tamaño *m* X *n.,* y dado que $A$ tiene inversa entonces
 
@@ -1859,14 +1858,14 @@ $$
 B = BI_n = BAA^{-1} = CAA^{-1} = CI_n = C
 $$
 
-- 2 =? 3. Obvio. basta con tomar *C* = O.
-- 3 =? 4. Procedemos por reducción al absurdo. Supongamos que rg(A) < *n.* La forma de HennitP por filas de *A, H¡(A)* =E~;··· *E1*iL donde las *E,* son matrices elementales. tiene rango menor que *n*  y por tanto las entradas de su última fila son iguales a O. Si *D* =(O ... O 1) <sup>E</sup>9J11 *xn* entonces es fácil comprobar que *DH¡(A)* =O, esto es, que DE~;··· *E1A* =O. Dado que el producto *Ek* · · · *E1*  tiene rango n. del cuarto apartado del Teorema 1.5:~ se sigue que
+- 2 =? 3. Obvio. basta con tomar *C* = 0.
+- 3 =? 4. Procedemos por reducción al absurdo. Supongamos que rg(A) < $n$ La forma de HennitP por filas de *A, H¡(A)* =E~;··· *E1*iL donde las *E,* son matrices elementales. tiene rango menor que $n$  y por tanto las entradas de su última fila son iguales a 0. Si *D* =(O ... O 1) <sup>E</sup>9J11 *xn* entonces es fácil comprobar que *DH¡(A)* =O, esto es, que DE~;··· *E1A* =O. Dado que el producto *Ek* · · · *E1*  tiene rango n. del cuarto apartado del Teorema 1.5:~ se sigue que
 
 $$
 rg(DE_k\cdots E_1)=rg(D)=1
 $$
 
-y esto nos lle,·a a contradecir la condición :~ pues DE~; · · · *E1 A* = O ~- DE~; · · ·E¡ # O.
+y esto nos lle,·a a contradecir la condición :~ pues DE~; · · · *E1 A* = O ~- DE~; · · ·E¡ # 0.
 
 4 =? l. Por el Teorema 1.46 $A$ = E~; · · · *E <sup>1</sup>*donde *E* 1 ..... E~; son matrices elementales. Entonces
 
@@ -1878,7 +1877,7 @@ luego Ej 1 · · · E; <sup>1</sup>es la inversa de *A.* <sup>O</sup>
 
 **Nota:** lVIás adelante utilizaremos el hecho de que una matriz invertible se puede escribir como producto de matrices elementales para desarrollar un mNodo efectivo para el cálculo de su inversa.
 
-<sup>1</sup>**Ejemplo 1.<sup>6</sup> <sup>l</sup>**1 El Teorema 1.60 nos dice que una matriz A de orden *n* tiene inversa si y sólo si rg(A) = *n,* o lo que es lo mismo. si y sólo si las *n* filas de A son independientes. Las filas de la matriz
+<sup>1</sup>**Ejemplo 1.<sup>6</sup> <sup>l</sup>**1 El Teorema 1.60 nos dice que una matriz A de orden $n$ tiene inversa si y sólo si rg(A) = *n,* o lo que es lo mismo. si y sólo si las $n$ filas de A son independientes. Las filas de la matriz
 
 $$
 A = \begin{pmatrix} 2 & 3 & 5 \\ 1 & 1 & 3 \\ 3 & 8 & 4 \end{pmatrix}
@@ -1890,13 +1889,13 @@ $$
 BA = \begin{pmatrix} 5 & -7 & -1 \end{pmatrix} \begin{pmatrix} 2 & 3 & 5 \\ 1 & 1 & 3 \\ 3 & 8 & 4 \end{pmatrix} = 5F_1 - 7F_2 - F_3 = 5(2 \quad 3 \quad 5) - 7(1 \quad 1 \quad 3) - (3 \quad 8 \quad 4) = (0 \quad 0 \quad 0)
 $$
 
-Tenernos un ejemplo que prueba que si *A cp* O no tiene inversa entonces *BA* = O no implica *B* = O. Como ya sabíamos, el producto de dos matrices no nulas puede ser una matriz nula.'i. O
+Tenernos un ejemplo que prueba que si *A cp* O no tiene inversa entonces *BA* = O no implica *B* = 0. Como ya sabíamos, el producto de dos matrices no nulas puede ser una matriz nula.'i. O
 
 Podemos completar el Teorema 1.60 viendo quó cosas pasan cuando se multiplica una matriz invertible por la derecha.
 
 #### **Teorema 1.62**
 
-Sea $A$ una matriz de orden *n.* Son equivalentes las afirmaciones:
+Sea $A$ una matriz de orden $n$ Son equivalentes las afirmaciones:
 
 - 1'. A tiene inversa.
 - 2'. Si *AB* = *AC* entonces *B =C.*
@@ -1920,7 +1919,7 @@ $$
 n = \text{rg}(I_n) = \text{rg}(AB) \le \min\{\text{rg}(A), \text{rg}(B)\} \le n
 $$
 
-Luego rg(A) = *n* Y. por el Teorema 1.60. A tiene inversa. Entonces, multiplicawlo en la ecuación AB = !, por la izquierda por *A-l* se tiene
+Luego rg(A) = $n$ Y. por el Teorema 1.60. A tiene inversa. Entonces, multiplicawlo en la ecuación AB = !, por la izquierda por *A-l* se tiene
 
 $$
 A^{-1}AB = A^{-1}I_n \Leftrightarrow I_nB = A^{-1} \Leftrightarrow B = A^{-1}
@@ -1932,7 +1931,7 @@ Una consecuencia de este resultado es que si tenemos una matriz *B* como candida
 
 ## Matrices congruentes y matrices semejantes
 
-Dos matrices $A$ y *B* de ordeu *n* son congruentes si existe una matriz regular *P.* del mismo orden. tal que *B* = *P*<sup>1</sup>*AP.* 
+Dos matrices $A$ y *B* de ordeu $n$ son congruentes si existe una matriz regular *P.* del mismo orden. tal que *B* = *P*<sup>1</sup>*AP.* 
 
 Una consecuencia de los Teoremas anteriores l~S que dos matrices congruentes tienen el mismo rango. En efecto. si *P* es regular entonces tambi('n *P1* es regular *y* 
 
@@ -1940,7 +1939,7 @@ $$
 rg(A) = rg(AP) = rg(PtAP) = rg(B)
 $$
 
-Dos matrices $A$ y *B* de orden *n* son sernejantes si existe una matriz regular *P.* del mismo orden. tal que B = p- <sup>1</sup>AP. Del mismo modo se demuestra que dos matrices semejantes tienen el mismo rango
+Dos matrices $A$ y *B* de orden $n$ son sernejantes si existe una matriz regular *P.* del mismo orden. tal que B = p- <sup>1</sup>AP. Del mismo modo se demuestra que dos matrices semejantes tienen el mismo rango
 
 $$
 rg(A) = rg(AP) = rg(P^{-1}AP) = rg(B)
@@ -1987,7 +1986,7 @@ $$
 A \quad \overrightarrow{c_{i_1} \rightarrow \cdots} \quad \overrightarrow{c_{i_2} \rightarrow \cdots} \quad \cdots \quad \overrightarrow{c_{i_h} \rightarrow \cdots} \quad H_c(A)
 $$
 
-Sean F<sup>1</sup> , ... , *Fh* las matrices elementales de orden *n* asociadas a dichas operaciones. Entonces
+Sean F<sup>1</sup> , ... , *Fh* las matrices elementales de orden $n$ asociadas a dichas operaciones. Entonces
 
 $$
 A(F_1\cdots F_h)=H_c(A)
@@ -2217,7 +2216,7 @@ $$
 
 ## Cálculo de la matriz inversa usando el método de Gauss
 
-Sea $A$ una matriz in vertible de orden *n.* Según el Teorema l.GO $A$ tiene rango *n.* Dado que la única matriz escalonada red u e ida de rango 11 es la identidad. tenemos que Hl (A) = 1*11* y t amhii''n H, (A) = 1*<sup>11</sup> •*  Particularizaremos lo visto en el apartado auterior al caso de matrices iun'rtiblcs.
+Sea $A$ una matriz in vertible de orden $n$ Según el Teorema l.GO $A$ tiene rango $n$ Dado que la única matriz escalonada red u e ida de rango 11 es la identidad. tenemos que Hl (A) = 1*11* y t amhii''n H, (A) = 1*<sup>11</sup> •*  Particularizaremos lo visto en el apartado auterior al caso de matrices iun'rtiblcs.
 
 ## l. Cálculo de la inversa de $A$ con operaciones elementales de filas.
 
@@ -2269,9 +2268,9 @@ $$
 
 #### Definición 1.68
 
-S<~a $A$ una matriz de tamaño *m* x *n.* 
+S<~a $A$ una matriz de tamaño *m* x $n$ 
 
-- U na inversa por la izquierda de $A$ es una matriz *X* de tamar!o *n* x *m.* tal que *X A* = *I,.*
+- U na inversa por la izquierda de $A$ es una matriz *X* de tamar!o $n$ x *m.* tal que *X A* = *I,.*
 - Una inversa por la derecha de $A$ es una matriz *Y* de tamaüo 11 x *m* tal que *AY= Im·*
 
 ## Proposición 1.69
@@ -2280,8 +2279,8 @@ Una matriz $A$ de tamaño rn x n tiene inversa por la izquierda si y sólo si rg
 
 Demostración: Vamos a dividir la demostración en los distintos casos posibles:
 
-- l. rg(A) < 11. Entonces A no tiene inversa por la izquierda ya que para cualquier matriz X de tamaño *n* x *m* se tiene que rg(XA):::; mín{rg(X).rg(A)} < 11.
-- 2. rg(A) < 111. Entonces A no tiene inversa por la derecha ya que para cualquier matriz Y de tamaño *n* x *m.* se tiene que rg(AY):::; mín{rg(A). rg(Y)} *<m.*
+- l. rg(A) < 11. Entonces A no tiene inversa por la izquierda ya que para cualquier matriz X de tamaño $n$ x *m* se tiene que rg(XA):::; mín{rg(X).rg(A)} < 11.
+- 2. rg(A) < 111. Entonces A no tiene inversa por la derecha ya que para cualquier matriz Y de tamaño $n$ x *m.* se tiene que rg(AY):::; mín{rg(A). rg(Y)} *<m.*
 - 3. rg(A) = n *<m ..* Transformamos (Ailm) mediante operaciones elementales de filas en (H¡(A)IP):
 
 $$
@@ -2307,7 +2306,7 @@ $$
 \left(\begin{array}{c|c}\n\overline{I_n}\n\end{array}\right) \quad c_{i_1} \rightarrow \cdots \quad c_{i_h} \rightarrow \cdots \quad\n\left(\begin{array}{c|c}\n\overline{Q} & \overline{Q}\n\end{array}\right) = \left(\begin{array}{c|c}\n\overline{Q_1}\n\end{array}\right) \quad
 $$
 
-Entonces *Q* es una matriz de orden *n* tal que *AQ* = *Hc(A).* Teniendo pn cuenta que
+Entonces *Q* es una matriz de orden $n$ tal que *AQ* = *Hc(A).* Teniendo pn cuenta que
 
 $$
 (I_m | 0) = H_c(A) = AQ = A(Q_1 | Q_2) = (AQ_1 | AQ_2) \text{ con } Q_1 \text{ de tamaño } n \times m
@@ -2315,7 +2314,7 @@ $$
 
 se sigue que *AQ1* = *Irn* y, por lo tanto. que Q1 es una inversa por la derecha de A.
 
-5. rg( A) = *rn* = *n.* La inversa de A es única y es inversa por la izquierda y por la derecha. O
+5. rg( A) = *rn* = $n$ La inversa de A es única y es inversa por la izquierda y por la derecha. O
 
 \ **Ejemplo l. 70** Calcule una inversa por la izquierda de la matriz
 
@@ -2350,14 +2349,14 @@ U u ejemplo de cálculo de una inversa por la derecha según d método desarroll
 Definimos el **determinante** de la matriz A E 9Jl77 (1K), det(A), de forma recursiva:
 
 - Sin= 1 y *A=* (a), entonces det(A) *=a.*
-- Si *n* > 1 entonces el determinante de $A$ viene dado por la fórmula
+- Si $n$ > 1 entonces el determinante de $A$ viene dado por la fórmula
 
 $$
 \begin{array}{rcl}\n\det(A) & = & \sum_{i=1}^{n} (-1)^{i+1} a_{i1} \det(A_{i1}) \\
 & = & a_{11} \det(A_{11}) - a_{21} \det(A_{21}) + \dots + (-1)^{n+1} a_{n1} \det(A_{n1})\n\end{array}
 $$
 
-donde Aij denota a la subrnatriz de A de orden *n* - 1 que se obtiene eliminando la fila i y la columna j de *A.* 
+donde Aij denota a la subrnatriz de A de orden $n$ - 1 que se obtiene eliminando la fila i y la columna j de *A.* 
 
 Se denomina **adjunto o cofactor** del elemento a;.i de A al escalar
 
@@ -2441,7 +2440,7 @@ $$
   
 = 2 \cdot 1 \cdot (-10) + 0 \cdot (-1) \cdot 4 + 1 \cdot 1 \cdot 13 + 0 \cdot (-1) \cdot (-8) = -7
 
-Si desarrollamos la fórmula de Laplace para una matriz de orden  $n$  aparecen n! sumandos, y cada sumando es el producto de *n* elementos de la matriz situados en filas y columnas distintas. Si *n* crece entonces el número de operaciones crece tan rápidamente que el cálculo resulta impracticable incluso para un ordenador potente. Más adelante veremos cómo se puede calcular el determinante de forma más eficiente. No obstante, en el caso de las matrices triangulares sí resulta práctico el cálculo del determinante desarrollando por la primera columna.
+Si desarrollamos la fórmula de Laplace para una matriz de orden  $n$  aparecen n! sumandos, y cada sumando es el producto de $n$ elementos de la matriz situados en filas y columnas distintas. Si $n$ crece entonces el número de operaciones crece tan rápidamente que el cálculo resulta impracticable incluso para un ordenador potente. Más adelante veremos cómo se puede calcular el determinante de forma más eficiente. No obstante, en el caso de las matrices triangulares sí resulta práctico el cálculo del determinante desarrollando por la primera columna.
 
 ## Proposición 1.73
 
@@ -2453,7 +2452,7 @@ $$
 
 <sup>&</sup>lt;sup>7</sup>Pierre Frédéric Sarrus (Saint-Affrique. 1798 – 1861).
 
-Demostración: Procedemos por inducción. El resultado es obvio para *n* = l. Supongamos que es cinto para matrices de orden *n* - l. Sea $A$ una matriz de orden *n* triangular superior y calculemos su dctcrmiuante desarrollando la fónnula de Laplace por la primera columna. Corno $A$ sólo tiene un elemento distinto de O en dicha columna, Ü'!lemos dct(A) = o <sup>11</sup>dct(A 1 1 ). Ahora bien. A11 es triangular superior de orden *n* - l y por hipótesis de inducción dct( A <sup>11</sup> ) = *o-22* · · · *o <sup>1111</sup> •* Por lo tanto det(A) = <sup>a</sup>11 a2:2 · · · a11,,. O
+Demostración: Procedemos por inducción. El resultado es obvio para $n$ = l. Supongamos que es cinto para matrices de orden $n$ - l. Sea $A$ una matriz de orden $n$ triangular superior y calculemos su dctcrmiuante desarrollando la fónnula de Laplace por la primera columna. Corno $A$ sólo tiene un elemento distinto de O en dicha columna, Ü'!lemos dct(A) = o <sup>11</sup>dct(A 1 1 ). Ahora bien. A11 es triangular superior de orden $n$ - l y por hipótesis de inducción dct( A <sup>11</sup> ) = *o-22* · · · *o <sup>1111</sup> •* Por lo tanto det(A) = <sup>a</sup>11 a2:2 · · · a11,,. O
 
 <sup>1</sup>Ejemplo l. 7 4 " veamos · 1 ' 1 'l 1 l l l t · t l t · cou llll e.wmp o como <'S e ca cu o < e < e ,enmnan ,e <e mm ma ,nz triangular superior desarrollawlo si<~mpre por la primera columna:
 
@@ -2463,11 +2462,11 @@ $$
 
 ## Determinante y operaciones elementales
 
-A lo largo de (~S te apartado trabajaremos con matrices A = (O.¡¡)' B = (bi¡)' *e* = ( *C¡J)* de orden *n.*  Comenzamos viendo el efecto que tienen en el dctenniuantc las operaciones deuwntales de filas, y más adelante demostraremos que análogos resultados son vúlidos tambih1 para columnas.
+A lo largo de (~S te apartado trabajaremos con matrices A = (O.¡¡)' B = (bi¡)' *e* = ( *C¡J)* de orden $n$  Comenzamos viendo el efecto que tienen en el dctenniuantc las operaciones deuwntales de filas, y más adelante demostraremos que análogos resultados son vúlidos tambih1 para columnas.
 
 ## Proposición l. 75
 
-Si se intercambian dos filas en una matriz de orden *n* el determinante cambia de signo.
+Si se intercambian dos filas en una matriz de orden $n$ el determinante cambia de signo.
 
 Demostración: Vamos a ver que si *A l l J3* entonces det(B) = - det(A). Tenieudo en cuenta . *k* B ·'' que $A$ y *B* se difcreucian únicamente en las filas /,: y *h* que esUtn intercambiadas, tcuemos que probar que
 
@@ -2475,13 +2474,13 @@ $$
 \det(B) = \begin{vmatrix} \vdots & \vdots & \vdots & \vdots \\ a_{h1} & \cdots & a_{hn} \\ \vdots & \vdots & \vdots & \vdots \\ a_{k1} & \cdots & a_{kn} \\ \vdots & \vdots & \vdots & \vdots \end{vmatrix} = - \begin{vmatrix} \vdots & \vdots & \vdots & \vdots \\ a_{k1} & \cdots & a_{kn} \\ \vdots & \vdots & \vdots & \vdots \\ a_{h1} & \cdots & a_{hn} \\ \vdots & \vdots & \vdots & \vdots \end{vmatrix} = -\det(A)
 $$
 
-Lo probaremos primero para el caso en el que las filas sean cousecutivas. Emplearemos inducción en el orden *n* de A. El resultado tiene sentido sólo si *n* 2: 2. Si *n* = 2 entonces
+Lo probaremos primero para el caso en el que las filas sean cousecutivas. Emplearemos inducción en el orden $n$ de A. El resultado tiene sentido sólo si $n$ 2: 2. Si $n$ = 2 entonces
 
 $$
 \begin{vmatrix} a_{21} & a_{22} \\ a_{11} & a_{12} \end{vmatrix} = a_{21}a_{12} - a_{22}a_{11} = - \begin{vmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{vmatrix}
 $$
 
-Asumimos que es cierto para matrices de orden *n* - 1 y veamos que es cierto para orden *n.* Sea B la matriz de orden *n* que se obtieuc intercambiando las filas k: y *k+* 1 de *A.* Desarrollando d determinante de *B* por la primera columna y llamando al adjunto del elemento *b¡;* tenemos
+Asumimos que es cierto para matrices de orden $n$ - 1 y veamos que es cierto para orden $n$ Sea B la matriz de orden $n$ que se obtieuc intercambiando las filas k: y *k+* 1 de *A.* Desarrollando d determinante de *B* por la primera columna y llamando al adjunto del elemento *b¡;* tenemos
 
 $$
 \det(B) = \sum_{i=1}^{n} b_{i1} \beta_{i1}
@@ -2513,7 +2512,7 @@ teniendo en cuenta que $A$ tiene dos filas iguales. Si intercambiamos las dos fi
 
 ## **Proposición l. 77**
 
-Si se multiplica una fila de una matriz de orden *n* por un número entonces el determinante de la matriz obtenida queda multiplicado por dicho número.
+Si se multiplica una fila de una matriz de orden $n$ por un número entonces el determinante de la matriz obtenida queda multiplicado por dicho número.
 
 **Demostración:** Vamos a ,·cr que si $A$ <sup>1</sup> ------+1 *B* entonces det(B) = *t* det(A). Teniendo en cuenta k--+tk que $A$ y *B* se diferencian únicamente en la fila *k* tenernos que probar que
 
@@ -2521,7 +2520,7 @@ $$
 \det(B) = \begin{vmatrix} \vdots & \vdots & \vdots \\ ta_{k1} & \cdots & ta_{kn} \\ \vdots & \vdots & \vdots \end{vmatrix} = t \begin{vmatrix} \vdots & \vdots & \vdots \\ a_{k1} & \cdots & a_{kn} \\ \vdots & \vdots & \vdots \end{vmatrix} = t \det(A)
 $$
 
-Procedemos por inducción en el orden n de la matriz *A.* Si *n* = 1 el resultado es obvio. Asumimos que es cierto para *n* - 1 y veamos que es cierto para *n.* Sea B la matriz de orden *n* que se obtiene multiplicando por *t* la fila *k* de *A.* Entonces desarrollando el determinante de *B* por la primera columna y llamando /J;j al adjunto del elemento *b;j* tenemos
+Procedemos por inducción en el orden n de la matriz *A.* Si $n$ = 1 el resultado es obvio. Asumimos que es cierto para $n$ - 1 y veamos que es cierto para $n$ Sea B la matriz de orden $n$ que se obtiene multiplicando por *t* la fila *k* de *A.* Entonces desarrollando el determinante de *B* por la primera columna y llamando /J;j al adjunto del elemento *b;j* tenemos
 
 $$
 \det(B) = \sum_{i=1}^{n} b_{i1} \beta_{i1} = b_{k1} \beta_{k1} + \sum_{i \neq k} b_{i1} \beta_{i1} = ta_{k1} \alpha_{k1} + \sum_{i \neq k} a_{i1} (t \alpha_{i1}) = t \det(A)
@@ -2545,7 +2544,7 @@ $$
 
 teniendo en cuenta que las matrices *A. B* y *C* se diferencian únicamente en la fila *k.* 
 
-Procedemos por inducción en el orden *n* de las matrices. Si *n* = 1 el resultado es obvio. Asumimos que es cierto para matrices de orden *n-* <sup>1</sup>y veamos que es cierto para matrices de orden *n.* Sean *A, B* y *<sup>C</sup>* matrices de orden *n* en las condiciones del enunciado. Entonces desarrollando el determinante de $A$ por la primera columna y llamando *(3;j* y *{i.j* al adjunto del elemento *b;j* de *B* y Cij de e' respectivamente, tenemos
+Procedemos por inducción en el orden $n$ de las matrices. Si $n$ = 1 el resultado es obvio. Asumimos que es cierto para matrices de orden *n-* <sup>1</sup>y veamos que es cierto para matrices de orden $n$ Sean *A, B* y *<sup>C</sup>* matrices de orden $n$ en las condiciones del enunciado. Entonces desarrollando el determinante de $A$ por la primera columna y llamando *(3;j* y *{i.j* al adjunto del elemento *b;j* de *B* y Cij de e' respectivamente, tenemos
 
 $$
 \begin{array}{rcl}\n\det(A) & = & \sum_{i=1}^{n} a_{i1} \alpha_{i1} \\
@@ -2560,7 +2559,7 @@ En la tercera igualdad hemos utilizado que a¡¡ = *¡3; <sup>1</sup>*+ Íil par
 
 ## **Proposición 1.80**
 
-Si a una fila de una matriz de orden *n* se le suma un múltiplo de otra fila. el determinante de la matriz obtenida no varía
+Si a una fila de una matriz de orden $n$ se le suma un múltiplo de otra fila. el determinante de la matriz obtenida no varía
 
 **Demostración:** Vamos a ver que si A . j f B entonces clct(B) = det(A). Teniendo ('n ClH'nta h---+ ,. *+t./¡*  que $A$ v *B* se difereucian úuicamente en la fila *k* teucmos que probar que
 
@@ -2634,13 +2633,13 @@ $$
 f_4 \to f_4 + \frac{1}{4}f_1
 $$
 
-pero aquí nos paramos, ¡\_por quó? Aunque esta última matriz no es escalonada, el hecho de que el pivote de la segunda fila no se encuentre en la diagonal principal nos anuncia que la matriíl escalonada a la que lleguemos tendrá un O en la entrada (2,2) de la diagonal y que, por tanto, su determinante será igual a O. Luego det(B) = O. D
+pero aquí nos paramos, ¡\_por quó? Aunque esta última matriz no es escalonada, el hecho de que el pivote de la segunda fila no se encuentre en la diagonal principal nos anuncia que la matriíl escalonada a la que lleguemos tendrá un O en la entrada (2,2) de la diagonal y que, por tanto, su determinante será igual a 0. Luego det(B) = 0. D
 
 #### **Otras propiedades del determinante**
 
 ## **Teorema 1.84**
 
-Sean $A$ y *B* dos matrices de orden *n.* Son ciertas las afirmaciones:
+Sean $A$ y *B* dos matrices de orden $n$ Son ciertas las afirmaciones:
 
 - l. det(A) =/=O si y sólo si A es invertible.
 - 2. det(AB) = det(A) det(B) (y por tanto det(AB) = det(BA)).
@@ -2655,7 +2654,7 @@ $$
 \det(A) = \det(E_1 \cdots E_k) = \det(E_1) \det(E_2 \cdots E_k) = \cdots = \det(E_1) \cdots \det(E_k)
 $$
 
-Como el determinante de una matriz clt>rnent al nunca es O entonces det (A) =/= O.
+Como el determinante de una matriz clt>rnent al nunca es O entonces det (A) =/= 0.
 
 =;.) Este sentido de la demostración es equivalente a probar que si $A$ no es inwrtible. entonces det(A) =O. Supongamos entonces que A no es invertihle. Por el Teorema 1.60 rg(A) < *no* lo que es lo mismo $A$ es equivalente a una matriz escalonada *A.'* en la que al menos su última fila es una fila de ceros. Sea *A.'* = *E*1 · · · E~:A donde las *E;* son matrices elementales. por el Teorema 1.82
 
@@ -2668,7 +2667,7 @@ Como det(E;) =/=O para i =l. ... ,k~· det(A') =O (wr Corolario 1.78). entonces 
 - 2. Consideramos dos posibilidades:
   - a) $A$ o *B* no son inwrtibles. En este caso det(A) det(B) =O pues det(A) =O o det(B) =O. Por el Teorema 1.53
 
-rg(AB) <:: mín{rg(A).rg(B)} < *n* 
+rg(AB) <:: mín{rg(A).rg(B)} < $n$ 
 
 luego *AB* no es im·ertible y por la propiedad 1 tenernos que *det(AB)* =O.
 
@@ -2676,7 +2675,7 @@ luego *AB* no es im·ertible y por la propiedad 1 tenernos que *det(AB)* =O.
 
 det(Afl) = det(E¡ · · · *E¡J¡* · · · *F¡,)* = dct(E¡) · · · det(Ek) det(Fl) · · · det(F¡,) = dct(A) det(B)
 
-3. Por el Teorema 1.58 si A no tiene im·prsa entonces A1 tampoco. y d apartado 1 nos dice que det(A) = det(A1 ) = O. Si A es invertihlc entonces A = E <sup>1</sup>···E~: donde las E; son matrices elementales. ~·
+3. Por el Teorema 1.58 si A no tiene im·prsa entonces A1 tampoco. y d apartado 1 nos dice que det(A) = det(A1 ) = 0. Si A es invertihlc entonces A = E <sup>1</sup>···E~: donde las E; son matrices elementales. ~·
 
 $$
 A^t = (E_1 \cdots E_k)^t = E_k^t \cdots E_1^t
@@ -2692,7 +2691,7 @@ El hecho de que una matriz tenga el mismo determinante que su matriz traspuesta 
 
 **Proposición 1.85** 
 
-El determinante de una matriz $A$ de orden *n* se puede calcular según la fórmula
+El determinante de una matriz $A$ de orden $n$ se puede calcular según la fórmula
 
 $$
 \det(A) = \sum_{j=1}^{n} a_{1j} \alpha_{1j} = a_{11} \alpha_{11} + \dots + a_{1n} \alpha_{1n}
@@ -2715,12 +2714,12 @@ Teniendo en cuenta esta caracteri:.mción del determinante utilizando la primera
 - Si se intercambian dos columnas en una matriz de orden n el determinante cambia de signo.
 - Si a una columna de una matri:.~ de orden n se le suma un múltiplo de otra columna, el determinante la matriz obtenida no varía
 - Si se multiplica una columna de una matriz de orden n por un número entonces el determinante de la matriz obtenida queda multiplicado por dicho número.
-- Si A tiene una columna nula entonces dPi A = O.
+- Si A tiene una columna nula entonces dPi A = 0.
 - Si *A, B* y *C* se diferencian únicamente en su columna j de manera que la columna *\_j* de $A$  es igual a la suma de las columnas j de *By C,* entonces clet(A) = dct(B) + det(C).
 
 #### **Teorema 1.86**
 
-El determinante de una matriz A de orden *n* se puede calcular según las fórmulas
+El determinante de una matriz A de orden $n$ se puede calcular según las fórmulas
 
 $$
 \det(A) = \sum_{j=1}^{n} a_{ij} \alpha_{ij} \qquad \text{o} \qquad \det(A) = \sum_{i=1}^{n} a_{ij} \alpha_{ij}
@@ -2797,7 +2796,7 @@ $$
 = (x+6)(x-2)\begin{vmatrix} x-2 & -2 \ -2 & x-2 \end{vmatrix} = (x+6)(x-2)(x-4)x
 $$
 
-Luego el determinante de $A$ es igual a O si y sólo si l' = -G. 2. 4 o O.
+Luego el determinante de $A$ es igual a O si y sólo si l' = -G. 2. 4 o 0.
 
 **Nota:** En la matriz $A$ también la suma de las entradas en cada una de las columnas coincide. de manera que podríamos haber procedido de forma análoga. En este caso las primeras operaciones elementales nos llevarían a sustituir una de las filas por la suma de todas ellas. D
 
@@ -2805,7 +2804,7 @@ Luego el determinante de $A$ es igual a O si y sólo si l' = -G. 2. 4 o O.
 
 El resultado de la Proposición l. 73 se puede generalizar a matrices diagonales por bloques.
 
-**Proposición 1.89**  Si $A$ es una matriz de orden *n* y *B* es una matriz de orden *m* entonces det ( <sup>~</sup>1 ~ ) = det(A) det(B)
+**Proposición 1.89**  Si $A$ es una matriz de orden $n$ y *B* es una matriz de orden *m* entonces det ( <sup>~</sup>1 ~ ) = det(A) det(B)
 
 **Demostración:** Procedemos por inducción sobre 11. el orden de la matriz *A.* Si n = 1 el resultado se sigue por la fórmula de Laplace para el cálculo del determinante utilizando la columna 1:
 
@@ -2813,7 +2812,7 @@ $$
 \det\left(\begin{array}{c|c} a & C \\ \hline 0 & B \end{array}\right) = a \det(B)
 $$
 
-Supongamos que el resultado es válido si el orden de $A$ igual a *n* - l.
+Supongamos que el resultado es válido si el orden de $A$ igual a $n$ - l.
 
 Sea A una matriz de orden n y consideramos la matriz *JI.[* = ( "~ 1 ~ ) de orden n + m. Aplicamos la fórmula de Laplace de cálculo del determinante utilizando la columna 1:
 
@@ -2827,7 +2826,7 @@ donde la segunda igualdad es debida a que m; <sup>1</sup>= O si i > *n,* y la te
 
 **Corolario 1.90** 
 
-Si A es una matriz de orden *n* triangular superior (inferior) por bloques tal que las matrices A<sup>1</sup> , *A2 •... , An* situadas en su diagonal son cuadradas, entonces
+Si A es una matriz de orden $n$ triangular superior (inferior) por bloques tal que las matrices A<sup>1</sup> , *A2 •... , An* situadas en su diagonal son cuadradas, entonces
 
 $$
 \det(A) = \det(A_1) \det(A_2) \cdots \det(A_n)
@@ -2865,7 +2864,7 @@ $$
 \text{Adj}(A)^t \cdot A = \begin{pmatrix} \alpha_{11} & \dots & \alpha_{n1} \\ \vdots & \ddots & \vdots \\ \alpha_{1n} & \dots & \alpha_{nn} \end{pmatrix} \begin{pmatrix} a_{11} & \dots & a_{1n} \\ \vdots & \ddots & \vdots \\ a_{n1} & \dots & a_{nn} \end{pmatrix} = \begin{pmatrix} \sum_{k=1}^n \alpha_{k1} a_{k1} & \dots & \sum_{k=1}^n \alpha_{k1} a_{kn} \\ \vdots & \ddots & \vdots \\ \sum_{k=1}^n \alpha_{kn} a_{k1} & \dots & \sum_{k=1}^n \alpha_{kn} a_{kn} \end{pmatrix}
 $$
 
-y calculamos el valor que tienen las entradas de la última matriz. Para i = 1, ... , *n* tenemos que ¿~'= 1 akiO:ki es la fórmula de Laplace por la columna i del determinante de *A.* Luego todos las entradas de la diagonal son iguales a det(A). Para i, j = 1, ... , n con 'i f j tenemos que L~=l akiakj es la fórmula de Laplace por la columna j del determinante de la matriz que se obtiene sustituyendo (no intercambiando) la columna j de A por la columna ideA, y como se trata de una matriz con dos columnas iguales entonces dicho determinante es 0. Luego todas las entradas de fuera de la diagonal son iguales a 0. Entonces:
+y calculamos el valor que tienen las entradas de la última matriz. Para i = 1, ... , $n$ tenemos que ¿~'= 1 akiO:ki es la fórmula de Laplace por la columna i del determinante de *A.* Luego todos las entradas de la diagonal son iguales a det(A). Para i, j = 1, ... , n con 'i f j tenemos que L~=l akiakj es la fórmula de Laplace por la columna j del determinante de la matriz que se obtiene sustituyendo (no intercambiando) la columna j de A por la columna ideA, y como se trata de una matriz con dos columnas iguales entonces dicho determinante es 0. Luego todas las entradas de fuera de la diagonal son iguales a 0. Entonces:
 
 $$
 \text{Adj}(A)^t A = \det(A) I_n
@@ -2962,9 +2961,9 @@ $$
 
 **Proposición 1.95** 
 
-Sea A una matriz de orden *m* x *n* y Ap una submatriz de A de orden p y rango p. Si rg(A) > p entonces A tiene una submatriz Ap+l de orden p + 1 y rango p + 1 que contiene a Ap.
+Sea A una matriz de orden *m* x $n$ y Ap una submatriz de A de orden p y rango p. Si rg(A) > p entonces A tiene una submatriz Ap+l de orden p + 1 y rango p + 1 que contiene a Ap.
 
-**Demostración:** Salvo permutación de filas :v columnas, que no infiu)·en en el rango. podemos suponer que AP es la submatriz de A formada por las p primeras filas y columnas de *A.* Como Ap tiene orden <sup>p</sup>:V rango p entonces sus filas son independientes. de donde se sigue que las filas F 1 ..... *Fp* de $A$  son independientes. y lo mismo ocurre con las columnas C1 .... , CP" Por otro lado. corno rg(A) *>p.*  entonces existe al menos otra fila de *A.* pongamos *F,* con s > *p.* tal que las filas F <sup>1</sup> , .... *FP, Fs* son independientes. Sea A.~, la submatriz de A de ordeu (p + 1) x *n* formada por las filas F 1 ..... *FP,* F, de A. esto es
+**Demostración:** Salvo permutación de filas :v columnas, que no infiu)·en en el rango. podemos suponer que AP es la submatriz de A formada por las p primeras filas y columnas de *A.* Como Ap tiene orden <sup>p</sup>:V rango p entonces sus filas son independientes. de donde se sigue que las filas F 1 ..... *Fp* de $A$  son independientes. y lo mismo ocurre con las columnas C1 .... , CP" Por otro lado. corno rg(A) *>p.*  entonces existe al menos otra fila de *A.* pongamos *F,* con s > *p.* tal que las filas F <sup>1</sup> , .... *FP, Fs* son independientes. Sea A.~, la submatriz de A de ordeu (p + 1) x $n$ formada por las filas F 1 ..... *FP,* F, de A. esto es
 
 $$
 A_p = \left( \begin{array}{cccc} a_{11} & \cdots & a_{1p} \\ \vdots & \ddots & \vdots \\ a_{p1} & \cdots & a_{pp} \end{array} \right) \quad \text{y} \quad A'_p = \left( \begin{array}{cccc} a_{11} & \cdots & a_{1p} & \cdots & a_{1n} \\ \vdots & \ddots & \vdots & & \vdots \\ a_{p1} & \cdots & a_{pp} & \cdots & a_{pn} \\ \hline a_{s1} & \cdots & a_{sp} & \cdots & a_{sn} \end{array} \right)
@@ -2984,9 +2983,9 @@ Dado que el rango de uua matriz es mayor o igual que el rango de cualquier subma
 
 El rango de una matriz A es igual al mayor orden de un menor no nulo de A.
 
-**Demostración:** Sea p el mayor orden de un menor no nulo de *A.* Entonces $A$ posee una submatriz *Ap*  de orden p tal que *det(Ap)* f. O. Como *rg(Ap)* <sup>=</sup>p y *AP* es una submatriz de *A,* se sigue que *rg(A)* ~p. Veamos que no puede ocurrir *rg(A)* > p y así concluiremos que *rg(A)* <sup>=</sup>p, corno queremos demostrar. En efecto, si fuese *rg(A)* > *p,* por la Proposición 1.95 existiría una subrnatriz *Ap+l* de *A,* de orden <sup>p</sup>+ 1 y rango p + **1** que contiene a *Ap.* Pero rg(Ap+I) <sup>=</sup>p + **1** implica *det(Ap+I)* i- O , y por tanto *<sup>A</sup>* tendría un menor no nulo de orden p + l. Una contradicción con la hipótesis. D
+**Demostración:** Sea p el mayor orden de un menor no nulo de *A.* Entonces $A$ posee una submatriz *Ap*  de orden p tal que *det(Ap)* f. 0. Como *rg(Ap)* <sup>=</sup>p y *AP* es una submatriz de *A,* se sigue que *rg(A)* ~p. Veamos que no puede ocurrir *rg(A)* > p y así concluiremos que *rg(A)* <sup>=</sup>p, corno queremos demostrar. En efecto, si fuese *rg(A)* > *p,* por la Proposición 1.95 existiría una subrnatriz *Ap+l* de *A,* de orden <sup>p</sup>+ 1 y rango p + **1** que contiene a *Ap.* Pero rg(Ap+I) <sup>=</sup>p + **1** implica *det(Ap+I)* i- O , y por tanto *<sup>A</sup>* tendría un menor no nulo de orden p + l. Una contradicción con la hipótesis. D
 
-Recordarnos que el rango de una matriz es el máximo número de filas independientes que tiene. La matriz nula tiene rango O. Una matriz no nula con todas sus filas proporcionales tiene rango 1 puesto que tiene únicamente una fila independiente. Si una matriz contiene dos filas no nulas que no son proporcionales entonces su rango ya será mayor o igual que 2 porque tiene como mínimo dos filas independientes. Localizar en una matriz con dos filas no proporcionales una submatriz de orden 2 y rango 2 es trivial.
+Recordarnos que el rango de una matriz es el máximo número de filas independientes que tiene. La matriz nula tiene rango 0. Una matriz no nula con todas sus filas proporcionales tiene rango 1 puesto que tiene únicamente una fila independiente. Si una matriz contiene dos filas no nulas que no son proporcionales entonces su rango ya será mayor o igual que 2 porque tiene como mínimo dos filas independientes. Localizar en una matriz con dos filas no proporcionales una submatriz de orden 2 y rango 2 es trivial.
 
 #### **Procedimiento para el cálculo del rango por menores**
 
@@ -2998,7 +2997,7 @@ $$
 A = \begin{pmatrix} 1 & 3 & 3 & 1 \\ 0 & 1 & 2 & 0 \\ 1 & 2 & 1 & 1 \\ 1 & 3 & 1 & 1 \end{pmatrix}
 $$
 
-La matriz A tiene al menos rango 2 ya que sus filas 1 y 2 no son proporcionales. Corno subrnatriz de <sup>A</sup>de orden 2 y rango 2 podemos tornar aquella cuyos elementos están en las filas 1 y 2 y columnas 1 <sup>y</sup>2 ya que dct ( 6 f) = 1 f. O. Vamos a seguir ahora el procedimiento descrito en la demostración de la Proposición 1.95. Sea
+La matriz A tiene al menos rango 2 ya que sus filas 1 y 2 no son proporcionales. Corno subrnatriz de <sup>A</sup>de orden 2 y rango 2 podemos tornar aquella cuyos elementos están en las filas 1 y 2 y columnas 1 <sup>y</sup>2 ya que dct ( 6 f) = 1 f. 0. Vamos a seguir ahora el procedimiento descrito en la demostración de la Proposición 1.95. Sea
 
 $$
 A_2 = \begin{pmatrix} 1 & 3 \\ 0 & 1 \end{pmatrix}
@@ -3096,7 +3095,7 @@ $$
 -2 & -4 & 1\n\end{pmatrix}
 $$
 
-Se ¡medc comprobar que todas ellas tienen determinante O. Por otra parte. la única submatriz dc orden 4 de $A$ es la propia *A,* y tambión se puede comprobar que det(A) =O. Por lo tanto rg *A=* 2.
+Se ¡medc comprobar que todas ellas tienen determinante 0. Por otra parte. la única submatriz dc orden 4 de $A$ es la propia *A,* y tambión se puede comprobar que det(A) =O. Por lo tanto rg *A=* 2.
 
 En realidad no hace falta calcular tantos menores. Podemos usar la Proposición 1.!)5 que nos dice que si $A$ tiene rango mayor que 2 entonces tiene que existir una submatriz de $A$ orden :3 con determinante no nulo que contiene a la submatri:.~ ( $i$ ~\ ) . Luego sólo teníamos que haber estudiado los menores correspondientes a las 4 submatrices dt~ $A$ de orden :3 que resultan de ampliar ( $i$ ~\ ) , quc son las 4 matrices que se han mareado con un asterisco. D
 
@@ -3106,9 +3105,9 @@ En realidad no hace falta calcular tantos menores. Podemos usar la Proposición 
 
 - **1.1.** Dadas tres matrices *A. B* y *e* de orden *n,* demuestre que si $A$ y *B* conmutan ~, $A$ y *e* conmutan entonces A y Be conmutan.
 - **1.2.** Demuestre cada una de las siguientes afirmaciones:
-  - a) Las entradas de la diagonal de una matriz antisimétrica son iguales a O.
+  - a) Las entradas de la diagonal de una matriz antisimétrica son iguales a 0.
   - b) Las entradas de la diagonal de una matriz hermítica son números reales.
-- **1.3.** Justifique la veracidad o falsedad de la siguiente afirmación: Si el rango de la suma de dos matrices cuadradas y el de su diferencia son ambos O. las dos matrices son nulas.
+- **1.3.** Justifique la veracidad o falsedad de la siguiente afirmación: Si el rango de la suma de dos matrices cuadradas y el de su diferencia son ambos 0. las dos matrices son nulas.
 - **1.4.** Demuestre que el producto de matrices triangulares superiores es una matriz triangular superior. y que el producto de matrices triangulares inferiores es una matriz triangular inferior.
 - **1.5.** Escriba todas las posibles matrices escalonadas reducidas de orden 2 x 4 (sugerencia: ordénelas por rango creciente).
 - 1.6. Calcule el rango de la matriz A dependiendo del valor de n.
@@ -3147,7 +3146,7 @@ $$
 A = \begin{pmatrix} 1 & 1 & 1 \\ 0 & 1 & 1 \\ 0 & 0 & 1 \end{pmatrix}
 $$
 
-entonces para todo *n* E N la matriz *An* tiene la forma general
+entonces para todo $n$ E N la matriz *An* tiene la forma general
 
 $$
 A^n = \begin{pmatrix} 1 & n & \frac{n(n+1)}{2} \\ 0 & 1 & n \\ 0 & 0 & 1 \end{pmatrix}
@@ -3164,11 +3163,11 @@ $$
   - a) Si *H(A)* es la forma de Herrnite de *A,* encuentre dos matrices *P* y *Q* invertibles tales que *PAQ* = *H(A).*
   - *b)* Si $A$ y *B* son dos matrices cuya forma de Hermite por filas coincide, encuentre una matriz in vertible *P* tal que *P A* = B'!
   - e) Si $A$ y *B* son dos matrices cuya forma de Hermite por columnas coincide, encuentre una matriz invertible Q tal que *Aq* = *B?*
-- **1.13.** Sean DE 9nnxp(1K) y CE 9J1<sup>11</sup> (1K). Demuestre que si rg(C) = *n* entonces rg(CD) = rg(D).
-- **1.14.** Sea A una matriz de orden *m* x *n.* Utilice la definición de rango de una matriz para demostrar las siguientes afirmaciones.
+- **1.13.** Sean DE 9nnxp(1K) y CE 9J1<sup>11</sup> (1K). Demuestre que si rg(C) = $n$ entonces rg(CD) = rg(D).
+- **1.14.** Sea A una matriz de orden *m* x $n$ Utilice la definición de rango de una matriz para demostrar las siguientes afirmaciones.
   - *a)* Si rg(A) < *m* entonces existe una rnatri:.~ no nula *B* tal que *BA* <sup>=</sup>O.
-  - *b)* Si rg( *A)* < *n* entonces existe una matriz no nula *B* tal que *AB* = O.
-- **1.15.** Demuestre que si *A es* una matriz de tamaüo *n* x 1 y *Bes* una matriz de tamaüo 1 x *n* con *n* > 1, entonces *AB* no es invertible. Determine el rango de *AB* si $A$ y *B* no son nulas.
+  - *b)* Si rg( *A)* < $n$ entonces existe una matriz no nula *B* tal que *AB* = 0.
+- **1.15.** Demuestre que si *A es* una matriz de tamaüo $n$ x 1 y *Bes* una matriz de tamaüo 1 x $n$ con $n$ > 1, entonces *AB* no es invertible. Determine el rango de *AB* si $A$ y *B* no son nulas.
 - **1.16.** Demuestre la veracidad de las siguientes afirmaciones:
   - a) Dos matrices semejantes tienen el mismo determinante.
   - b) La relación de semejanza entre matrices es de equivalencia.
@@ -3204,7 +3203,7 @@ Demuestre que:
 
 - a) f(A) :::>O si y sólo si A es triangular su¡wrior.
 - b) Si f(A) :::>O y f(B) :::>O entonces f(AB) :::>O.
-- e) Si f(A) :::> 1 y f(B) < *n* entonces f(AB) > f(B).
+- e) Si f(A) :::> 1 y f(B) < $n$ entonces f(AB) > f(B).
 - *d)* Si *f(A)* :::> 1 clltonccs existe Uit entero *k* tal que *A"* =O.
 
 **l. 21.** (\*) Demuestre que Pi determinante de la matriz

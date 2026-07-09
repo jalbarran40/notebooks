@@ -22,7 +22,7 @@ Para construir $\mathbb{Z}$, partimos del conjunto producto $\mathbb{N} \times \
 
 #### 3. Construcción de los Números Racionales ($\mathbb{Q}$) (15 minutos)
 
-Ahora usamos los enteros ya definidos para construir el conjunto $\mathbb{Q}$ a partir de $\mathbb{Z} \times \mathbb{Z}^_$ (donde $\mathbb{Z}^_$ son los enteros no nulos).
+Ahora usamos los enteros ya definidos para construir el conjunto $\mathbb{Q}$ a partir de $\mathbb{Z} \times \mathbb{Z}^{*}$ (donde $\mathbb{Z}^{*}$ son los enteros no nulos).
 
 - **Relación de Equivalencia:** $(a, b) \sim (c, d) \iff ad = bc$. Aquí, el par $(a, b)$ representa la fracción $a/b$.
 - **Operaciones:**
@@ -60,6 +60,5 @@ He completado el desarrollo de la **Sesión 4: Construcción de los números ent
 **Materiales de apoyo:**
 
 - **Resumen de Audio (Podcast):** He generado una conversación en profundidad donde se explica el concepto de "clase de equivalencia" como una herramienta para tapar los "huecos" algebraicos de los números naturales. El audio ya está disponible para su escucha.
-- **Nota sobre la Presentación:** Lamentablemente, la generación de la presentación visual ha fallado en este momento debido a límites en la cuota de creación de diapositivas. Para compensarlo, he incluido arriba un desglose textual detallado de lo que habrían contenido las diapositivas (relaciones de equivalencia y jerarquía de estructuras).
-
-¿Te gustaría que realicemos un breve **test de seguimiento** sobre este bloque de construcción de conjuntos numéricos para asegurar que los conceptos de anillo y cuerpo están claros antes de pasar al Tema de Números Reales?
+![[Sesión04_La_Construcción_de_Z_Q.m4a]]
+- **Presentación:** 
