@@ -12,25 +12,21 @@ $$
 \text{con } s,a_n\in\mathbb{C}.
 $$
 
-Si \(s=\sigma+it\) tenemos que
+Si $(s=\sigma+it)$ tenemos que
 
 $$
 n^s=e^{s\log n}
 \;\Rightarrow\;
-|n^s|
-=
-e^{\sigma\log n}
-=
+|n^s| =
+e^{\sigma\log n} =
 n^\sigma,
 $$
 
 luego
 
 $$
-\left|\frac{a_n}{n^s}\right|
-=
-\frac{|a_n|}{|n^s|}
-=
+\left|\frac{a_n}{n^s}\right| =
+\frac{|a_n|}{|n^s|} =
 \frac{|a_n|}{n^\sigma}.
 $$
 
@@ -43,12 +39,10 @@ $$
 ya que
 
 $$
-\left|\frac{a_n}{n^s}\right|
-=
+\left|\frac{a_n}{n^s}\right| =
 \frac{|a_n|}{n^{\operatorname{Re}(s)}}
 \le
-\frac{|a_n|}{n^{\operatorname{Re}(s_0)}}
-=
+\frac{|a_n|}{n^{\operatorname{Re}(s_0)}} =
 \left|\frac{a_n}{n^{s_0}}\right|.
 $$
 
@@ -91,11 +85,9 @@ $$
 Tenemos
 
 $$
-\sum_{n=1}^{\infty}\frac{a_n}{n^s}
-=
+\sum_{n=1}^{\infty}\frac{a_n}{n^s} =
 \sum_{n=1}^{\infty}
-\frac{a_n}{n^{s_0}n^{\,s-s_0}}
-=
+\frac{a_n}{n^{s_0}n^{\,s-s_0}} =
 \sum_{n=1}^{\infty}\frac{C_n}{n^\sigma},
 $$
 
@@ -104,8 +96,7 @@ donde
 $$
 C_n=\frac{a_n}{n^{s_0}},
 \qquad
-\sigma=\operatorname{Re}(s-s_0)
-=
+\sigma=\operatorname{Re}(s-s_0) =
 \operatorname{Re}(s)-\operatorname{Re}(s_0)>0.
 $$
 
@@ -128,12 +119,9 @@ $$
 Sea la sucesión \((b_n)\). Entonces
 
 $$
-\sum_{n=1}^{N}c_nb_n
-=
-\sum_{n=1}^{N}(C_n-C_{n-1})b_n
-=
-C_Nb_N
--
+\sum_{n=1}^{N}c_nb_n =
+\sum_{n=1}^{N}(C_n-C_{n-1})b_n =
+C_Nb_N -
 \sum_{n=1}^{N-1}C_n(b_{n+1}-b_n).
 $$
 
@@ -148,15 +136,12 @@ $$
 y por tanto
 
 $$
-\sum_{n=1}^{N}\frac{C_n}{n^\sigma}
-=
-\frac{C_N}{N^\sigma}
--
+\sum_{n=1}^{N}\frac{C_n}{n^\sigma} =
+\frac{C_N}{N^\sigma} -
 \sum_{n=1}^{N-1}
 C_n
 \left(
-\frac{1}{(n+1)^\sigma}
--
+\frac{1}{(n+1)^\sigma} -
 \frac{1}{n^\sigma}
 \right).
 $$
