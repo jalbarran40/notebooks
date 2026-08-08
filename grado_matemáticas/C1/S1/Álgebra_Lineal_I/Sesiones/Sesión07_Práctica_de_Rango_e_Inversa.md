@@ -35,17 +35,12 @@ Para que $A$ sea invertible, recuerda que debe ser cuadrada y su determinante de
 
 ### Generación de Artifacts
 
-He activado las herramientas para crear tus materiales:
-
-- **Presentación:** Ya se está procesando en tu panel. Aplica el estilo académico y minimalista acordado, con un resumen final de "fórmulas maestras" para el Bloque 1.
-- **Audio:** He configurado la conversación para que sea un repaso dinámico antes de que te pongas a resolver ejercicios.
-
-¿Te gustaría que seleccionemos ahora un ejercicio de **Beatriz Estrada** sobre una matriz con parámetros (tipo examen) para resolverlo paso a paso usando ambos métodos?
-
 He gestionado la creación de los materiales para la **Sesión 7: Práctica de Rango e Inversa**.
 
 - **Resumen de Audio (Podcast):** ¡Listo! Ya tienes disponible en tu panel una conversación de profundización centrada en las estrategias para elegir el mejor método (Gauss vs. Determinantes) y consejos para no cometer errores operativos bajo la presión del examen.
+	![[Sesión07_Práctica_de_Rango_e_Inversa.m4a]]
 - **Presentación (Slide Deck):** Lamentablemente, el sistema ha alcanzado el límite de cuota para la generación de diapositivas en este momento y no se ha podido procesar el archivo.
+![[Sesión07_Práctica_de_Rango_e_Inversa.pptx]]
 
 Para que no pierdas la coherencia visual de tu estudio, he preparado aquí mismo un **esquema estructurado** siguiendo las directrices de nuestro **Manual de Estilo** (minimalista, con términos técnicos en negrita y fórmulas limpias), que sustituye el contenido de la presentación:
 
