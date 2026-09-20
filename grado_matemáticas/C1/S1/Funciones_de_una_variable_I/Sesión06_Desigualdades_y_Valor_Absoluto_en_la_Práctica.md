@@ -34,6 +34,8 @@ Te sugiero introducir las funciones $f(x) = |x + 5|$ y $g(x) = 3$ en GeoGebra. V
 **Recursos multimedia generados:**
 
 - **Presentación de Soporte:** Contiene el desglose paso a paso de los ejercicios resueltos y esquemas sobre las propiedades del Teorema 1.4 de Javier Pérez.
+	![[Sesión06_Desigualdades_y_Valor_Absoluto_en_la_Práctica.pptx]]
 - **Audio Overview (Diálogo):** Una conversación detallada sobre por qué el valor absoluto representa la distancia en la recta real y cómo evitar el error común de pensar que $\sqrt{x^2}$ es simplemente $x$ (recordando que siempre es $|x|$).
+	![[Sesión06_Desigualdades_y_Valor_Absoluto_en_la_Práctica.m4a]]
 
 Ya tienes disponibles estos materiales en tu panel de **Studio**. ¿Te gustaría que para la **Sesión 7** profundicemos en la Propiedad del Supremo con algún ejercicio desafiante de conjunto acotado?

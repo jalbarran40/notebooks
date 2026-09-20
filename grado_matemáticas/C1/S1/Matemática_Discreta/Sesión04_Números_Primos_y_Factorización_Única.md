@@ -39,7 +39,11 @@ Si conocemos la factorización en primos de dos números $a$ y $b$, podemos hall
 He procedido a crear los siguientes materiales para tu estudio:
 
 - **Presentación de estudio (Slide Deck):** Un resumen visual que abarca las definiciones de primos, el Lema de Euclides y el procedimiento para la factorización canónica.
+
+	![[Sesión04_Números_Primos_y_Factorización_Única.pptx]]
 - **Podcast de la sesión (Audio Overview):** Una conversación detallada entre dos expertos sobre por qué la factorización única es tan importante y cómo se aplica en el cálculo del MCD y mcm.
+
+	![[Sesión04_Números_Primos_y_Factorización_Única.m4a]]
 
 Para verificar tus soluciones en ejercicios de factorización de números grandes, te recomiendo usar la herramienta web **Mathos AI** o **WolframAlpha**, que te permitirán confirmar si tu descomposición es correcta paso a paso.
 
