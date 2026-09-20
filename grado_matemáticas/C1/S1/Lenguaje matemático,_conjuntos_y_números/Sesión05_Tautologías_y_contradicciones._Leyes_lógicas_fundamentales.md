@@ -33,6 +33,6 @@ Estas leyes permiten manipular y simplificar expresiones complejas:
 He procedido a generar los materiales de apoyo para esta sesión:
 
 - **Presentación de referencia:** Incluye una tabla resumen con todas las leyes lógicas fundamentales y ejemplos visuales de cómo una tabla de verdad identifica una tautología.
+	![[Sesión05_Tautologías_y_contradicciones._Leyes_lógicas_fundamentales.pptx]]
 - **Resumen de audio:** Explica la importancia de estas leyes como "reglas del juego" en matemáticas y cómo las Leyes de Morgan se aplican constantemente en la negación de enunciados científicos.
-
-Los materiales aparecerán en tu panel de estudio en breve.
+	![[Sesión05_Tautologías_y_contradicciones._Leyes_lógicas_fundamentales.m4a]]

@@ -1,4 +1,4 @@
-![[Sesión03_El_condicional_y_el_bicondicional._Antecedente_y_consecuente.pptx]]En esta lección profundizaremos en los conectores que permiten establecer relaciones de dependencia y equivalencia entre proposiciones.
+En esta lección profundizaremos en los conectores que permiten establecer relaciones de dependencia y equivalencia entre proposiciones.
 
 ### **Contenido Teórico de la Sesión 3**
 
@@ -29,7 +29,7 @@ A partir de un condicional $p \to q$, se pueden definir tres variaciones importa
 
 ---
 
-He generado los siguientes materiales de apoyo que estarán disponibles en breve en tu panel:
+### Materiales de apoyo 
 
 - **Presentación de referencia:** Un esquema visual que compara las tablas de verdad de ambos conectores y explica la terminología de las variantes del condicional.
 ![[Sesión03_El_condicional_y_el_bicondicional._Antecedente_y_consecuente.pptx]]

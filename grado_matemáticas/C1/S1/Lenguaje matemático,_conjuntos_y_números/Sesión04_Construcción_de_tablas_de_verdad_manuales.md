@@ -35,6 +35,12 @@ Como indica tu guía de estudio, usaremos esta herramienta para la parte analít
 - Para verificar tus resultados, entra en WolframAlpha y escribe la expresión. Por ejemplo: `truth table ((p or q) and (not p)) implies q`.
 - La herramienta generará la tabla completa y te indicará si la forma lógica es válida.
 
+- Nomenclatura WolframAlphe
+	- NOT: $\neg$
+	- AND: $\land$
+	- OR: $\lor$
+	- IMPLIES: $\to$
+	- EQUIVALENT: $\leftrightarrow$
 ---
 
 He procedido a crear los siguientes artefactos de apoyo:
