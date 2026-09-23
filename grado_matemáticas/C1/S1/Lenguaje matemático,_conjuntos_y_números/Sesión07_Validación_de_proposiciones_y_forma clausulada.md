@@ -11,7 +11,7 @@ Aunque las tablas de verdad son útiles, cuando el número de variables crece, s
 
 #### **2. La Forma Clausulada (Forma Normal Conjuntiva)**
 
-Es una forma de escribir cualquier proposición compleja de modo que sea una **conjunción de disyunciones**. Se dice que una proposición está en forma clausulada si aparece como: \[(C_1 \land C_2 \land \dots \land C_n)\] Donde cada $C_i$ (cláusula) es una disyunción de letras proposicionales o sus negaciones.
+Es una forma de escribir cualquier proposición compleja de modo que sea una **conjunción de disyunciones**. Se dice que una proposición está en forma clausulada si aparece como: $(C_1 \land C_2 \land \dots \land C_n)$ Donde cada $C_i$ (cláusula) es una disyunción de letras proposicionales o sus negaciones.
 
 #### **3. Algoritmo para extraer la Forma Clausulada**
 

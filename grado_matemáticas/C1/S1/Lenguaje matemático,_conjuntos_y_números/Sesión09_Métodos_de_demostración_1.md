@@ -13,12 +13,24 @@ He generado en paralelo la **presentación de diapositivas** (siguiendo el Manua
 
 ### **1. La Estructura de un Teorema Matemático**
 
+#### Presentación de resultados en matemáticas
+
+Establece la jerarquía del conocimiento matemático:
+
+- **Definición:** Sentencia bien formada que describe directamente un objeto o sus propiedades características.
+- **Teorema:** Enunciado demostrado de gran relevancia y utilidad práctica dentro de una teoría.
+- **Proposición:** Enunciado demostrado de utilidad práctica pero de menor jerarquía o alcance que un teorema.
+- **Lema:** Resultado intermedio previo que facilita la demostración de un teorema o proposición.
+- **Corolario:** Resultado que se deduce con relativa facilidad e inmediata consecuencia de un teorema.
+- **Conjetura / Hipótesis:** Afirmación que se presume cierta pero que aún no ha sido demostrada formalmente (como la _Conjetura de Goldbach_ o la _Conjetura de Poincaré_).
+
+#### Estructura
+
 En matemáticas, el conocimiento se organiza mediante **definiciones** y **teoremas** (o proposiciones, lemas y corolarios).
 
 - **Hipótesis (\(P\)):** Es el conjunto de premisas o condiciones iniciales que se asumen como verdaderas.
 - **Tesis o Conclusión (\(Q\)):** Es el resultado que se pretende demostrar a partir de las hipótesis.
 - **Demostración:** Es la cadena finita de argumentos lógicos válidos que establece la veracidad de la implicación \(P \Rightarrow Q\).
-
 ---
 
 ### **2. Método 1: Deducción Directa**
