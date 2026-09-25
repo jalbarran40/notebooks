@@ -71,6 +71,12 @@ Realiza los siguientes ejercicios del texto base redactando la justificación de
 1. Obtener la FNC de la expresión: $p \to (q \land r)$. _(Pista: El resultado es $(\neg p \lor q) \land (\neg p \lor r)$)_.
 2. Transformar a forma normal conjuntiva la regla de exportación: $[(p \land q) \to r] \leftrightarrow [p \to (q \to r)]$.
 
+### 6. Ejercicion de exámenes
+
+#### Febrero 2026
+
+
+## Material de apoyo
 
 - Presentación
 ![[Sesión08_Transformación_de_fórmulas_a_forma_normal_conjuntiva_paso_a_paso.pptx]]
