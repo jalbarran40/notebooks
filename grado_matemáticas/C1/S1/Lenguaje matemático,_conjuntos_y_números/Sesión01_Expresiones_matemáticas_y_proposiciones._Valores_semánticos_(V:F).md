@@ -1,4 +1,4 @@
-ç### **Sesión 1: Expresiones matemáticas y proposiciones**
+### **Sesión 1: Expresiones matemáticas y proposiciones**
 
 1.  **El Lenguaje Matemático:** A diferencia del lenguaje natural, que permite ambigüedades, el lenguaje matemático requiere que las expresiones sean **sintácticamente correctas** para que el mensaje sea unívoco. El valor semántico debe ser único e independiente del contexto para ser catalogado como verdadero o falso con certeza absoluta.
 2.  **Definición de Proposición:** Es una sentencia sintácticamente correcta que describe características o propiedades de objetos tratados, y de la cual solo nos interesa su **valor semántico** (verdad o falsedad).
