@@ -80,10 +80,7 @@ Para obtener la máxima puntuación en los problemas de demostración del examen
 ## Material de apoyo
 
 - Presentación
-	- Versión original: **Tiene errata en diapositiva 7. ¿La ves?**
-		[[Sesión09_Métodos_de_demostración_1.pptx]]
-	- Nueva versión
-		[[Sesión09_Métodos_de_demostración_1_corregida.pptx]]
-- Audio
-	[[Sesión09_Métodos_de_demostración_1.m4a]]
+	- [Versión original: **Tiene errata en diapositiva 7. ¿La ves?**](Sesión09_Métodos_de_demostración_1.pptx)
+	- [Nueva versión](Sesión09_Métodos_de_demostración_1_corregida.pptx)
+- [Audio](Sesión09_Métodos_de_demostración_1.m4a)
 	

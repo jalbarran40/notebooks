@@ -88,8 +88,5 @@ Esto demuestra que **basta encontrar un único elemento** $x_0 \in C$ que no sat
 
 ## Material de apoyo
 
-- Presentación
-
-![[Sesión10_Métodos_de_demostración_2.pptx]]
-- Resumen de audio
-![[Sesión10_Métodos_de_demostración_2.m4a]]
+- [Presentación](Sesión10_Métodos_de_demostración_2.pptx)
+- [Resumen de audio](Sesión10_Métodos_de_demostración_2.m4a)

@@ -1,4 +1,4 @@
-### **Sesión 7: Validación de Proposiciones y Forma Clausulada**
+# **Sesión 7: Validación de Proposiciones y Forma Clausulada**
 
 Esta sesión teórica se centra en los métodos para demostrar la validez de una proposición y en una forma estándar de escritura lógica que facilita enormemente esta tarea.
 
@@ -29,10 +29,8 @@ Para transformar cualquier expresión, seguimos estos pasos de forma secuencial:
 
 ---
 
-**Nota sobre los artefactos generados:**
+## Materiales de apoyo
 
-- **Presentación:** He incluido una diapositiva especial con el comando de **WolframAlpha** para este tema: `conjunctive normal form of (p implies (q and r))`. Te permitirá validar tus ejercicios de forma automática.
-	![[Sesión07_Validación_de_proposiciones_y_forma clausulada.pptx]]
-
-- **Resumen de Audio:** Profundiza en la importancia de la forma clausulada para el razonamiento automático y el diseño de algoritmos de validación.
-	![[Sesión07_Validación_de_proposiciones_y_forma clausulada.m4a]]
+- [**Presentación**](Sesión07_Validación_de_proposiciones_y_forma clausulada.pptx): He incluido una diapositiva especial con el comando de **WolframAlpha** para este tema: `conjunctive normal form of (p implies (q and r))`. Te permitirá validar tus ejercicios de forma automática.
+- [**Resumen de Audio**](Sesión07_Validación_de_proposiciones_y_forma clausulada.m4a): Profundiza en la importancia de la forma clausulada para el razonamiento automático y el diseño de algoritmos de validación.
+	

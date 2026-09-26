@@ -1,9 +1,3 @@
-Aquí tienes el desarrollo completo y riguroso de la **Sesión 8 (Práctica): Transformación de fórmulas a forma normal conjuntiva paso a paso**, adaptado al plan de trabajo y exigiendo la redacción formal que requiere el nuevo examen de desarrollo de la UNED.
-
-He generado la **presentación de referencia** en tu panel de estudio siguiendo las pautas fijadas en el Manual de Estilo. _(Nota: La generación del resumen de audio no se ha podido realizar en este momento por límites de cuota de la plataforma, pero todo el contenido explicativo queda detallado a continuación)._
-
----
-
 # **SESIÓN 8 (PRÁCTICA): TRANSFORMACIÓN A FORMA NORMAL CONJUNTIVA PASO A PASO**
 
 **Duración:** 45 minutos  
@@ -78,7 +72,5 @@ Realiza los siguientes ejercicios del texto base redactando la justificación de
 
 ## Material de apoyo
 
-- Presentación
-![[Sesión08_Transformación_de_fórmulas_a_forma_normal_conjuntiva_paso_a_paso.pptx]]
-- Resumen de audio
-![[Sesión08_Transformación_de_fórmulas_a_forma_normal_conjuntiva_paso_a_paso.m4a]]
+- [**Presentación**](Sesión08_Transformación_de_fórmulas_a_forma_normal_conjuntiva_paso_a_paso.pptx)
+- [**Resumen de audio**](Sesión08_Transformación_de_fórmulas_a_forma_normal_conjuntiva_paso_a_paso.m4a)

@@ -1,6 +1,4 @@
-Iniciamos la **Sesión 5: Tautologías y contradicciones. Leyes lógicas fundamentales**. En esta lección teórica, aprenderemos a identificar expresiones que, por su propia estructura, poseen un valor de verdad constante, lo que constituye la base de las reglas de razonamiento matemático.
-
-### **Contenido Teórico de la Sesión 5**
+# Sesión 05: Tautologías y contradicciones. Leyes lógicas fundamentales
 
 #### **1. Definiciones Fundamentales**
 
@@ -69,8 +67,8 @@ Usamos símbolo de condicional doble porque asumimos la parte izquierda verdader
 - **Modus tollendo tollens:** $( p \rightarrow q ) \land \neg q \Longrightarrow \neg p$ 
 
 ---
+## Materiales de apoyo
 
-- **Presentación de referencia:** Incluye una tabla resumen con todas las leyes lógicas fundamentales y ejemplos visuales de cómo una tabla de verdad identifica una tautología.
-	[[Sesión05_Tautologías_y_contradicciones._Leyes_lógicas_fundamentales.pptx]]
-- **Resumen de audio:** Explica la importancia de estas leyes como "reglas del juego" en matemáticas y cómo las Leyes de Morgan se aplican constantemente en la negación de enunciados científicos.
-	[[Sesión05_Tautologías_y_contradicciones._Leyes_lógicas_fundamentales.m4a]]
+- [**Presentación de referencia**]([[Sesión05_Tautologías_y_contradicciones._Leyes_lógicas_fundamentales.pptx]]): Incluye una tabla resumen con todas las leyes lógicas fundamentales y ejemplos visuales de cómo una tabla de verdad identifica una tautología.
+- [**Resumen de audio**](Sesión05_Tautologías_y_contradicciones._Leyes_lógicas_fundamentales.m4a): Explica la importancia de estas leyes como "reglas del juego" en matemáticas y cómo las Leyes de Morgan se aplican constantemente en la negación de enunciados científicos.
+	

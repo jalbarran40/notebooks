@@ -32,9 +32,7 @@ Las tablas de verdad son representaciones gráficas que nos permiten visualizar 
 
 He procedido a generar los materiales de apoyo para esta sesión:
 
-- **Presentación de referencia:** Un esquema visual con las definiciones y las tablas de verdad fundamentales de estos tres conectores.
-![[Sesión02_Conectores_lógicos_negación,_disyunción_y_conjunción._Tablas_de_verdad.pptx]]
-- **Resumen de audio:** Una explicación sonora que profundiza en la interpretación de la disyunción inclusiva y cómo diferenciarla del lenguaje cotidiano, además de las reglas para construir tablas de verdad.
-![[Sesión02_Conectores_lógicos_negación,_disyunción_y_conjunción._Tablas_de_verdad.m4a]]
-En el audio encontrarás un análisis detallado sobre cómo la disyunción matemática ($p \lor q$) difiere a veces del uso cotidiano del "o", así como consejos para no cometer errores al rellenar las tablas de verdad de la conjunción y la negación. Las diapositivas te servirán como guía visual rápida para memorizar los símbolos ($\neg, \land, \lor$) y sus comportamientos semánticos.
+- [**Presentación de referencia:**](Sesión02_Conectores_lógicos_negación,_disyunción_y_conjunción._Tablas_de_verdad.pptx) Un esquema visual con las definiciones y las tablas de verdad fundamentales de estos tres conectores.
+- [**Resumen de audio:**](Sesión02_Conectores_lógicos_negación,_disyunción_y_conjunción._Tablas_de_verdad.m4a) Una explicación sonora que profundiza en la interpretación de la disyunción inclusiva y cómo diferenciarla del lenguaje cotidiano, además de las reglas para construir tablas de verdad.
+	- En el audio encontrarás un análisis detallado sobre cómo la disyunción matemática ($p \lor q$) difiere a veces del uso cotidiano del "o", así como consejos para no cometer errores al rellenar las tablas de verdad de la conjunción y la negación. Las diapositivas te servirán como guía visual rápida para memorizar los símbolos ($\neg, \land, \lor$) y sus comportamientos semánticos.
 

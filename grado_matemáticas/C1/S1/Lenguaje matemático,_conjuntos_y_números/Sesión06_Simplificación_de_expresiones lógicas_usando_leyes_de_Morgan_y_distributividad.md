@@ -1,4 +1,4 @@
-# **Sesión 6: Simplificación de expresiones lógicas usando leyes de Morgan y distributividad**. 
+# **Sesión 6: Simplificación de expresiones lógicas usando leyes de Morgan y distributividad**
 Esta sesión práctica de 45 minutos tiene como objetivo que aprendas a reducir la complejidad de las proposiciones sin necesidad de construir tablas de verdad completas, utilizando el "álgebra de proposiciones".
 
 ### **Contenido Práctico de la Sesión 6**
@@ -48,11 +48,8 @@ Intenta simplificar las siguientes expresiones paso a paso antes de consultar la
 Si tras simplificar una expresión quieres estar seguro del resultado, puedes usar **WolframAlpha** comparando las tablas de verdad de la expresión original y la simplificada. Si ambas columnas finales son idénticas, tu simplificación es correcta.
 
 ---
+## Materiales de apoyo
 
-He procedido a crear los siguientes materiales de apoyo:
-
-- **Presentación de referencia:** Contiene una guía visual con los "movimientos permitidos" en la simplificación y los ejercicios resueltos paso a paso indicando qué ley se aplica en cada línea. Las diapositivas te servirán de guía técnica para realizar las transformaciones algebraicas necesarias en los ejercicios de autoevaluación del Capítulo 1.
-	[[Sesión06_Simplificación_de_expresiones lógicas_usando_leyes_de_Morgan_y_distributividad.pptx]]
-
-- **Resumen de audio:** Explica la estrategia mental para abordar la simplificación, como la búsqueda de "factores comunes" lógicos y cuándo es más conveniente aplicar Morgan antes que distributividad. En el audio, profundizo en el concepto de "equivalencia lógica" y cómo las leyes de Morgan actúan como un puente entre la conjunción y la disyunción
-	![[Sesión06_Simplificación_de_expresiones lógicas_usando_leyes_de_Morgan_y_distributividad.m4a]]
+- [**Presentación de referencia**](Sesión06_Simplificación_de_expresiones lógicas_usando_leyes_de_Morgan_y_distributividad.pptx): Contiene una guía visual con los "movimientos permitidos" en la simplificación y los ejercicios resueltos paso a paso indicando qué ley se aplica en cada línea. Las diapositivas te servirán de guía técnica para realizar las transformaciones algebraicas necesarias en los ejercicios de autoevaluación del Capítulo 1.
+- [**Resumen de audio**](Sesión06_Simplificación_de_expresiones lógicas_usando_leyes_de_Morgan_y_distributividad.m4a): Explica la estrategia mental para abordar la simplificación, como la búsqueda de "factores comunes" lógicos y cuándo es más conveniente aplicar Morgan antes que distributividad. En el audio, profundizo en el concepto de "equivalencia lógica" y cómo las leyes de Morgan actúan como un puente entre la conjunción y la disyunción
+	
