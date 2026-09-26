@@ -11,5 +11,8 @@
 
 Para las próximas sesiones prácticas, utilizaremos **WolframAlpha** para verificar la validez de estas sentencias cuando se vuelvan más complejas.
 
-- [**Presentación**](Sesión01_Expresiones_matemáticas_y_proposiciones._Valores_semánticos_(V:F).pptx)
-- [**Resumen de audio**](Sesión01_Expresiones_matemáticas_y_proposiciones._Valores_semánticos_(V:F).m4a)
+- **Presentación**
+	[[Sesión01_Expresiones_matemáticas_y_proposiciones._Valores_semánticos_(V-F).pptx]]
+- **Resumen de audio**
+	[[Sesión01_Expresiones_matemáticas_y_proposiciones._Valores_semánticos_(V-F).m4a]]
+
