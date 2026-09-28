@@ -109,6 +109,5 @@ Para tres subconjuntos cualesquiera $A, B, C \subseteq U$, se satisfacen de form
 ---
 ## Material de apoyo
 
-- Presentación
-
+- [Presentación](Sesión17_Álgebra_de_conjuntos.pptx)
 - Resumen de audio
