@@ -10,7 +10,7 @@
 
 #### **Definición Formal por Comprensión**
 
-Dados dos conjuntos $A$ y $B$ pertenecientes a un conjunto universal $U$, la **unión** de $A$ y $B$, denotada por $A \cup B$, es el conjunto formado por todos los elementos de $U$ que pertenecen a $A$, a $B$ o a ambos: $A \cup B = {x \in U \mid x \in A \lor x \in B}$
+Dados dos conjuntos $A$ y $B$ pertenecientes a un conjunto universal $U$, la **unión** de $A$ y $B$, denotada por $A \cup B$, es el conjunto formado por todos los elementos de $U$ que pertenecen a $A$, a $B$ o a ambos: $A \cup B = \{x \in U \mid x \in A \lor x \in B\}$
 
 #### **Caracterización Semántica**
 
@@ -26,7 +26,7 @@ A partir de la definición de disyunción inclusiva, se deduce que tanto $A$ com
 
 #### **Definición Formal por Comprensión**
 
-Dados dos conjuntos $A$ y $B$ en $U$, la **intersección** de $A$ y $B$, denotada por $A \cap B$, es el conjunto formado por los elementos de $U$ que pertenecen **simultáneamente** a $A$ y a $B$: $A \cap B = {x \in U \mid x \in A \land x \in B}$
+Dados dos conjuntos $A$ y $B$ en $U$, la **intersección** de $A$ y $B$, denotada por $A \cap B$, es el conjunto formado por los elementos de $U$ que pertenecen **simultáneamente** a $A$ y a $B$: $A \cap B = \{x \in U \mid x \in A \land x \in B\}$
 
 #### **Caracterización Semántica**
 
@@ -34,7 +34,7 @@ Un elemento $x \in U$ pertenece a $A \cap B$ si y solo si la proposición conjun
 
 #### **Conjuntos Disjuntos**
 
-Dos conjuntos $A$ y $B$ se dicen **disjuntos** (o mutuamente excluyentes) si no poseen ningún elemento en común, es decir, si su intersección es el conjunto vacío: $A \text{ y } B \text{ disjuntos} \iff A \cap B = \emptyset$
+Dos conjuntos $A$ y $B$ se dicen **disjuntos** (o mutuamente excluyentes) si no poseen ningún elemento en común, es decir, si su intersección es el conjunto vacío: $A \text{ y } B \text{ disjuntos} \iff A \cap B = \varnothing$
 
 #### **Propiedades Inmediatas de Inclusión**
 
@@ -46,7 +46,7 @@ La intersección es un subconjunto de cada uno de los factores que la componen: 
 
 #### **Definición Formal por Comprensión**
 
-Dados dos conjuntos $A$ y $B$ en $U$, la **diferencia** entre $A$ y $B$ (o complemento relativo de $B$ en $A$), denotada por $A \setminus B$ (o bien $A - B$), es el conjunto formado por los elementos de $U$ que pertenecen a $A$ y **no pertenecen** a $B$: $A \setminus B = {x \in U \mid x \in A \land x \notin B}$
+Dados dos conjuntos $A$ y $B$ en $U$, la **diferencia** entre $A$ y $B$ (o complemento relativo de $B$ en $A$), denotada por $A \setminus B$ (o bien $A - B$), es el conjunto formado por los elementos de $U$ que pertenecen a $A$ y **no pertenecen** a $B$: $A \setminus B = \{x \in U \mid x \in A \land x \notin B\}$
 
 #### **Caracterización Semántica**
 
@@ -55,7 +55,7 @@ $x \in (A \setminus B) \iff (x \in A \land \neg(x \in B))$
 #### **Propiedades de Inclusión y Descomposición**
 
 1. La diferencia siempre está incluida en el primer conjunto: $(A \setminus B) \subseteq A$
-2. La diferencia $A \setminus B$ y el conjunto $B$ son **siempre conjuntos disjuntos**: $(A \setminus B) \cap B = \emptyset$
+2. La diferencia $A \setminus B$ y el conjunto $B$ son **siempre conjuntos disjuntos**: $(A \setminus B) \cap B = \varnothing$
 
 ---
 
@@ -63,7 +63,7 @@ $x \in (A \setminus B) \iff (x \in A \land \neg(x \in B))$
 
 Para dos conjuntos cualesquiera $A$ y $B$, existe una relación jerárquica de inclusión en el universo $U$ que conviene memorizar para la resolución analítica de problemas de examen:
 
-$\emptyset \subseteq (A \cap B) \subseteq A \subseteq (A \cup B) \subseteq U$
+$\varnothing \subseteq (A \cap B) \subseteq A \subseteq (A \cup B) \subseteq U$
 
 #### **Demostración Rigurosa de $(A \cap B) \subseteq A$ (para Examen de Desarrollo):**
 
@@ -90,5 +90,5 @@ $\emptyset \subseteq (A \cap B) \subseteq A \subseteq (A \cup B) \subseteq U$
 > - La opción **B** es la **correcta**. (La opción A correspondería a la diferencia simétrica $A \Delta B$).
 
 ## Material de soporte
-- [Presentación](Sesión16_Operaciones_con_conjuntos.pptx)
-- [Resumen de audio](Sesión16_Operaciones_con_conjuntos.m4a)
+- [Presentación](Presentaciones/Sesión16_Operaciones_con_conjuntos.pptx)
+- [Resumen de audio](Audios/Sesión16_Operaciones_con_conjuntos.m4a)

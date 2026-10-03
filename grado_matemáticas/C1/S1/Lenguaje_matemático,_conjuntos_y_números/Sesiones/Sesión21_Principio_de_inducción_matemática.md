@@ -114,5 +114,5 @@ En algunos problemas, suponer únicamente que \(P(n)\) es cierto no aporta infor
 > - La opción **B** es la **correcta**, pues la Hipótesis de Inducción consiste precisamente en asumir de forma condicional la veracidad de \(P(n)\) para un valor indeterminado \(n\) para poder demostrar la tesis inductiva \(P(n+1)\).
 
 ## Materiales de apoyo
-- [**Presentación**]()
-- [**Resumen de audio**]()
+- [**Presentación**](Presentaciones/Sesión21_Principio_de_inducción_matemática.pptx)
+- [**Resumen de audio**](Audios/Sesión21_Principio_de_inducción_matemática.m4a)

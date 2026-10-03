@@ -16,7 +16,7 @@ Un **diagrama de Venn** es una representación gráfica donde el **conjunto univ
 
 1. **Pertenencia de un elemento ($x \in A$):** Se representa situando un punto individual $x$ dentro de la frontera del círculo que delimita al conjunto $A$.
 2. **Inclusión de conjuntos ($A \subseteq B$):** Se representa dibujando el contorno del conjunto $A$ **totalmente contenido en el interior** del contorno del conjunto $B$.
-3. **Conjuntos disjuntos ($A \cap B = \emptyset$):** Se representan mediante dos círculos sin ningún punto ni región en común (no se solapan).
+3. **Conjuntos disjuntos ($A \cap B = \varnothing$):** Se representan mediante dos círculos sin ningún punto ni región en común (no se solapan).
 4. **Subconjunto Propio ($A \subset B$):** $A$ está dentro de $B$, pero existe al menos una región dentro de $B$ que no pertenece a $A$.
 
 ---
@@ -29,6 +29,7 @@ Tal como recomienda la guía oficial de la UNED, emplearemos **GeoGebra** (entor
 
 1. **Delimitación del Universo ($U$):**
     - Dibuja un rectángulo en la vista gráfica mediante la herramienta `Polígono` con vértices en $(-5,-3)$, $(5,-3)$, $(5,3)$ y $(-5,3)$. Renombra este polígono como $U$.
+    - `Polígono((-5,-3),(5,-3),(5,3),(-5,3))`
 2. **Construcción de Conjuntos Básicos:**
     - Utiliza la herramienta `Circunferencia (Centro, Punto)` o la entrada de comandos para definir regiones.
     - Por ejemplo, para definir el conjunto $A$ como un disco circular: $A: (x - 1)^2 + y^2 \le 4$
@@ -67,12 +68,12 @@ Tal como recomienda la guía oficial de la UNED, emplearemos **GeoGebra** (entor
 **Enunciado:** Si dos conjuntos $A$ y $B$ cumplen que en su diagrama de Venn la región de $A$ no tiene ningún punto en común con la región de $B$ (son disjuntos), ¿cuál de las siguientes afirmaciones es **necesariamente verdadera**?
 
 - **A)** $A \subseteq B$
-- **B)** $A \cap B = \emptyset$
+- **B)** $A \cap B = \varnothing$
 - **C)** Ninguna de las anteriores.
 
 > **Solución Explicada:**
 > 
-> - La opción **B** es **correcta** porque, por definición formal de conjuntos disjuntos, si dos conjuntos no comparten ningún punto en su representación gráfica, su intersección es el conjunto vacío ($A \cap B = \emptyset$).
+> - La opción **B** es **correcta** porque, por definición formal de conjuntos disjuntos, si dos conjuntos no comparten ningún punto en su representación gráfica, su intersección es el conjunto vacío ($A \cap B = \varnothing$).
 > - La opción A es falsa ya que la inclusión exigiría que la región de $A$ estuviese totalmente dentro de la región de $B$.
 
 

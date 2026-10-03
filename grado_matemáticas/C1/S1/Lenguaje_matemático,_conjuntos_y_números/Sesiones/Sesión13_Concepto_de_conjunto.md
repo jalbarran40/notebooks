@@ -28,8 +28,9 @@ La relación primitiva que vincula a un **objeto/elemento con un conjunto** es l
 > **Relación con lógica proposicional**: 
 > - La pertenencia es una **proposición**, puesto que $x \in A$ se puede afirmar que es o verdadera o falsa, sin alternativas
 > - Un conjunto se puede definir:
-> 	- Por extensión: Enumerando elementos: Sin importar el orden ni las repeticiónes. Notación entre llaves: $A=\{a, b, c, d\}$, $B=\{c, d, a, b\}$, $C=\{c,c,d,d,a,b\}$. A, B y C son el mismo conjunto
-> 	- Como un **predicado**: Todos los números pares en $\mathbb{N}$
+> 	- Por **extensión**: Enumerando elementos: Sin importar el orden ni las repeticiónes. Notación entre llaves: $A=\{a, b, c, d\}$, $B=\{c, d, a, b\}$, $C=\{c,c,d,d,a,b\}$. A, B y C son el mismo conjunto
+> 	- Por **comprensión**: Expresión lógica
+> 	- Como un **predicado** sobre un **Universo del predicado**: "Todos los números pares en $\mathbb{N}$". $A=C_P=\{x \in C | P_x\}$
 ---
 
 ### **2. Inclusión de Conjuntos y Subconjuntos ($\subseteq$)**
@@ -111,5 +112,8 @@ Para probar $A = B$:
 
 
 ## Material adicional:
-- [**Presentación**](Presentaciones/Sesión13_Concepto_de_conjunto.pptx)
+- [**Presentación**](Presentaciones/Sesión13_Concepto_de_conjunto.pptx): NOTA: El test de la diapositiva 12 es incorrecto. Ambas opciones, A y B son correctas. **PENDIENTE**: Corregir presentación
 - [**Resumen de audio**](Audios/Sesión13_Concepto_de_conjunto.m4a)
+
+## Notas
+El texto representa el conjunto vacío como $\varnothing$ no como $\emptyset$

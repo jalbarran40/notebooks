@@ -69,6 +69,6 @@ Usamos símbolo de condicional doble porque asumimos la parte izquierda verdader
 ---
 ## Materiales de apoyo
 
-- [**Presentación de referencia**]([[Sesión05_Tautologías_y_contradicciones._Leyes_lógicas_fundamentales.pptx]]): Incluye una tabla resumen con todas las leyes lógicas fundamentales y ejemplos visuales de cómo una tabla de verdad identifica una tautología.
-- [**Resumen de audio**](Sesión05_Tautologías_y_contradicciones._Leyes_lógicas_fundamentales.m4a): Explica la importancia de estas leyes como "reglas del juego" en matemáticas y cómo las Leyes de Morgan se aplican constantemente en la negación de enunciados científicos.
+- [**Presentación**](Presentaciones/Sesión05_Tautologías_y_contradicciones._Leyes_lógicas_fundamentales.pptx): Incluye una tabla resumen con todas las leyes lógicas fundamentales y ejemplos visuales de cómo una tabla de verdad identifica una tautología.
+- [**Resumen de audio**](Audios/Sesión05_Tautologías_y_contradicciones._Leyes_lógicas_fundamentales.m4a): Explica la importancia de estas leyes como "reglas del juego" en matemáticas y cómo las Leyes de Morgan se aplican constantemente en la negación de enunciados científicos.
 	

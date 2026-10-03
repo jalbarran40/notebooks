@@ -40,7 +40,7 @@ Cuando se quiere indicar la cantidad de elementos del universo $C$ que satisface
 
 - **Símbolo y lectura:** El símbolo $\exists$ se denomina cuantificador existencial y se lee _"existe al menos un"_ o _"existe algún"_.
 - **Definición:** La expresión $(\exists x \in C) P_x$ es una proposición que es verdadera ($1$) si existe **al menos un elemento** en $C$ que satisface el predicado $P_x$.
-- **Caracterización conjuntista:** $(\exists x \in C) P_x \iff C_P \neq \emptyset$
+- **Caracterización conjuntista:** $(\exists x \in C) P_x \iff C_P \neq \varnothing$
 - **Interpretación finita:** Si $C = {x_1, x_2, \dots, x_n}$ es finito, el cuantificador existencial es una generalización de la **disyunción ($\lor$)**: $(\exists x \in C) P_x \iff P(x_1) \lor P(x_2) \lor \dots \lor P(x_n)$
 
 ---
@@ -91,7 +91,5 @@ Para negar un enunciado cuantificado, el operador negación ($\neg$) intercambia
 
 ---
 ## Material adicional
-- Presentación
-[[Sesión15_Lógica_de_predicados_y_cuantificadores.pptx]]
-- Resumen de audio
-[[Sesión15_Lógica_de_predicados_y_cuantificadores.m4a]]
+- [**Presentación**](Presentaciones/Sesión15_Lógica_de_predicados_y_cuantificadores.pptx)
+- [**Resumen de audio**](Sesión15_Lógica_de_predicados_y_cuantificadores.m4a)
