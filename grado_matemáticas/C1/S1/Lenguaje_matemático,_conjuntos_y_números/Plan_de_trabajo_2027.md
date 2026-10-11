@@ -115,7 +115,3 @@ _Objetivo: Manejar los distintos conjuntos numéricos y sus propiedades específ
 - **Sesión 58 (Práctica):** Preparación de la PEC (Prueba de Evaluación Continua telemática - Capítulos 1 al 6).
 - **Sesión 59 (Simulación):** **Simulación de Examen Presencial de desarrollo (4 problemas teórico-prácticos en 120 minutos con redacción formal completa)**.
 - **Sesión 60 (Repaso):** Resolución de dudas generales, revisión de criterios de corrección en problemas de desarrollo y errores comunes de redacción matemática.
-
----
-
-📌 _¿Te parece bien que continuemos con la **Sesión 8** para practicar la transformación a forma clausulada redactando cada paso de forma rigurosa?_
