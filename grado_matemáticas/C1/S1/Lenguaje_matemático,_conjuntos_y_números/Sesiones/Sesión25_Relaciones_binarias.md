@@ -25,7 +25,7 @@ Cuando el conjunto inicial y el conjunto final coinciden ($A = B$), decimos que 
     Se define la diagonal de $A \times A$, denotada por $\Delta_A$ o $I_A$, como el conjunto de todos los pares formados por un elemento y él mismo: $\Delta_A = {(x, x) \in A \times A \mid x \in A}$
     
 2. **Relación Recíproca (o Inversa) $R^{-1}$:**  
-    Dada una relación $R \subseteq A \times A$, se define su relación recíproca $R^{-1} \subseteq A \times A$ invirtiendo el orden de las componentes en cada par ordenado: $R^{-1} = {(y, x) \in A \times A \mid (x, y) \in R}$ $y R^{-1} x \iff xRy$
+    Dada una relación $R \subseteq A \times A$, se define su relación recíproca $R^{-1} \subseteq A \times A$ invirtiendo el orden de las componentes en cada par ordenado: $R^{-1} = {(y, x) \in A \times A \mid (x, y) \in R}$ o bien $y R^{-1} x \iff xRy$
     
 
 ---
@@ -65,6 +65,52 @@ Sea $R$ una relación binaria definida sobre un conjunto no vacío $A$ ($R \subs
 
 ---
 
+#### **Aclaración**
+
+##### **1. Comparación Directa de Exigencias**
+
+- **Propiedad Reflexiva ($\forall x \in A, \quad xRx$):**
+    
+    - **Exige de forma obligatoria** que **TODOS** los elementos del conjunto $A$ estén relacionados consigo mismos.
+    - Si en un conjunto $A = \{1, 2, 3\}$ falta aunque sea un solo bucle (por ejemplo, falta el $(3, 3)$), la relación **deja de ser reflexiva**.
+- **Propiedad Simétrica ($\forall x, y \in A, \quad xRy \implies yRx$):**
+    
+    - **No obliga a que exista ninguna relación**.
+    - Solo dice: _"**SI** existe la pareja $(x, y)$, **ENTONCES** debe existir la pareja $(y, x)$"_.
+    - Si la pareja es $(1, 1)$, su pareja de vuelta es la misma $(1, 1)$. Por lo tanto, tener pares de la forma $(x, x)$ satisface la simetría de forma automática.
+
+---
+
+##### **2. Dos Ejemplos para Ver la Diferencia**
+
+Imaginemos el conjunto $A = \{1, 2, 3\}$.
+
+###### **Ejemplo A: $R_A = \{(1, 1)\}$**
+
+- **¿Es Reflexiva en $A$? NO.** Porque faltan $(2, 2)$ y $(3, 3)$. No cumple la exigencia de cubrir todo el conjunto $A$.
+- **¿Es Simétrica? SÍ.** Para la única ida $(1, 1)$, la vuelta es $(1, 1)$ (que está en la relación). Para cualquier otro par no hay ida, por lo que la implicación es verdades vacuamente.
+- **¿Es Antisimétrica? SÍ.** No hay dos elementos **distintos** ($x \neq y$) relacionados en ambos sentidos.
+
+> _Aquí ves claramente que la relación es **simétrica y antisimétrica a la vez**, pero **NO es reflexiva**._
+
+---
+
+###### **Ejemplo B: $R_B = {(1, 1), (2, 2), (3, 3)} = \Delta_A$ (La Igualdad)**
+
+- **¿Es Reflexiva en $A$? SÍ.** Contiene los bucles de **todos** los elementos de $A$.
+- **¿Es Simétrica? SÍ.** La vuelta de cada $(x, x)$ es el propio $(x, x)$.
+- **¿Es Antisimétrica? SÍ.** Cumple la regla porque los únicos elementos relacionados de ida y vuelta son idénticos ($x = y$).
+
+> _La relación de igualdad ($\Delta_A$) es el **único caso especial** en el que se cumplen las tres propiedades a la vez: **reflexiva, simétrica y antisimétrica**._
+
+---
+
+##### **3. Resumen en Una Frase**
+
+- La **reflexividad** te obliga a poner los pares $(x, x)$ para **todos** los elementos del conjunto.
+- La **simetría** no te obliga a poner nada, pero si pones un par $(x, x)$, **no viola la simetría ni viola la antisimetría**.
+
+💡 ¿Se entiende mejor ahora por qué una relación puede tener solo elementos relacionados consigo mismos y ser simétrica y antisimétrica, sin llegar a ser reflexiva (si le faltan elementos del universo $A$)?
 #### **4. Propiedad Transitiva**
 
 - **Definición Formal:** Una relación $R$ en $A$ es **transitiva** si y solo si siempre que $x$ esté relacionado con $y$, e $y$ esté relacionado con $z$, entonces $x$ está relacionado con $z$: $\forall x, y, z \in A, \quad ((xRy \land yRz) \implies xRz)$
@@ -77,7 +123,7 @@ Sea $R$ una relación binaria definida sobre un conjunto no vacío $A$ ($R \subs
 
 #### **Ejemplo 1: Relación de Divisibilidad en los Números Naturales Positivos**
 
-Sea $A = \mathbb{N}^* = {1, 2, 3, \dots}$ y definimos la relación $R$ mediante $xRy \iff x \text{ divide a } y$ (denotado $x \mid y \iff \exists k \in \mathbb{N}^*, y = k \cdot x$).
+Sea $A = \mathbb{N}^* = \{1, 2, 3, \dots \}$ y definimos la relación $R$ mediante $xRy \iff x \text{ divide a } y$ (denotado $x \mid y \iff \exists k \in \mathbb{N}^*, y = k \cdot x$).
 
 - **Reflexiva:** Para todo $x \in \mathbb{N}^*$, $x = 1 \cdot x \implies x \mid x$, luego **es reflexiva**.
 - **Simétrica:** No es simétrica. Contraejemplo: $2 \mid 4$ (ya que $4 = 2 \cdot 2$), pero $4 \nmid 2$ (pues $2/4 \notin \mathbb{N}^*$).
@@ -89,7 +135,7 @@ Sea $A = \mathbb{N}^* = {1, 2, 3, \dots}$ y definimos la relación $R$ mediante 
 
 ---
 
-#### __Ejemplo 2: Análisis de la Relación $x + y = 20$ en $\mathbb{N}^_$_*
+#### __Ejemplo 2: Análisis de la Relación $x + y = 20$ en $\mathbb{N}^*$
 
 Sea $A = \mathbb{N}^*$ y la relación $S$ dada por $xSy \iff x + y = 20$.
 
@@ -102,14 +148,92 @@ Sea $A = \mathbb{N}^*$ y la relación $S$ dada por $xSy \iff x + y = 20$.
 
 ### **4. Ejercicios Propuestos para Trabajo Personal (45 min)**
 
-1. **Ejercicio 1:** En el conjunto $A = {1, 2, 3, 4}$, se define la relación $R = {(1, 1), (2, 2), (3, 3), (4, 4), (1, 2), (2, 1), (2, 3)}$. Analizar de forma justificada si $R$ cumple cada una de las 4 propiedades.
+1. **Ejercicio 1:** En el conjunto $A = \{1, 2, 3, 4\}$, se define la relación $R = \{(1, 1), (2, 2), (3, 3), (4, 4), (1, 2), (2, 1), (2, 3)\}$. Analizar de forma justificada si $R$ cumple cada una de las 4 propiedades.
 2. **Ejercicio 2:** Sea $U$ un conjunto no vacío y $P(U)$ su conjunto de las partes. En $P(U)$ se define la relación de inclusión $X R Y \iff X \subseteq Y$. Demostrar analíticamente que $R$ es reflexiva, antisimétrica y transitiva, pero no simétrica.
+
+Aquí tienes la resolución analítica completa y detallada del ejercicio, redactada con el rigor formal exigido en el examen de desarrollo de la UNED.
 
 ---
 
+#### **Ejercicio 2 (Sesión 25): Propiedades de la Relación de Inclusión**
+
+**Enunciado:**  
+Sea $U$ un conjunto no vacío y $\mathcal{P}(U)$ su conjunto de las partes. En $\mathcal{P}(U)$ se define la relación binaria de inclusión $R$ mediante:
+$$X R Y \iff X \subseteq Y \quad (\forall X, Y \in \mathcal{P}(U))$$
+
+Demostrar analíticamente que $R$ es **reflexiva**, **antisimétrica** y **transitiva** (lo que define a $R$ como una relación de orden parcial en $\mathcal{P}(U)$), pero **no es simétrica**.
+
+---
+
+##### **Demostración Paso a Paso**
+
+###### **1. Propiedad Reflexiva**
+* **Definición a comprobar:** $\forall X \in \mathcal{P}(U), \quad X R X$.
+* **Demostración:**  
+  Sea $X \in \mathcal{P}(U)$ un subconjunto arbitrario de $U$. Por la definición formal de la relación de inclusión por comprensión:
+  $$X \subseteq X \iff \forall x \, (x \in X \implies x \in X)$$
+  La proposición condicional $p \implies p$ es una **tautología lógicamente válida** para cualquier elemento $x$.  
+  Dado que la implicación $x \in X \implies x \in X$ se verifica universalmente para todo $x$, deducimos que $X \subseteq X$ es cierto para cualquier $X \in \mathcal{P}(U)$.  
+  Por la definición de la relación $R$, esto equivale a **$X R X$**, probando que **$R$ es reflexiva**.
+
+---
+
+###### **2. Propiedad Antisimétrica**
+* **Definición a comprobar:** $\forall X, Y \in \mathcal{P}(U), \quad ((X R Y \land Y R X) \implies X = Y)$.
+* **Demostración:**  
+  Sean $X, Y \in \mathcal{P}(U)$ dos subconjuntos cualesquiera tales que se satisfacen simultáneamente $X R Y$ y $Y R X$.  
+  Traduciendo por la definición de la relación $R$:
+  $$X \subseteq Y \quad \land \quad Y \subseteq X$$
+  Por el **Axioma de Extensionalidad** (o Principio de la Doble Inclusión en Teoría de Conjuntos), dos conjuntos cumplen $X \subseteq Y$ y $Y \subseteq X$ si y solo si contienen exactamente los mismos elementos:
+  $$(X \subseteq Y \land Y \subseteq X) \iff X = Y$$
+  Por lo tanto, concluimos que **$X = Y$**, lo que demuestra analíticamente que **$R$ es antisimétrica**.
+
+---
+
+###### **3. Propiedad Transitiva**
+* **Definición a comprobar:** $\forall X, Y, Z \in \mathcal{P}(U), \quad ((X R Y \land Y R Z) \implies X R Z)$.
+* **Demostración:**  
+  Sean $X, Y, Z \in \mathcal{P}(U)$ tres subconjuntos cualesquiera tales que $X R Y$ y $Y R Z$.  
+  Traduciendo mediante la relación de inclusión:
+  $$X \subseteq Y \quad \land \quad Y \subseteq Z$$
+  Escribiendo la definición condicional a nivel de elementos para cada inclusión:
+  1. Por $X \subseteq Y$: $\forall x \, (x \in X \implies x \in Y)$.
+  2. Por $Y \subseteq Z$: $\forall x \, (x \in Y \implies x \in Z)$.
+
+  Aplicando la ley lógica del **silogismo hipotético** en lógica proposicional ($(p \implies q) \land (q \implies r) \implies (p \implies r)$):
+  $$\forall x \, (x \in X \implies x \in Z)$$
+  Por definición de inclusión de conjuntos, esta condición equivale a **$X \subseteq Z$**.  
+  Por consiguiente, **$X R Z$**, lo que prueba que **$R$ es transitiva**.
+
+---
+
+###### **4. Demostración de que NO es Simétrica**
+* **Definición de Simetría:** $\forall X, Y \in \mathcal{P}(U), \quad (X R Y \implies Y R X)$.
+* **Negación de la Simetría (Demostración por Contraejemplo):**  
+  Para probar que $R$ no es simétrica, debemos demostrar la negación lógica:
+  $$\exists X, Y \in \mathcal{P}(U) \quad \text{tales que} \quad X R Y \land \neg(Y R X)$$
+  Es decir, debemos exhibir un par de subconjuntos $X, Y$ en $\mathcal{P}(U)$ donde $X \subseteq Y$ pero $Y \nsubseteq X$.
+
+* **Construcción del Contraejemplo:**  
+  1. Como por la hipótesis del enunciado el conjunto universo $U$ es **no vacío** ($U \neq \varnothing$), existe al menos un elemento $a \in U$.
+  2. Consideremos los subconjuntos $X = \varnothing$ (conjunto vacío) e $Y = \{a\}$ (conjunto unitario).  
+     Ambos pertenecen a $\mathcal{P}(U)$ ya que $\varnothing \subseteq U$ y $\{a\} \subseteq U$.
+  3. Comprobamos la relación de ida $X R Y$:  
+     $\varnothing \subseteq \{a\}$ es **verdadero** (el conjunto vacío es subconjunto de cualquier conjunto).
+  4. Comprobamos la relación de vuelta $Y R X$:  
+     $\{a\} \subseteq \varnothing$ es **falso**, pues el elemento $a \in \{a\}$, pero $a \notin \varnothing$.
+
+  Al haber encontrado dos subconjuntos explícitos $X = \varnothing$ e $Y = \{a\}$ tales que $\varnothing R \{a\}$ pero $\{a\} \cancel{R} \varnothing$, queda demostrado que **$R$ NO es simétrica**.
+
+---
+
+##### **Conclusión del Ejercicio**
+La relación de inclusión $R = (\subseteq)$ en $\mathcal{P}(U)$ es **reflexiva**, **antisimétrica** y **transitiva**, por lo que es una **relación de orden parcial**. Al no ser simétrica (y no ser de orden total en general para $U$ con 2 o más elementos), confirma la estructura de retículo ordenado de $\mathcal{P}(U)$.
+
+
 ### **5. Pregunta de Autoevaluación (Estilo PEC)**
 
-**Enunciado:** Sea el conjunto $A = {1, 2, 3}$ y la relación binaria definida por extensión como $R = {(1, 1), (2, 2), (3, 3), (1, 2)}$. ¿Cuál de las siguientes afirmaciones sobre $R$ es **verdadera**?
+**Enunciado:** Sea el conjunto $A = \{1, 2, 3\}$ y la relación binaria definida por extensión como $R = \{(1, 1), (2, 2), (3, 3), (1, 2)\}$. ¿Cuál de las siguientes afirmaciones sobre $R$ es **verdadera**?
 
 - **A)** La relación $R$ es simétrica y no es reflexiva.
 - **B)** La relación $R$ es reflexiva, antisimétrica y transitiva.

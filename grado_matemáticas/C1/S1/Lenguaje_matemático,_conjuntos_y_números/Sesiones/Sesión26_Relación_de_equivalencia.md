@@ -20,7 +20,7 @@ Una relación binaria $\mathcal{R}$ definida sobre un conjunto no vacío $U$ ($\
 
 #### **B. Clase de Equivalencia $[x]$**
 
-Dada una relación de equivalencia $\mathcal{R}$ en $U$ y un elemento $x \in U$, se define la **clase de equivalencia de $x$** (denotada por $[x]$, $\mathcal{R}[x]$ o $\bar{x}$) como el subconjunto de $U$ formado por todos los elementos relacionados con $x$: $[x] = {y \in U \mid x \mathcal{R} y}$
+Dada una relación de equivalencia $\mathcal{R}$ en $U$ y un elemento $x \in U$, se define la **clase de equivalencia de $x$** (denotada por $[x]$, $\mathcal{R}[x]$ o $\bar{x}$) como el subconjunto de $U$ formado por todos los elementos relacionados con $x$: $[x] = \{y \in U \mid x \mathcal{R} y\}$
 
 Cualquier elemento $y \in [x]$ se denomina **representante** de la clase de equivalencia $[x]$.
 
@@ -37,18 +37,18 @@ Cualquier elemento $y \in [x]$ se denomina **representante** de la clase de equi
 
 #### **Definición Formal**
 
-Dada una relación de equivalencia $\mathcal{R}$ sobre un conjunto $U$, se denomina **conjunto cociente de $U$ por $\mathcal{R}$**, y se denota por **$U/\mathcal{R}$** (o bien $U/\mathcal{E}$), al conjunto cuyos elementos son todas las clases de equivalencia generadas por $\mathcal{R}$: $U/\mathcal{R} = {[x] \mid x \in U}$
+Dada una relación de equivalencia $\mathcal{R}$ sobre un conjunto $U$, se denomina **conjunto cociente de $U$ por $\mathcal{R}$**, y se denota por **$U/\mathcal{R}$** (o bien $U/\mathcal{E}$), al conjunto cuyos elementos son todas las clases de equivalencia generadas por $\mathcal{R}$: $U/\mathcal{R} =\{[x] \mid x \in U\}$
 
 #### **Ejemplos Emblemáticos del Texto Base (Delgado Pineda & Muñoz Bouzo)**
 
 1. **Enteros Módulo $p$ ($\mathbb{Z}/p\mathbb{Z}$):**  
-    En $\mathbb{Z}$, fijado $p \in \mathbb{N}^*$, se define la relación de congruencia módulo $p$: $a \equiv b \pmod p \iff \exists k \in \mathbb{Z}, a - b = k p$ El conjunto cociente consta de $p$ clases disjuntas representadas por los posibles restos de la división entera entre $p$: $\mathbb{Z}/p\mathbb{Z} = {,,, \dots, [p-1]}$
+    En $\mathbb{Z}$, fijado $p \in \mathbb{N}^*$, se define la relación de congruencia módulo $p$: $a \equiv b \pmod p \iff \exists k \in \mathbb{Z}, a - b = k p$ El conjunto cociente consta de $p$ clases disjuntas representadas por los posibles restos de la división entera entre $p$: $\mathbb{Z}/p\mathbb{Z} = \{0,1,2, \dots, [p-1]\}$
     
 2. **Construcción Formal de los Números Enteros $\mathbb{Z}$ a partir de $\mathbb{N} \times \mathbb{N}$:**  
     En $\mathbb{N} \times \mathbb{N}$, se define la relación $(a, b) \mathcal{E} (c, d) \iff a + d = b + c$.  
     El conjunto cociente $(\mathbb{N} \times \mathbb{N})/\mathcal{E}$ define formalmente el conjunto de los números enteros $\mathbb{Z}$.
     
-3. __Construcción Formal de los Números Racionales $\mathbb{Q}$ a partir de $\mathbb{Z} \times \mathbb{Z}^_$:_*  
+3. __Construcción Formal de los Números Racionales $\mathbb{Q}$ a partir de $\mathbb{Z} \times \mathbb{Z}^*$: 
     En $\mathbb{Z} \times \mathbb{Z}^*$, se define la relación $(a, b) \mathcal{E} (c, d) \iff a \cdot d = b \cdot c$.  
     El conjunto cociente $(\mathbb{Z} \times \mathbb{Z}^*)/\mathcal{E}$ define el conjunto de los números racionales $\mathbb{Q}$, donde la clase $[(a, b)]$ se denota habitualmente por la fracción irreducible $\frac{a}{b}$.
     
@@ -100,7 +100,7 @@ Una familia $P$ de subconjuntos de $U$ es una **partición del conjunto $U$** si
 
 ### **4. Ejercicios Propuestos para Trabajo Personal (45 min)**
 
-1. **Ejercicio 1 (Cálculo de Particiones):** Sea el conjunto $V = {1, 2, 3}$. Obtener todas las particiones posibles de $V$ (deben obtenerse exactamente $15$ particiones distintas) y determinar la relación de equivalencia asociada a la partición $P = {{1}, {2, 3}}$.
+1. **Ejercicio 1 (Cálculo de Particiones):** Sea el conjunto $V = \{1, 2, 3\}$. Obtener todas las particiones posibles de $V$ (deben obtenerse exactamente $5$ particiones distintas) y determinar la relación de equivalencia asociada a la partición $P = \{\{1\}, \{2, 3\}\}$.
 2. **Ejercicio 2 (Relación en $\mathbb{R}^2$):** En $\mathbb{R}^2$ se define la relación $(x, y) \mathcal{R} (z, t) \iff x^2 + y^2 = z^2 + t^2$.  
     Demostrar que es una relación de equivalencia y describir geométricamente sus clases de equivalencia (circunferencias concéntricas centradas en el origen).
 
@@ -110,15 +110,15 @@ Una familia $P$ de subconjuntos de $U$ es una **partición del conjunto $U$** si
 
 **Enunciado:** En el conjunto de los números enteros $\mathbb{Z}$, se define la relación de congruencia módulo $4$: $a \equiv b \pmod 4 \iff 4 \mid (a - b)$. ¿Cuál es la clase de equivalencia $[-1]$ y qué conjunto forma parte del conjunto cociente $\mathbb{Z}/4\mathbb{Z}$?
 
-- **A)** $[-1] = {} = {k \in \mathbb{Z} \mid \exists q \in \mathbb{Z}, k = 4q + 3}$ y la clase $[-1]$ coincide con la clase $$.
-- **B)** $[-1] = {-1, 1, 3, 5}$ y el conjunto cociente tiene infinitos elementos.
+- **A)** $[-1] = \{[3]\} = \{k \in \mathbb{Z} \mid \exists q \in \mathbb{Z}, k = 4q + 3\}$ y la clase $[-1]$ coincide con la clase $[3]$.
+- **B)** $[-1] = \{-1, 1, 3, 5\}$ y el conjunto cociente tiene infinitos elementos.
 - **C)** Ninguna de las anteriores.
 
 > **Solución Explicada:**
 > 
 > - Calculamos los elementos de $[-1]$: $k \in [-1] \iff k \equiv -1 \pmod 4 \iff k - (-1) = 4q \iff k = 4q - 1 = 4(q-1) + 3$.
-> - Tomando $q' = q-1 \in \mathbb{Z}$, vemos que $k = 4q' + 3$, por lo que la clase $[-1]$ es idéntica a la clase $$.
-> - El conjunto cociente consta de $4$ clases: $\mathbb{Z}/4\mathbb{Z} = {,,,}$.
+> - Tomando $q' = q-1 \in \mathbb{Z}$, vemos que $k = 4q' + 3$, por lo que la clase $[-1]$ es idéntica a la clase $[3]$.
+> - El conjunto cociente consta de $4$ clases: $\mathbb{Z}/4\mathbb{Z} = \{0,1,2,3\}$.
 > - La opción B es falsa porque afirma que el conjunto cociente es infinito y da una lista incorrecta de elementos.
 > - Por tanto, la opción **A** es la **correcta**.
 
