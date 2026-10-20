@@ -1,7 +1,3 @@
-Para esta **Sesión 3**, de carácter **teórico (T)**, profundizaremos en el núcleo de la clasificación de matrices: el cálculo de **autovalores y autovectores** y el estudio de la **diagonalizabilidad**. El objetivo es comprender cómo una transformación puede simplificarse al máximo cuando elegimos la base adecuada.
-
----
-
 # Sesión 3 (T): Autovalores, Autovectores y Endomorfismos Diagonalizables
 
 ### 1. Definiciones Fundamentales
@@ -32,11 +28,7 @@ _Nota importante:_ Siempre se cumple que $1 \leq m_g \leq m_a$. Si $m_a=1$, ento
 - **GeoGebra:** Útil para visualizar cómo los autovectores mantienen su línea de acción en transformaciones de $\mathbb{R}^2$.
 
 ---
+## Material de apoyo
 
-He generado los materiales complementarios para esta sesión:
-
-1. **Audio Overview (Podcast):** Una conversación entre dos expertos que explican la intuición detrás de la diagonalización, comparando una matriz "desordenada" con una "ordenada" (diagonal) y por qué los autovectores son las "guías" de la transformación.
-![[Sesión03_Autovalores,_Autovectores_y_Endomorfismos_Diagonalizab.m4a]]
-2. **Slide Deck (Presentación):** Siguiendo el manual de estilo, incluye la hoja de ruta para calcular $P(\lambda)$, la comparación de multiplicidades y el teorema fundamental de diagonalización.
-![[Sesión03_Autovalores,_Autovectores_y_Endomorfismos_Diagonalizables.pptx]]
-
+- [**Presentación**](Presentaciones/Sesión03_Autovalores,_Autovectores_y_Endomorfismos_Diagonalizables.pptx): Siguiendo el manual de estilo, incluye la hoja de ruta para calcular $P(\lambda)$, la comparación de multiplicidades y el teorema fundamental de diagonalización.
+- [**Resumen de audio**](Audios/Sesión03_Autovalores,_Autovectores_y_Endomorfismos_Diagonalizables.m4a): Una conversación entre dos expertos que explican la intuición detrás de la diagonalización, comparando una matriz "desordenada" con una "ordenada" (diagonal) y por qué los autovectores son las "guías" de la transformación.

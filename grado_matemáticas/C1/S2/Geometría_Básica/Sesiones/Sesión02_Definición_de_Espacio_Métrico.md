@@ -20,13 +20,7 @@ Para que una función sea considerada una métrica, debe cumplir obligatoriament
 
 Entender estos axiomas es vital porque toda la geometría euclidiana plana que estudiaremos en el Capítulo 2 se construye sobre un plano que, ante todo, es un espacio métrico,. Además, existen métricas "no usuales" (como la métrica del taxi) que cumplen estos mismos axiomas pero generan geometrías visualmente muy distintas, lo cual exploraremos en la próxima sesión.
 
----
+## Materiales de apoyo
 
-He generado los materiales de apoyo para esta sesión:
-
-- **Audio Overview (Podcast):** Una conversación detallada que profundiza en por qué necesitamos estos tres axiomas y qué pasaría si, por ejemplo, la distancia de A a B no fuera igual a la de B a A. Es una excelente forma de asimilar la lógica matemática detrás de algo tan cotidiano como medir.
-- **Presentación de Diapositivas:** Un resumen visual estructurado que define el par $(M, \delta)$ y desglosa los axiomas con claridad, ideal para tu repaso rápido.
-
-Puedes encontrar ambos materiales en el panel lateral. Como recomendación de apoyo, puedes intentar visualizar en **GeoGebra** tres puntos cualesquiera y comprobar cómo, sin importar dónde los coloques, la suma de dos lados de ese triángulo siempre supera al tercero, verificando empíricamente el tercer axioma,.
-
-¿Estás listo para avanzar a la Sesión 3, donde veremos ejemplos concretos de métricas curiosas, o prefieres que revisemos algún ejercicio sobre la desigualdad triangular primero?
+- [**Presentación**](Presentaciones/Sesión02_Definición_de_Espacio_Métrico.pptx): Un resumen visual estructurado que define el par $(M, \delta)$ y desglosa los axiomas con claridad, ideal para tu repaso rápido.
+- [**Resumen de audio**](Audios/Sesión02_Definición_de_Espacio_Métrico.m4a): Una conversación detallada que profundiza en por qué necesitamos estos tres axiomas y qué pasaría si, por ejemplo, la distancia de A a B no fuera igual a la de B a A. Es una excelente forma de asimilar la lógica matemática detrás de algo tan cotidiano como medir.

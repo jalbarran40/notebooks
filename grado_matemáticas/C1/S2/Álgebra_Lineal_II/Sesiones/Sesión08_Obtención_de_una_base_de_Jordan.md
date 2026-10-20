@@ -25,7 +25,7 @@ Para un autovalor $\lambda$ con multiplicidad algebraica $m_a$:
 
 #### Enunciado
 
-Dada la matriz $A \in \mathcal{M}_4(\mathbb{R})$ asociada a un endomorfismo $f$ en la base canónica $B$: $A = \begin{pmatrix} 2 & 0 & 0 & 0 \ 1 & 2 & 0 & 0 \ -2 & 1 & 2 & 0 \ -4 & 2 & 0 & 2 \end{pmatrix}$ Determine su forma canónica de Jordan $J$ y construya una base de Jordan $B'$ tal que $\mathcal{M}_{B'}(f) = J$.
+Dada la matriz $A \in \mathcal{M}_4(\mathbb{R})$ asociada a un endomorfismo $f$ en la base canónica $B$: $$A = \begin{pmatrix} 2 & 0 & 0 & 0 \\ 1 & 2 & 0 & 0 \\ -2 & 1 & 2 & 0 \\ -4 & 2 & 0 & 2 \end{pmatrix}$$ Determine su forma canónica de Jordan $J$ y construya una base de Jordan $B'$ tal que $\mathcal{M}_{B'}(f) = J$.
 
 ---
 
@@ -37,15 +37,15 @@ Al ser $A$ una matriz triangular inferior, sus autovalores coinciden con la diag
 
 #### Paso 2: Subespacios propios generalizados y dimensiones $d_i$
 
-- **Subespacio $K^1(2) = \ker(f - 2\text{Id})$:** $A - 2I = \begin{pmatrix} 0 & 0 & 0 & 0 \ 1 & 0 & 0 & 0 \ -2 & 1 & 0 & 0 \ -4 & 2 & 0 & 0 \end{pmatrix}$ El rango es $\text{rg}(A - 2I) = 2$. Por tanto, $d_1 = \dim K^1(2) = 4 - 2 = 2$ (Multiplicidad geométrica $m_g = 2$, luego habrá **2 bloques de Jordan**).
+- **Subespacio $K^1(2) = \ker(f - 2\text{Id})$:** $A - 2I = \begin{pmatrix} 0 & 0 & 0 & 0 \\ 1 & 0 & 0 & 0 \\ -2 & 1 & 0 & 0 \\ -4 & 2 & 0 & 0 \end{pmatrix}$ El rango es $\text{rg}(A - 2I) = 2$. Por tanto, $d_1 = \dim K^1(2) = 4 - 2 = 2$ (Multiplicidad geométrica $m_g = 2$, luego habrá **2 bloques de Jordan**).
     
-    Las ecuaciones implícitas de $K^1(2)$ se obtienen de $(A - 2I)X = 0$: $K^1(2) \equiv \begin{cases} x_1 = 0 \ x_2 = 0 \end{cases}$
+    Las ecuaciones implícitas de $K^1(2)$ se obtienen de $(A - 2I)X = 0$: $K^1(2) \equiv \begin{cases} x_1 = 0 \\ x_2 = 0 \end{cases}$
     
-- **Subespacio $K^2(2) = \ker(f - 2\text{Id})^2$:** $(A - 2I)^2 = \begin{pmatrix} 0 & 0 & 0 & 0 \ 0 & 0 & 0 & 0 \ 1 & 0 & 0 & 0 \ 2 & 0 & 0 & 0 \end{pmatrix}$ El rango es $\text{rg}(A - 2I)^2 = 1$. Por tanto, $d_2 = \dim K^2(2) = 4 - 1 = 3$.
+- **Subespacio $K^2(2) = \ker(f - 2\text{Id})^2$:** $(A - 2I)^2 = \begin{pmatrix} 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 1 & 0 & 0 & 0 \\ 2 & 0 & 0 & 0 \end{pmatrix}$ El rango es $\text{rg}(A - 2I)^2 = 1$. Por tanto, $d_2 = \dim K^2(2) = 4 - 1 = 3$.
     
     La ecuación implícita de $K^2(2)$ es: $K^2(2) \equiv { x_1 = 0 }$
     
-- **Subespacio $K^3(2) = \ker(f - 2\text{Id})^3$:** $(A - 2I)^3 = \begin{pmatrix} 0 & 0 & 0 & 0 \ 0 & 0 & 0 & 0 \ 0 & 0 & 0 & 0 \ 0 & 0 & 0 & 0 \end{pmatrix} = 0_4$ El rango es $0$, por lo que $d_3 = \dim K^3(2) = 4 = m_a$. Aquí se estabiliza la cadena; $K^3(2) = M(2) = \mathbb{R}^4$.
+- **Subespacio $K^3(2) = \ker(f - 2\text{Id})^3$:** $(A - 2I)^3 = \begin{pmatrix} 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \end{pmatrix} = 0_4$ El rango es $0$, por lo que $d_3 = \dim K^3(2) = 4 = m_a$. Aquí se estabiliza la cadena; $K^3(2) = M(2) = \mathbb{R}^4$.
     
 
 ---
@@ -67,7 +67,7 @@ Calculamos las diferencias de dimensión $r_i = d_i - d_{i-1}$:
 - **Bloque 1:** Tamaño $3 \times 3$ (formado por la cadena de $v_1$).
 - **Bloque 2:** Tamaño $1 \times 1$ (formado por $v_4 \in K^1(2)$).
 
-La **Forma Canónica de Jordan** es: $J = \begin{pmatrix} 2 & 0 & 0 & 0 \ 1 & 2 & 0 & 0 \ 0 & 1 & 2 & 0 \ 0 & 0 & 0 & 2 \end{pmatrix}$
+La **Forma Canónica de Jordan** es: $J = \begin{pmatrix} 2 & 0 & 0 & 0 \\ 1 & 2 & 0 & 0 \\ 0 & 1 & 2 & 0 \\ 0 & 0 & 0 & 2 \end{pmatrix}$
 
 ---
 
@@ -77,8 +77,8 @@ La **Forma Canónica de Jordan** es: $J = \begin{pmatrix} 2 & 0 & 0 & 0 \ 1 & 2 
     
 2. **Descenso por la cadena de $v_1$:**
     
-    - $v_2 = (A - 2I) v_1 = \begin{pmatrix} 0 & 0 & 0 & 0 \ 1 & 0 & 0 & 0 \ -2 & 1 & 0 & 0 \ -4 & 2 & 0 & 0 \end{pmatrix} \begin{pmatrix} 1 \ 0 \ 0 \ 0 \end{pmatrix} = \begin{pmatrix} 0 \ 1 \ -2 \ -4 \end{pmatrix}_B \in K^2(2) \setminus K^1(2)$
-    - $v_3 = (A - 2I) v_2 = \begin{pmatrix} 0 & 0 & 0 & 0 \ 1 & 0 & 0 & 0 \ -2 & 1 & 0 & 0 \ -4 & 2 & 0 & 0 \end{pmatrix} \begin{pmatrix} 0 \ 1 \ -2 \ -4 \end{pmatrix} = \begin{pmatrix} 0 \ 0 \ 1 \ 2 \end{pmatrix}_B \in K^1(2)$
+    - $v_2 = (A - 2I) v_1 = \begin{pmatrix} 0 & 0 & 0 & 0 \\ 1 & 0 & 0 & 0 \\ -2 & 1 & 0 & 0 \\ -4 & 2 & 0 & 0 \end{pmatrix} \begin{pmatrix} 1 \\ 0 \\ 0 \\ 0 \end{pmatrix} = \begin{pmatrix} 0 \\ 1 \\ -2 \\ -4 \end{pmatrix}_B \in K^2(2) \setminus K^1(2)$
+    - $v_3 = (A - 2I) v_2 = \begin{pmatrix} 0 & 0 & 0 & 0 \\ 1 & 0 & 0 & 0 \\ -2 & 1 & 0 & 0 \\ -4 & 2 & 0 & 0 \end{pmatrix} \begin{pmatrix} 0 \\ 1 \\ -2 \\ -4 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \\ 1 \\ 2 \end{pmatrix}_B \in K^1(2)$
 3. **Elección de $v_4 \in K^1(2)$ para completar la base:** Necesitamos un vector en $K^1(2) \equiv {x_1 = 0, x_2 = 0}$ que sea linealmente independiente de $v_3 = (0, 0, 1, 2)^t$. Tomamos $v_4 = (0, 0, 0, 1)_B^t$.
     
 
@@ -86,9 +86,9 @@ La **Forma Canónica de Jordan** es: $J = \begin{pmatrix} 2 & 0 & 0 & 0 \ 1 & 2 
 
 #### Paso 5: Matriz de cambio de base y verificación
 
-Ordenamos la base de Jordan leyendo la tabla por columnas: $B' = {v_1, v_2, v_3, v_4}$. La matriz de paso $P$ es: $P = \mathcal{M}_{B' B} = \begin{pmatrix} 1 & 0 & 0 & 0 \ 0 & 1 & 0 & 0 \ 0 & -2 & 1 & 0 \ 0 & -4 & 2 & 1 \end{pmatrix}$
+Ordenamos la base de Jordan leyendo la tabla por columnas: $B' = {v_1, v_2, v_3, v_4}$. La matriz de paso $P$ es: $P = \mathcal{M}_{B' B} = \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & -2 & 1 & 0 \\ 0 & -4 & 2 & 1 \end{pmatrix}$
 
-Podemos verificar la relación de semejanza $A P = P J$: $A P = \begin{pmatrix} 2 & 0 & 0 & 0 \ 1 & 2 & 0 & 0 \ -2 & 1 & 2 & 0 \ -4 & 2 & 0 & 2 \end{pmatrix} \begin{pmatrix} 1 & 0 & 0 & 0 \ 0 & 1 & 0 & 0 \ 0 & -2 & 1 & 0 \ 0 & -4 & 2 & 1 \end{pmatrix} = \begin{pmatrix} 2 & 0 & 0 & 0 \ 1 & 2 & 0 & 0 \ 0 & 0 & 2 & 0 \ 0 & 0 & 4 & 2 \end{pmatrix}$ $P J = \begin{pmatrix} 1 & 0 & 0 & 0 \ 0 & 1 & 0 & 0 \ 0 & -2 & 1 & 0 \ 0 & -4 & 2 & 1 \end{pmatrix} \begin{pmatrix} 2 & 0 & 0 & 0 \ 1 & 2 & 0 & 0 \ 0 & 1 & 2 & 0 \ 0 & 0 & 0 & 2 \end{pmatrix} = \begin{pmatrix} 2 & 0 & 0 & 0 \ 1 & 2 & 0 & 0 \ 0 & 0 & 2 & 0 \ 0 & 0 & 4 & 2 \end{pmatrix}$
+Podemos verificar la relación de semejanza $A P = P J$: $A P = \begin{pmatrix} 2 & 0 & 0 & 0 \\ 1 & 2 & 0 & 0 \\ -2 & 1 & 2 & 0 \\ -4 & 2 & 0 & 2 \end{pmatrix} \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & -2 & 1 & 0 \\ 0 & -4 & 2 & 1 \end{pmatrix} = \begin{pmatrix} 2 & 0 & 0 & 0 \\ 1 & 2 & 0 & 0 \\ 0 & 0 & 2 & 0 \\ 0 & 0 & 4 & 2 \end{pmatrix}$ $P J = \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & -2 & 1 & 0 \\ 0 & -4 & 2 & 1 \end{pmatrix} \begin{pmatrix} 2 & 0 & 0 & 0 \\ 1 & 2 & 0 & 0 \\ 0 & 1 & 2 & 0 \\ 0 & 0 & 0 & 2 \end{pmatrix} = \begin{pmatrix} 2 & 0 & 0 & 0 \\ 1 & 2 & 0 & 0 \\ 0 & 0 & 2 & 0 \\ 0 & 0 & 4 & 2 \end{pmatrix}$
 
 Se cumple $A P = P J \implies J = P^{-1} A P$, confirmando que la base calculada es correcta.
 
@@ -100,14 +100,9 @@ Se cumple $A P = P J \implies J = P^{-1} A P$, confirmando que la base calculada
 - **Dependencia lineal:** Al elegir vectores complementarios en niveles inferiores, asegúrate siempre de que no sean combinación lineal de los vectores que descienden de niveles superiores.
 - **Verificación rápida:** Comprueba siempre que el último vector de cada cadena es un autovector (debe cumplir $(A - \lambda I) v_{\text{último}} = 0$).
 
----
+## Materiales de apoyo
 
-## Materiales multimedia solicitados
+- [**Presentación**](Presentaciones/Sesión08_Obtención_de_una_base_de_Jordan.pptx): Se ha elaborado el soporte visual estructurado según el **Manual de Estilo UNED**. Incluye la ficha técnica del algoritmo, el caso práctico resuelto paso a paso con su tabla de Jordan y la comprobación matricial $A P = P J$.
+- [**Resumen de audio**](Audios/Sesión08_Obtención_de_una_base_de_Jordan.m4a): He activado un resumen en formato de conversación en profundidad entre dos expertos. En él se comentan los aspectos más delicados de la práctica, como el método para evitar la dependencia lineal al completar bases en $K^1(\lambda)$ y la razón matemática por la cual la lectura por columnas coloca los unos en la subdiagonal.
 
-He generado los recursos de apoyo solicitados para acompañar el estudio de esta sesión:
-
-1. **Presentación (Slides):** Se ha elaborado el soporte visual estructurado según el **Manual de Estilo UNED**. Incluye la ficha técnica del algoritmo, el caso práctico resuelto paso a paso con su tabla de Jordan y la comprobación matricial $A P = P J$.
-[[Sesión08_Obtención_de_una_base_de_Jordan.pptx]]
-2. **Podcast (Audio Overview):** He activado un resumen en formato de conversación en profundidad entre dos expertos. En él se comentan los aspectos más delicados de la práctica, como el método para evitar la dependencia lineal al completar bases en $K^1(\lambda)$ y la razón matemática por la cual la lectura por columnas coloca los unos en la subdiagonal.
-[[Sesión08_Obtención_de_una_base_de_Jordan.m4a]]
 

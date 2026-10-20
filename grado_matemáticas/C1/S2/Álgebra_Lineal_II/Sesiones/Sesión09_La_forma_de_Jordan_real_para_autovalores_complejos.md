@@ -1,4 +1,3 @@
-
 # Sesión 9: La Forma de Jordan Real para Autovalores Complejos
 
 ## La Forma de Jordan Real para Autovalores Complejos
@@ -53,7 +52,7 @@ Sea $f: \mathbb{R}^2 \to \mathbb{R}^2$ el endomorfismo con matriz en la base can
 
 
 ## Material adicional
-### [Presentación](Sesión09_La_forma_de_Jordan_real_para_autovalores_complejos.pptx)
+### [Presentación](Presentaciones/Sesión09_La_forma_de_Jordan_real_para_autovalores_complejos.pptx)
 
 Diseñado conforme al Manual de Estilo de Presentaciones UNED (Colores corporativos, rigor formal y notación LaTeX)._
 
@@ -121,7 +120,7 @@ Diseñado conforme al Manual de Estilo de Presentaciones UNED (Colores corporati
 
 ---
 
-### [Resumen de Audio](Sesión09_La_forma_de_Jordan_real_para_autovalores_complejos.m4a)
+### [Resumen de Audio](Audios/Sesión09_La_forma_de_Jordan_real_para_autovalores_complejos.m4a)
 
 **Título del Episodio:** _Descifrando la Forma de Jordan Real: Cuando los Números Complejos Vuelven a Casa_ **Interlocutores:** Profesor Carlos (Tutor UNED) y Dra. Elena (Especialista en Álgebra Lineal)
 

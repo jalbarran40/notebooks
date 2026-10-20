@@ -1,3 +1,14 @@
+### Notas
+
+En el `Plan-Tema2.pdf`, la planificación de 10 horas del equipo docente revela los siguientes aspectos clave:
+
+- **Convenio de Inclusión Amplia ($A \subset B$):** Los docentes recuerdan explícitamente la convención de notación del libro base: el símbolo $A \subset B$ **no excluye que $A = B$** (es decir, en esta asignatura se usa $\subset$ para la inclusión en sentido amplio $\subseteq$, reservando la aclaración para cuando sea un subconjunto propio).
+- **Ubicación Conceptual de la Inducción y Peano (Sección 2.1):** En la primera sesión del Tema 2, el equipo docente introduce juntos la definición de conjunto, los **Axiomas de Peano y el Principio de Inducción** para caracterizar los conjuntos finitos e infinitos. En nuestro _Plan de trabajo_ le dedicamos las Sesiones 21 y 22 de forma monográfica para profundizar en su técnica de prueba, lo cual es muy acertado para el examen de desarrollo, pero es bueno saber que en el libro aparece tempranamente en la sección 2.1.
+- **Uso de Contraejemplos con Cuantificadores (Sección 2.1):** Insisten en rehacer el _Ejemplo 2.10_ del libro para aprender a refutar proposiciones universales mediante la construcción explícita de un contraejemplo.
+- **Familias de Conjuntos e Índices Arbitrarios (Sección 2.2 y 2.3):** En la Sesión 4, los profesores dan un peso muy elevado al cálculo de uniones e intersecciones sobre familias arbitrarias con conjunto de índices $i \in I$ ($\bigcup_{i \in I} A_i$ y $\bigcap_{i \in I} A_i$) y sus leyes distributivas.
+- **Lógica Relacional con Varios Cuantificadores (Sección 2.5):** Al estudiar las relaciones entre conjuntos ($R \subseteq A \times B$), el equipo docente enfatiza los _Ejemplos 2.47 y 2.48_ del texto base, donde se analiza cómo influye el orden de los cuantificadores ($\forall x \exists y$ frente a $\exists y \forall x$) en la definición de una relación y en su negación.
+
+
 ### [Tema 2. Conjuntos](https://agora.uned.es/course/view.php?id=16327&sectionid=232621#)
 
 Hoy en día prácticamente todos los conceptos matemáticos se definen en términos de conjuntos. Las propiedades de los números, las relaciones de orden y de equivalencia o las funciones se formulan en este lenguaje. En este tema los conjuntos se tratan de forma intuitiva, sin entrar en su axiomática formal, y se pone el acento en su estrecha conexión con la lógica del tema anterior.
@@ -34,23 +45,23 @@ A continuación se introducen los cuantificadores. El cuantificador universal (�
 	    - Ejercicios del texto: 2.13 y 2.14.  
 	    - Ejercicios propuestos: 4 y 5.
     
-    Sesión 3 (2 h)  
-    Estudiar: 2.2 Operaciones con conjuntos: unión, intersección, conjuntos disjuntos, propiedades distributivas, diferencia y diferencia simétrica. Practicar la demostración por doble inclusión.  
-    Ejercicios del texto (rehacer sin mirar la solución): 2.18, 2.20 y 2.26.  
-    Ejercicios propuestos: 6, 7, 9, 12 y 15.
+    - Sesión 3 (2 h)  
+	    - Estudiar: 2.2 Operaciones con conjuntos: unión, intersección, conjuntos disjuntos, propiedades distributivas, diferencia y diferencia simétrica. Practicar la demostración por doble inclusión.  
+	    - Ejercicios del texto (rehacer sin mirar la solución): 2.18, 2.20 y 2.26.  
+	    - Ejercicios propuestos: 6, 7, 9, 12 y 15.
     
-    Sesión 4 (1,5 h)  
-    Estudiar: familias de conjuntos (final de 2.2) y 2.3 Álgebra de conjuntos, con el cuadro 2.1 de propiedades y su correspondencia con las leyes lógicas.  
-    Ejercicios del texto: 2.24 (intervalos encajados), 2.28 y 2.29.  
-    Ejercicios propuestos: 8, 10, 11, 13 y 14.
+    - Sesión 4 (1,5 h)  
+	    - Estudiar: familias de conjuntos (final de 2.2) y 2.3 Álgebra de conjuntos, con el cuadro 2.1 de propiedades y su correspondencia con las leyes lógicas.  
+	    - Ejercicios del texto: 2.24 (intervalos encajados), 2.28 y 2.29.  
+	    - Ejercicios propuestos: 8, 10, 11, 13 y 14.
     
-    Sesión 5 (1 h)  
-    Estudiar: 2.4 Producto de dos conjuntos: pares ordenados, producto cartesiano y su representación gráfica, ternas y n-uplas.  
-    Ejercicios del texto: 2.33.  
-    Ejercicios propuestos: 16, 17 y 23.
+    - Sesión 5 (1 h)  
+	    - Estudiar: 2.4 Producto de dos conjuntos: pares ordenados, producto cartesiano y su representación gráfica, ternas y n-uplas.  
+	    - Ejercicios del texto: 2.33.  
+	    - Ejercicios propuestos: 16, 17 y 23.
     
-    Sesión 6 (2 h)  
-    Estudiar: 2.5 Relaciones entre conjuntos: relaciones lógicas y grafo, relación entre A y B, relación inversa, conjunto original e imagen, composición de relaciones y lógica relacional (orden de los cuantificadores y negación con varios cuantificadores, ejemplos 2.47 y 2.48). Lectura de los Comentarios del capítulo (inducción completa, sucesiones recurrentes, historia de la teoría de conjuntos y paradojas).  
-    Ejercicios propuestos: 18, 19, 20, 21, 22 y 24.
+    - Sesión 6 (2 h)  
+	    - Estudiar: 2.5 Relaciones entre conjuntos: relaciones lógicas y grafo, relación entre A y B, relación inversa, conjunto original e imagen, composición de relaciones y lógica relacional (orden de los cuantificadores y negación con varios cuantificadores, ejemplos 2.47 y 2.48). Lectura de los Comentarios del capítulo (inducción completa, sucesiones recurrentes, historia de la teoría de conjuntos y paradojas).  
+	    - Ejercicios propuestos: 18, 19, 20, 21, 22 y 24.
     
      **El tiempo previsto para estudiar este tema es de 10 horas.**

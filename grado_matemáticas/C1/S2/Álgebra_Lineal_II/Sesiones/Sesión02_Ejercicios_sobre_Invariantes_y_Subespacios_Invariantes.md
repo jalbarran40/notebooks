@@ -42,18 +42,10 @@ Un subespacio $W$ es **f-invariante** si para todo vector $w \in W$, su imagen $
 
 ---
 
-He solicitado la creación de los materiales complementarios (podcast y presentación) que se están generando en este momento.
+## Material de apoyo
 
-- **Podcast:** Una conversación detallada sobre cómo usar los invariantes para descartar la semejanza de matrices y la importancia visual de los subespacios que "no se mueven" de su sitio.
-- **Presentación:** Un resumen visual de los pasos para resolver ejercicios de invarianza y una guía rápida de comandos para WolframAlpha/wxMaxima aplicados a esta sesión.
-
-Aquí tienes el material para la **Sesión 2**. En esta ocasión, pasamos de la teoría a la acción con ejercicios prácticos sobre invariantes y subespacios.
-
-Como parte de tu formación personalizada, he generado dos recursos adicionales que te ayudarán a consolidar lo aprendido hoy:
-
-1. **Podcast (Resumen de audio):** Una conversación entre dos expertos que profundiza en la aplicación práctica de la traza, el determinante y el rango para clasificar matrices, además de discutir la "geometría" detrás de los subespacios que permanecen en su sitio.![[Sesión02_Ejercicios_sobre_Invariantes_y_Subespacios_Invariantes.m4a]]
-2. **Presentación (PowerPoint):** Un soporte visual que resume los criterios de semejanza y los pasos algorítmicos para verificar la invarianza de un subespacio, ideal para repasar antes de enfrentarte a los problemas.
-![[Sesión02_Ejercicios_sobre_Invariantes_y_Subespacios_Invariantes.pptx]]
+- [**Presentación**](Sesión02_Ejercicios_sobre_Invariantes_y_Subespacios_Invariantes.pptx): Un soporte visual que resume los criterios de semejanza y los pasos algorítmicos para verificar la invarianza de un subespacio, ideal para repasar antes de enfrentarte a los problemas.
+- [**Resumen de audio**](Audios/Sesión02_Ejercicios_sobre_Invariantes_y_Subespacios_Invariantes.m4a): Una conversación entre dos expertos que profundiza en la aplicación práctica de la traza, el determinante y el rango para clasificar matrices, además de discutir la "geometría" detrás de los subespacios que permanecen en su sitio.
 
 Recuerda que para los ejercicios de cálculo de matrices de gran tamaño, el uso de **WolframAlpha** o **wxMaxima** es muy recomendable para evitar errores aritméticos y centrarte en la comprensión conceptual.
 

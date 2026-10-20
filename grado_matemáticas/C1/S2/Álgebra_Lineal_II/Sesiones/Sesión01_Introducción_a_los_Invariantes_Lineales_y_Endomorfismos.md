@@ -36,5 +36,5 @@ Un concepto capital en la clasificación de endomorfismos es el de **subespacio 
 El objetivo final es encontrar una representación matricial lo más sencilla posible (como la **forma canónica de Jordan**) que permita identificar si dos endomorfismos son "esencialmente el mismo" basándose en sus invariantes. La identificación de subespacios invariantes permite "descomponer" el espacio en bloques más pequeños y manejables para simplificar la matriz asociada.
 
 ### Material de apoyo
-- [Presentación](Sesión01_Introducción_al_Lenguaje_Matricial.pptx)
-- [Audio](Sesión01_Introducción_al_Lenguaje_Matricial.m4a)
+- [Presentación](Presentaciones/Sesión01_Introducción_a_los_Invariantes_Lineales_y_Endomorfismos.pptx)
+- [Resumen de audio](Audios/Sesión01_Introducción_a_los_Invariantes_Lineales_y_Endomorfismo.m4a)

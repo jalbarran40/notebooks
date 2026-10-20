@@ -1,3 +1,16 @@
+### Notas
+
+En el `Plan-Tema1.pdf`, los profesores distribuyen el tema en **6 sesiones** (con un cómputo total de 10 horas) y ponen especial foco en los siguientes puntos:
+
+- **Diferencia entre Condicional e Implicación (Sección 1.1 y 1.2):** Los profesores señalan expresamente que el alumno debe detenerse en el comentario del texto base que distingue el **condicional material** ($p \rightarrow q$, que es una conectiva proposicional) de la **implicación lógica** ($p \Rightarrow q$, que es una relación de deducción o tautología condicional).
+- **Cuadros de las Tablas de Verdad Posibles (Sección 1.3):** El plan docente pide estudiar y rehacer los cuadros del libro que recogen _todas las combinaciones posibles de tablas de verdad_ para 1 y 2 proposiciones (las $2^{2^n}$ funciones de verdad).
+- **Demostraciones Clásicas en la Sección 1.4 (Leyes Lógicas):** Aunque en nuestro plan reservamos bloques específicos para métodos de demostración, el equipo docente exige rehacer sin mirar la solución los ejemplos resueltos de la sección 1.4:
+    - La demostración por reducción al absurdo de la **irracionalidad de $\sqrt{2}$**.
+    - La demostración de la **infinitud de los números primos**.
+- **Validación por Refutación (Sección 1.5):** Enfatizan mucho no limitarse a construir tablas de verdad mecánicas, sino dominar la **validación por refutación** (asignar valores semánticos estratégicos para intentar falsar la proposición).
+- **Leyes del Dilema y de Resolución en la Forma Clausulada (Sección 1.6):** Solicitan ejercitar de forma prioritaria las _Leyes del Dilema Constructivo y Destructivo_ y la _Ley de Resolución_ al transformar a Forma Normal Conjuntiva (FNC).
+- **Estructura de un Sistema Axiomático (Sección 1.7):** La última sesión del tema la dedican íntegramente a la lectura de la sección 1.7 sobre qué es un sistema axiomático, la diferencia entre axiomas y teoremas, y los tipos de teoremas.
+
 ### [Tema 1. Nociones de lógica](https://agora.uned.es/course/view.php?id=16327&sectionid=232609#)
 
 En este tema se pretende que el alumno tenga algunos rudimentos sobre la lógica matemática en particular, en la formalización de enunciados matemáticos, el conocimiento de reglas para inferir de enunciados dados nuevos enunciados, el análisis de formas enunciativas y en el desarrollo de procedimientos de demostración. Todo ello apoyándonos en la lógica de dos valores veritativos.

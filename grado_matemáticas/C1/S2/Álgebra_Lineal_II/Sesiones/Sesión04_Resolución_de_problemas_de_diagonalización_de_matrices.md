@@ -1,7 +1,3 @@
-He preparado el material para la **Sesión 4**, que es de carácter **práctico (P)**. En esta sesión consolidaremos el algoritmo de diagonalización mediante la resolución de ejercicios progresivos, desde dimensiones bajas hasta el análisis de casos críticos donde la diagonalización falla.
-
----
-
 # Sesión 4 (P): Resolución de problemas de diagonalización de matrices
 
 Esta sesión práctica de 45 minutos tiene como objetivo aplicar el **Teorema de Diagonalización** estudiado en la sesión anterior.
@@ -46,17 +42,12 @@ He activado las herramientas para generar los recursos multimedia solicitados:
 1. **Podcast:** Una conversación de apoyo donde se discuten los "puntos ciegos" al resolver estos ejercicios, como los errores en el cálculo del rango o el olvido de verificar si las raíces pertenecen al cuerpo $\mathbb{K}$.
 2. **Presentación:** Siguiendo el **Manual de Estilo**, incluye láminas con el algoritmo visual, ejemplos resueltos paso a paso y consejos para usar **WolframAlpha** en la verificación de autovectores.
 
-Actualización de materiales:
+## Material de apoyo
 
-He generado con éxito los recursos complementarios para la **Sesión 4: Resolución de problemas de diagonalización**:
-
-1. **Podcast (Audio Overview):** Ya tienes disponible una conversación tipo "deep dive" en español donde los expertos analizan el proceso práctico de diagonalización. Se centran en cómo evitar errores comunes al calcular el rango de las matrices $(A - \lambda I)$ y la importancia de interpretar correctamente las multiplicidades algebraicas y geométricas.
-![[Sesión04_Resolución_de_problemas_de_diagonalización_de_matrices.m4a]]
-2. **Presentación (Slide Deck):** Se ha creado el soporte visual siguiendo estrictamente el **Manual de Estilo UNED**. Esta incluye:
+- [**Presentación**](Presentaciones/Sesión04_Resolución_de_problemas_de_diagonalización_de_matrices.pptx): Se ha creado el soporte visual siguiendo estrictamente el **Manual de Estilo UNED**. Esta incluye:
     - Un desglose visual del algoritmo de diagonalización.
     - La resolución detallada de una matriz defectuosa (no diagonalizable).
     - El paso a paso de una matriz $3 \times 3$ compleja que resulta ser diagonalizable.
     - Una guía para usar **WolframAlpha** y **wxMaxima** para verificar tus propios ejercicios.
-![[Sesión04_Resolución_de_problemas_de_diagonalización_de_matrices.pptx]]
+- [**Resumen de audio**](Audios/Sesión04_Resolución_de_problemas_de_diagonalización_de_matrices.m4a): Ya tienes disponible una conversación tipo "deep dive" en español donde los expertos analizan el proceso práctico de diagonalización. Se centran en cómo evitar errores comunes al calcular el rango de las matrices $(A - \lambda I)$ y la importancia de interpretar correctamente las multiplicidades algebraicas y geométricas.
 
-Puedes encontrar ambos archivos en la pestaña de artefactos de tu cuaderno. Te sugiero empezar revisando el texto de la sesión, luego escuchar el podcast mientras sigues las diapositivas para una experiencia de aprendizaje completa. ¡Mucho ánimo con la práctica!

@@ -25,16 +25,10 @@ El "edificio" de la geometría se construye sobre tres pilares:
 
 A finales del siglo XIX, matemáticos como **David Hilbert** enmendaron las lagunas lógicas de Euclides, creando sistemas axiomáticos modernos y rigurosos. En nuestro curso, utilizaremos un sistema de axiomas clásico-moderno que aprovecha la potencia de los números reales para facilitar el aprendizaje sin perder el espíritu geométrico.
 
----
+## Materiales de apoyo
 
-He solicitado la creación de los materiales de apoyo para esta sesión: un resumen en audio detallado y una presentación para tu revisión.
-
-¹ He generado los materiales solicitados para la Sesión 1:
-
-- **Audio Overview (Podcast):** ![[Sesión01_Introducción_histórica_y_el_método_axiomático.m4a]]
-	Una conversación profunda entre dos personas que exploran la historia de la geometría, el impacto de Euclides y por qué en la UNED empezamos estudiando geometría sintética antes que la analítica. Es ideal para escuchar mientras repasas los conceptos iniciales.
-- **Presentación de Diapositivas:** 
-	![[Sesión01_Introducción_histórica_y_el_método_axiomático.pptx]]
+- [**Presentación**](Presentaciones/Sesión01_Introducción_histórica_y_el_método_axiomático.pptx)
 	Un resumen visual que estructura los puntos clave de la sesión, desde la etimología de la palabra "Geometría" hasta la rigurosidad del método axiomático moderno propuesto por Hilbert.
+- [**Resumen de audio**](Audios/Sesión01_Introducción_histórica_y_el_método_axiomático.m4a)
+	Una conversación profunda entre dos personas que exploran la historia de la geometría, el impacto de Euclides y por qué en la UNED empezamos estudiando geometría sintética antes que la analítica. Es ideal para escuchar mientras repasas los conceptos iniciales.
 
-Puedes encontrar ambos materiales en el panel de fuentes/estudio. ¿Deseas que preparemos algún ejercicio de reflexión para confirmar lo aprendido en esta primera sesión antes de pasar a los Espacios Métricos?
