@@ -53,18 +53,18 @@ Es el conjunto de llegada $B$.
 
 #### **3. Conjunto Imagen (o Recorrido / Rango)**
 
-Es el subconjunto de $B$ formado por aquellos elementos que son imagen de al menos un elemento de $A$. Se denota por **$\text{Im}(f)$**, $\text{Im } f$ o **$f(A)$**: $$\text{Im}(f) = f(A) = {y \in B \mid \exists x \in A, f(x) = y} = {f(x) \mid x \in A} \subseteq B$$
+Es el subconjunto de $B$ formado por aquellos elementos que son imagen de al menos un elemento de $A$. Se denota por **$\text{Im}(f)$**, $\text{Im } f$ o **$f(A)$**: $$\text{Im}(f) = f(A) = \{y \in B \mid \exists x \in A, f(x) = y\} = \{f(x) \mid x \in A\} \subseteq B$$
 
 > **Diferencia Fundamental para Examen:**  
 > El **codominio $B$** y el **conjunto imagen $\text{Im}(f)$** NO son necesariamente iguales. Siempre se cumple que $\text{Im}(f) \subseteq B$, pero pueden sobrar elementos en $B$ que no sean imagen de nadie.
 
 #### **4. Imagen de un Subconjunto $X \subseteq A$**
 
-Si $X \subseteq A$, la imagen del subconjunto $X$ mediante $f$ es: $$f(X) = {y \in B \mid \exists x \in X, f(x) = y} = {f(x) \mid x \in X} \subseteq B$$
+Si $X \subseteq A$, la imagen del subconjunto $X$ mediante $f$ es: $$f(X) = \{y \in B \mid \exists x \in X, f(x) = y\} = \{f(x) \mid x \in X\} \subseteq B$$
 
 #### **5. Imagen Inversa (o Antiimagen) de un Subconjunto $Y \subseteq B$**
 
-Si $Y \subseteq B$, la **imagen inversa de $Y$ por $f$**, denotada por **$f^{-1}(Y)$**, es el subconjunto de $A$ formado por todos los elementos cuya imagen pertenece a $Y$: $$f^{-1}(Y) = {x \in A \mid f(x) \in Y} \subseteq A$$
+Si $Y \subseteq B$, la **imagen inversa de $Y$ por $f$**, denotada por **$f^{-1}(Y)$**, es el subconjunto de $A$ formado por todos los elementos cuya imagen pertenece a $Y$: $$f^{-1}(Y) = \{x \in A \mid f(x) \in Y\} \subseteq A$$
 
 - **Imagen Inversa de un Elemento $y \in B$:**  
     Para un elemento individual $y \in B$, se define $f^{-1}(y) = f^{-1}({y}) = {x \in A \mid f(x) = y}$.
@@ -83,11 +83,11 @@ Sea la función real dada por $f(x) = x^2$.
 - **Codominio:** $B = \mathbb{R}$.
 - **Conjunto Imagen:** Como todo cuadrado de un número real es no negativo ($x^2 \ge 0$), se tiene que $\text{Im}(f) = f(\mathbb{R}) = [0, +\infty)$.
 - **Imágenes Inversas de Puntos:**
-    - $f^{-1}(4) = {x \in \mathbb{R} \mid x^2 = 4} = {-2, 2}$.
-    - $f^{-1}(0) = {x \in \mathbb{R} \mid x^2 = 0} = {0}$.
-    - $f^{-1}(-3) = {x \in \mathbb{R} \mid x^2 = -3} = \varnothing$ (pués no existen cuadrados negativos en $\mathbb{R}$).
+    - $f^{-1}(4) = \{x \in \mathbb{R} \mid x^2 = 4\} = \{-2, 2\}$.
+    - $f^{-1}(0) = \{x \in \mathbb{R} \mid x^2 = 0\} = {0}$.
+    - $f^{-1}(-3) = \{x \in \mathbb{R} \mid x^2 = -3\} = \varnothing$ (pués no existen cuadrados negativos en $\mathbb{R}$).
 - **Imagen Inversa de un Intervalo:**
-    - $f^{-1}() = {x \in \mathbb{R} \mid 1 \le x^2 \le 4} = [-2, -1] \cup$.
+    - $f^{-1}([1,4]) = \{x \in \mathbb{R} \mid 1 \le x^2 \le 4\} = [-2, -1] \cup [1, 2]$.
 
 ---
 
@@ -98,7 +98,7 @@ Dada una relación de equivalencia $\mathcal{E}$ sobre un conjunto $A$, la relac
 - **Dominio:** $\text{Dom}(p) = A$.
 - **Codominio:** $A/\mathcal{E}$ (el conjunto cociente).
 - **Conjunto Imagen:** Dado que por la propiedad reflexiva toda clase de equivalencia $[x]$ posee al menos un representante $x \in A$ tal que $p(x) = [x]$, el conjunto imagen coincide plenamente con el codominio: $\text{Im}(p) = A/\mathcal{E}$.
-- **Imagen Inversa de una Clase $[x]$:** $p^{-1}({[x]}) = {y \in A \mid p(y) = [x]} = {y \in A \mid [y] = [x]} = [x]$. La antiimagen de una clase de equivalencia es la propia clase como subconjunto de $A$.
+- **Imagen Inversa de una Clase $[x]$:** $p^{-1}({[x]}) = \{y \in A \mid p(y) = [x]\} = \{y \in A \mid [y] = [x]\} = [x]$. La antiimagen de una clase de equivalencia es la propia clase como subconjunto de $A$.
 
 ---
 
@@ -120,7 +120,7 @@ Cuando una función real se especifica únicamente por su expresión algebraica 
 1. **Ejercicio 1:** Dada la aplicación $f: \mathbb{R} \to \mathbb{R}$ definida por $f(x) = x^2 - 3x + 2$.  
     a) Determinar el conjunto imagen $\text{Im}(f)$.  
     b) Calcular las antiimágenes $f^{-1}(0)$ y $f^{-1}({-1})$.  
-    c) Calcular la imagen del subconjunto $X =$.
+    c) Calcular la imagen del subconjunto $X = [1,4]$.
 2. **Ejercicio 2 (Ejercicio 15 del Capítulo 3 del texto base):** Determinar el dominio de definición de las siguientes funciones reales:  
     a) $f(x) = \frac{x - 1}{x + 2} + \frac{1}{x^2 - 1}$  
     b) $g(x) = \sqrt{1 - x^3}$  
@@ -132,20 +132,21 @@ Cuando una función real se especifica únicamente por su expresión algebraica 
 
 **Enunciado:** Sea la función real dada por $f(x) = |x - 2|$ con dominio $A = \mathbb{R}$ y codominio $B = \mathbb{R}$. ¿Cuál de las siguientes afirmaciones sobre sus conjuntos imagen e imagen inversa es **verdadera**?
 
-- **A)** $\text{Im}(f) = [0, +\infty)$ y la imagen inversa del intervalo $$ es el intervalo $f^{-1}() =$.
+- **A)** $\text{Im}(f) = [0, +\infty)$ y la imagen inversa del intervalo $[]$ es el intervalo $f^{-1}([0,1]) =[1,3]$.
 - **B)** $\text{Im}(f) = \mathbb{R}$ y la imagen inversa del punto $0$ es el conjunto vacío $f^{-1}(0) = \varnothing$.
 - **C)** Ninguna de las anteriores.
 
 > **Solución Explicada:**
 > 
 > - Como el valor absoluto de cualquier número real es no negativo, $|x - 2| \ge 0$ para todo $x \in \mathbb{R}$, y para cada $y \ge 0$ los puntos $x = 2 + y$ y $x = 2 - y$ satisfacen $f(x) = y$. Por consiguiente, **$\text{Im}(f) = [0, +\infty)$**.
-> - Calculamos la imagen inversa del intervalo $$: $$f^{-1}() = {x \in \mathbb{R} \mid 0 \le |x - 2| \le 1} \iff |x - 2| \le 1 \iff -1 \le x - 2 \le 1 \iff 1 \le x \le 3$$
-> - Luego $f^{-1}() =$.
+> - Calculamos la imagen inversa del intervalo $[0,1]$: $$f^{-1}([0,1]) = {x \in \mathbb{R} \mid 0 \le |x - 2| \le 1} \iff |x - 2| \le 1 \iff -1 \le x - 2 \le 1 \iff 1 \le x \le 3$$
+> - Luego $f^{-1}([0,1]) =[1,3]$.
 > - Por lo tanto, la opción **A** es la **correcta**.
 
 ## Material de apoyo
 
 - [**Presentación**](Presentaciones/Sesión31_Aplicaciones_y_conjuntos.pptx) Maquetada respetando el _AAA_Manual_de_Estilo_Presentaciones_, con el encabezado del Bloque 3, el escape estricto de llaves `\{` y `\}`, la notación oficial `\varnothing` para el conjunto vacío, la distinción entre relación y aplicación, y la pregunta de autoevaluación.
+	**NOTA**: La infografía de la diapositiva 4 se errónea
 - [**Resumen de audio**](Audios/Sesión31_Aplicaciones_y_conjuntos.m4a): Enfocado en la transición de relaciones binarias generales a la noción de aplicación (existencia y unicidad de imagen), la diferencia crítica entre codominio $B$ e imagen $\text{Im}(f)$, el concepto de imagen inversa $f^{-1}(Y)$ de un subconjunto, los casos límite con el conjunto vacío y los criterios sintácticos para el examen de desarrollo de la UNED.
 
 ---

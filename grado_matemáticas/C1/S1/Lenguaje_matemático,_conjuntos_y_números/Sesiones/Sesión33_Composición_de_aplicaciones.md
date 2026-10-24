@@ -62,27 +62,29 @@ Una aplicación $f: A \to B$ admite **aplicación inversa** $f^{-1}: B \to A$ si
         - **Dominio de $f \circ g$:** Se exige $x \ge 0$ y $\sqrt{x} \neq 2 \implies x \neq 4$. Luego **$\text{Dom}(f \circ g) = [0, 4) \cup (4, +\infty)$**.
         - Es evidente que las expresiones algebraicas y los dominios difieren, por lo que **$g \circ f \neq f \circ g$**.
 
+- Imagen de la función f(x)
+![[Sesión33_2_1_f.png]]
 ---
 
 #### **Ejercicio 2: Prueba de Biyectividad y Cálculo de la Función Inversa**
 
-**Enunciado:** Consideremos la función homográfica $f: \mathbb{R} \setminus {3} \to \mathbb{R} \setminus {2}$ definida por: $$f(x) = \frac{2x + 1}{x - 3}$$
+**Enunciado:** Consideremos la función homográfica $f: \mathbb{R} \setminus \{3\} \to \mathbb{R} \setminus \{2\}$ definida por: $$f(x) = \frac{2x + 1}{x - 3}$$
 
 1. Demostrar analíticamente que $f$ es inyectiva.
 2. Demostrar analíticamente que $f$ es sobreyectiva.
-3. Deducir la expresión algebraica de la función inversa $f^{-1}: \mathbb{R} \setminus {2} \to \mathbb{R} \setminus {3}$.
+3. Deducir la expresión algebraica de la función inversa $f^{-1}: \mathbb{R} \setminus \{2\} \to \mathbb{R} \setminus \{3\}$.
 
 - **Resolución Paso a Paso (Estándar UNED):**
     
     1. **Demostración de Inyectividad:**  
-        Sean $x, x' \in \mathbb{R} \setminus {3}$ tales que $f(x) = f(x')$: $$\frac{2x + 1}{x - 3} = \frac{2x' + 1}{x' - 3}$$ Multiplicando en cruz: $$(2x + 1)(x' - 3) = (2x' + 1)(x - 3)$$ $$2xx' - 6x + x' - 3 = 2xx' - 6x' + x - 3$$ Simplificando los términos comunes $2xx'$ y $-3$: $$-6x + x' = -6x' + x \implies 7x' = 7x \implies x = x'$$ Por tanto, **$f$ es inyectiva**.
+        Sean $x, x' \in \mathbb{R} \setminus \{3\}$ tales que $f(x) = f(x')$: $$\frac{2x + 1}{x - 3} = \frac{2x' + 1}{x' - 3}$$ Multiplicando en cruz: $$(2x + 1)(x' - 3) = (2x' + 1)(x - 3)$$ $$2xx' - 6x + x' - 3 = 2xx' - 6x' + x - 3$$ Simplificando los términos comunes $2xx'$ y $-3$: $$-6x + x' = -6x' + x \implies 7x' = 7x \implies x = x'$$ Por tanto, **$f$ es inyectiva**.
         
     2. **Demostración de Sobreyectividad:**  
-        Sea $y \in \mathbb{R} \setminus {2}$ un elemento genérico del codominio. Buscamos un $x \in \mathbb{R} \setminus {3}$ tal que $f(x) = y$: $$\frac{2x + 1}{x - 3} = y \implies 2x + 1 = y(x - 3) \implies 2x + 1 = xy - 3y$$ Agrupando los términos con $x$: $$2x - xy = -3y - 1 \implies x(2 - y) = -(3y + 1) \implies x = \frac{3y + 1}{2 - y} = \frac{3y + 1}{-(y - 2)}$$ Como $y \in \mathbb{R} \setminus {2}$, el denominador $2 - y \neq 0$, luego siempre existe un valor de $x \in \mathbb{R}$.  
-        Comprobamos que $x \neq 3$: $$\frac{3y + 1}{2 - y} = 3 \implies 3y + 1 = 6 - 3y \implies 6y = 5 \implies y = 5/6 \neq 2$$ Luego para todo $y \in \mathbb{R} \setminus {2}$ existe antecesor en $\mathbb{R} \setminus {3}$. **$f$ es sobreyectiva**.
+        Sea $y \in \mathbb{R} \setminus \{2\}$ un elemento genérico del codominio. Buscamos un $x \in \mathbb{R} \setminus \{3\}$ tal que $f(x) = y$: $$\frac{2x + 1}{x - 3} = y \implies 2x + 1 = y(x - 3) \implies 2x + 1 = xy - 3y$$ Agrupando los términos con $x$: $$2x - xy = -3y - 1 \implies x(2 - y) = -(3y + 1) \implies x = \frac{-(3y + 1)}{2 - y} = \frac{3y + 1}{y - 2}$$ Como $y \in \mathbb{R} \setminus {2}$, el denominador $2 - y \neq 0$, luego siempre existe un valor de $x \in \mathbb{R}$.  
+        Comprobamos que $x \neq 3$: $$\frac{3y + 1}{2 - y} = 3 \implies 3y + 1 = 6 - 3y \implies 6y = 5 \implies y = 5/6 \neq 2$$ Luego para todo $y \in \mathbb{R} \setminus \{2\}$ existe antecesor en $\mathbb{R} \setminus \{3\}$. **$f$ es sobreyectiva**.
         
     3. **Cálculo de la Función Inversa:**  
-        Al ser inyectiva y sobreyectiva, $f$ es **biyectiva**. Su función inversa $f^{-1}: \mathbb{R} \setminus {2} \to \mathbb{R} \setminus {3}$ viene dada por la fórmula obtenida al despejar: $$f^{-1}(y) = \frac{3y + 1}{2 - y} \quad \text{o bien, en la variable estándar: } \quad f^{-1}(x) = \frac{3x + 1}{2 - x}$$
+        Al ser inyectiva y sobreyectiva, $f$ es **biyectiva**. Su función inversa $f^{-1}: \mathbb{R} \setminus \{2\} \to \mathbb{R} \setminus \{3\}$ viene dada por la fórmula obtenida al despejar: $$f^{-1}(y) = \frac{3y + 1}{y - 2} \quad \text{o bien, en la variable estándar: } \quad f^{-1}(x) = \frac{3x + 1}{x - 2}$$
         
 
 ---
@@ -109,7 +111,80 @@ A partir de la lista de ejercicios prioritarios seleccionados por la **Guía Com
     b) Determinar si $g$ admite inversa y hallarla.
 2. **Ejercicio 21 del Capítulo 3:** Sea $f: A \to B$ una aplicación. Demostrar que $f$ es inyectiva si y solo si para todo par de subconjuntos $X, Y \subseteq A$ se cumple que $f(X \cap Y) = f(X) \cap f(Y)$.
 
+#### Solución ejercicio 21
+
+##### **Enunciado**
+
+Sea $f: A \to B$ una aplicación. Demostrar que $f$ es **inyectiva** si y solo si para todo par de subconjuntos $X, Y \subseteq A$ se cumple que:
+$f(X \cap Y) = f(X) \cap f(Y)$
+
 ---
+
+##### **Estrategia de Demostración**
+
+Al tratarse de un bicondicional ($\iff$), la demostración consta de dos partes bien diferenciadas:
+
+1. **Lema Previo (Propiedad General):** Demostrar que la inclusión $f(X \cap Y) \subseteq f(X) \cap f(Y)$ se cumple **siempre** para cualquier aplicación $f$, sea inyectiva o no.
+2. **Implicación Directa ($\implies$):** Suponer que $f$ es inyectiva y probar la inclusión contraria $f(X) \cap f(Y) \subseteq f(X \cap Y)$.
+3. **Implicación Recíproca ($\impliedby$):** Suponer que se cumple la igualdad de imágenes de la intersección para todo par de subconjuntos y deducir que $f$ es inyectiva.
+
+---
+
+##### **1. Lema Previo: Inclusión Contenida $f(X \cap Y) \subseteq f(X) \cap f(Y)$**
+
+Sea $y \in f(X \cap Y)$ un elemento genérico.
+* Por definición de imagen de un conjunto, existe al menos un $x \in X \cap Y$ tal que $f(x) = y$.
+* Como $x \in X \cap Y$, por definición de intersección se tiene que $x \in X$ y $x \in Y$.
+* Como $x \in X \implies f(x) \in f(X) \implies y \in f(X)$.
+* Como $x \in Y \implies f(x) \in f(Y) \implies y \in f(Y)$.
+* Al pertenecer $y$ a ambos conjuntos, por definición de intersección se deduce que $y \in f(X) \cap f(Y)$.
+
+Por lo tanto, la inclusión **$f(X \cap Y) \subseteq f(X) \cap f(Y)$ se verifica siempre**.
+
+---
+
+##### **2. Implicación Directa ($\implies$)**
+
+**Hipótesis:** $f: A \to B$ es inyectiva.  
+**Objetivo:** Probar que para todo $X, Y \subseteq A$ se cumple $f(X \cap Y) = f(X) \cap f(Y)$.
+
+Gracias al Lema Previo, solo necesitamos demostrar la inclusión opuesta: **$f(X) \cap f(Y) \subseteq f(X \cap Y)$**.
+
+1. Sea $y \in f(X) \cap f(Y)$ un elemento genérico.
+2. Por definición de intersección, $y \in f(X)$ y $y \in f(Y)$.
+3. Por definición de imagen directa de un subconjunto:
+   * Como $y \in f(X)$, existe algún $x_1 \in X$ tal que $f(x_1) = y$.
+   * Como $y \in f(Y)$, existe algún $x_2 \in Y$ tal que $f(x_2) = y$.
+1. Igualando ambas expresiones obtenemos $f(x_1) = f(x_2) = y$.
+2. **Aplicamos la Hipótesis de Inyectividad:** Puesto que $f$ es inyectiva, de $f(x_1) = f(x_2)$ se deduce necesariamente que:
+   \$$x_1 = x_2\$$
+3. Llamemos $x = x_1 = x_2$. Como $x = x_1 \in X$ y $x = x_2 \in Y$, concluimos que $x \in X \cap Y$.
+4. Por lo tanto, $y = f(x)$ con $x \in X \cap Y$, lo que significa por definición que **$y \in f(X \cap Y)$**.
+
+Al haberse demostrado ambas inclusiones, queda establecida la igualdad **$f(X \cap Y) = f(X) \cap f(Y)$**. $\quad \blacksquare$
+
+---
+
+##### **3. Implicación Recíproca ($\impliedby$)**
+
+**Hipótesis:** Para todo $X, Y \subseteq A$ se cumple $f(X \cap Y) = f(X) \cap f(Y)$.  
+**Objetivo:** Demostrar que $f$ es inyectiva (es decir, $\forall x, x' \in A, f(x) = f(x') \implies x = x'$).
+
+1. Sean $x, x' \in A$ dos elementos arbitrarios del dominio tales que **$f(x) = f(x')$**.
+2. Consideremos los subconjuntos unitarios $X = \{x\} \subseteq A$ e $Y = \{x'\} \subseteq A$.
+3. Aplicamos la hipótesis a estos dos conjuntos unitarios concretos:
+   \$$f(\{x\} \cap \{x'\}) = f(\{x\}) \cap f(\{x'\})\$$
+4. Evaluamos el miembro de la derecha:
+   * $f(\{x\}) = \{f(x)\}$
+   * $f(\{x'\}) = \{f(x')\}$
+   * Como $f(x) = f(x')$, se deduce que $\{f(x)\} \cap \{f(x')\} = \{f(x)\}$.
+1. Sustituyendo en la igualdad de la hipótesis:
+   \$$f(\{x\} \cap \{x'\}) = \{f(x)\}\$$
+2. Observamos que el conjunto $\{f(x)\}$ es un conjunto unitario no vacío (contiene al elemento $f(x)$). Por tanto, su imagen precursora $\{x\} \cap \{x'\}$ **no puede ser el conjunto vacío** ($\{x\} \cap \{x'\} \neq \varnothing$).
+3. La única forma de que la intersección de dos conjuntos unitarios no sea vacía es que **ambos elementos sean idénticos**:
+   \$$x = x'\$$
+
+Por lo tanto, **$f$ es inyectiva**. $\quad \blacksquare$
 
 ### **4. Pregunta de Autoevaluación (Estilo PEC)**
 
@@ -133,4 +208,50 @@ A partir de la lista de ejercicios prioritarios seleccionados por la **Guía Com
 - [**Presentación**](Presentaciones/Sesión33_Composición_de_aplicaciones.pptx): Elaborada conforme al _AAA_Manual_de_Estilo_Presentaciones_, con el encabezado del Bloque 3, la notación del texto base de Delgado Pineda & Muñoz Bouzo (escape de llaves `\{` y `\}`, símbolo `\varnothing` para el conjunto vacío), los ejercicios resueltos paso a paso y la pregunta de autoevaluación.
 - [**Resumen de audio**](Audios/Sesión33_Composición_de_aplicaciones.m4a) Enfocado en las técnicas algebraicas para calcular compuestas $(g \circ f)(x)$, la verificación estricta de dominios de compatibilidad, la demostración formal de biyectividad para justificar la existencia de la función inversa $f^{-1}$, el procedimiento de despeje, la regla $(g \circ f)^{-1} = f^{-1} \circ g^{-1}$ y las pautas para obtener la máxima calificación en el examen de desarrollo.
 
+# Notas
+
+## Función homográfica
+
+Una **función homográfica** (o transformación homográfica) es una función racional de primer grado, definida como el cociente de dos polinomios lineales:
+
+$$f(x) = \frac{ax + b}{cx + d}$$
+
+donde $a, b, c, d \in \mathbb{R}$ son escalares fijos que satisfacen dos condiciones fundamentales:
+
+1. **$c \neq 0$**: Si $c = 0$, la función se reduciría a una función afín o lineal $f(x) = \frac{a}{d}x + \frac{b}{d}$.
+2. **$ad - bc \neq 0$**: Si el determinante $ad - bc = 0$, el numerador y el denominador serían proporcionales, por lo que la función se reduciría a una constante $f(x) = \frac{a}{c}$.
+
 ---
+
+### **Propiedades Clave para la Asignatura (Especialmente en la Sesión 33)**
+
+En el estudio de aplicaciones reales (Capítulo 3 del texto base de _Delgado Pineda & Muñoz Bouzo_), las funciones homográficas son el ejemplo clásico para practicar el **análisis de dominios, la demostración de biyectividad y el cálculo algebraico de funciones inversas**:
+
+#### **1. Dominio de Definición ($\text{Dom}(f)$)**
+
+La función no está definida en el punto que anula el denominador ($cx + d = 0 \implies x = -d/c$): 
+$$\text{Dom}(f) = \mathbb{R} \setminus \left\{ -\frac{d}{c} \right\}$$
+
+#### **2. Conjunto Imagen ($\text{Im}(f)$)**
+
+El recorrido de la función alcanza todos los números reales excepto el cociente de los coeficientes de grado 1 ($y = a/c$): $$\text{Im}(f) = \mathbb{R} \setminus \left\{ \frac{a}{c} \right\}$$
+
+#### **3. Biyectividad e Inversa ($f^{-1}$)**
+
+Considerada como aplicación entre sus dominios naturales: $$f: \mathbb{R} \setminus \left\{ -\frac{d}{c} \right\} \longrightarrow \mathbb{R} \setminus \left\{ \frac{a}{c} \right\}$$ $f$ es una **aplicación biyectiva**.
+
+Para obtener la expresión de la **función inversa $f^{-1}$**, igualamos $y = f(x)$ y despejamos $x$: $$y = \frac{ax + b}{cx + d} \implies y(cx + d) = ax + b \implies cxy + dy = ax + b$$ $$cxy - ax = -dy + b \implies x(cy - a) = -dy + b \implies x = \frac{-dy + b}{cy - a}$$
+
+Por tanto, **la inversa de una función homográfica es también otra función homográfica**: $$f^{-1}(y) = \frac{-dy + b}{cy - a}$$
+
+> **Regla mnemotécnica para el examen:** Los coeficientes de la diagonal principal ($a$ y $d$) se **intercambian de posición y cambian de signo** (el $d$ pasa arriba como $-d$, y el $a$ pasa abajo como $-a$).
+
+---
+
+### **4. Interpretación Geométrica**
+
+En el plano cartesiano $\mathbb{R}^2$, la gráfica de toda función homográfica es una **hipérbola equilátera** que posee dos asíntotas:
+
+- **Asíntota vertical:** $x = -\frac{d}{c}$
+- **Asíntota horizontal:** $y = \frac{a}{c}$
+

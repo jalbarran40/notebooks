@@ -51,8 +51,8 @@ Una aplicación $f: A \to B$ es **biyectiva** si y solo si existe una aplicació
 
 Dada una aplicación $f: A \to B$:
 
-1. $f$ es **sobreyectiva** $\iff$ existe una aplicación $h: B \to A$ tal que $f \circ h = I_B$ _(utiliza el Axioma de Elección)_.
-2. $f$ es **inyectiva** $\iff$ existe una aplicación $g: B \to A$ tal que $g \circ f = I_A$.
+1. $f$ es **sobreyectiva** $\iff$ existe una aplicación $h: B \to A$ tal que $f \circ h = I_B$ _(utiliza el Axioma de Elección)_. NOTA: La inversa es inyectiva y no tiene por qué ser única.
+2. $f$ es **inyectiva** $\iff$ existe una aplicación $g: B \to A$ tal que $g \circ f = I_A$. NOTA: La inversa es sobreyectiva y no tiene por qué ser única.
 
 #### **Proposición 3.56 (Composición de Inyecciones y Sobreyecciones)**
 
@@ -92,8 +92,9 @@ Sean $A$ y $B$ dos conjuntos finitos con $\text{card}(A) = n$ y $\text{card}(B) 
     - Si $n \neq m$: Existen **$0$ aplicaciones biyectivas**.
 4. **Número de Aplicaciones Sobreyectivas:**
     - Si $n < m$: Existen **$0$ aplicaciones sobreyectivas**.
-    - Si $m = 2$: Existen $2^n - 2$ aplicaciones sobreyectivas.
-
+    - Si $m \ge n$
+	    - Caso particular: Si $m = 2$: Existen $2^n - 2$ aplicaciones sobreyectivas.
+	    - Caso general: $\text{Nº de sobreyecciones} = \sum_{k=0}^{m} (-1)^k \binom{m}{k} (m - k)^n$
 ---
 
 ### **5. Ejemplos Emblemáticos del Texto Base (Delgado Pineda & Muñoz Bouzo)**

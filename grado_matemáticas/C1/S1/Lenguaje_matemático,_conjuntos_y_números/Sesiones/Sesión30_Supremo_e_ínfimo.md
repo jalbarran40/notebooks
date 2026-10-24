@@ -203,15 +203,15 @@ Este resultado es precisamente el ejemplo clásico que muestra por qué el cuerp
 ### **3. Ejercicios Propuestos para Trabajo Personal (45 min)**
 
 1. **Ejercicio 1:** Dado el conjunto 
-$$C = \left\{ \frac{(-1)^n}{n} + \frac{1}{n} ;\middle|; n \in \mathbb{N}^* \right\}$$, calcular explícitamente sus primeros términos, determinar si está acotado y hallar $\sup(C)$, $\inf(C)$, $\max(C)$ y $\min(C)$.
+$$C = \left\{ \frac{(-1)^n}{n} + \frac{1}{n} \;\middle|\; n \in \mathbb{N}^* \right\}$$, calcular explícitamente sus primeros términos, determinar si está acotado y hallar $\sup(C)$, $\inf(C)$, $\max(C)$ y $\min(C)$.
 
-2. **Ejercicio 2:** Sean $A, B \subseteq \mathbb{R}$ acotados. Se define el conjunto suma $A + B = {a + b \mid a \in A \land b \in B}$. Demostrar analíticamente que $\sup(A + B) = \sup(A) + \sup(B)$.
+2. **Ejercicio 2:** Sean $A, B \subseteq \mathbb{R}$ acotados. Se define el conjunto suma $A + B = \{a + b \mid a \in A \land b \in B\}$. Demostrar analíticamente que $\sup(A + B) = \sup(A) + \sup(B)$.
 
 ---
 
 ### **4. Pregunta de Autoevaluación (Estilo PEC)**
 
-**Enunciado:** Sea el subconjunto de números reales $$A = \left\{ \frac{2n + 1}{n + 2} ;\middle|; n \in \mathbb{N}^* \right\} = \left\{ 1, \frac{5}{4}, \frac{7}{5}, \frac{9}{6}, \dots \right\}$$. ¿Cuál de las siguientes afirmaciones es **verdadera**?
+**Enunciado:** Sea el subconjunto de números reales $$A = \left\{ \frac{2n + 1}{n + 2} \;\middle|\; n \in \mathbb{N}^* \right\} = \left\{ 1, \frac{5}{4}, \frac{7}{5}, \frac{9}{6}, \dots \right\}$$. ¿Cuál de las siguientes afirmaciones es **verdadera**?
 
 - **A)** $\inf(A) = 1$ (que es mínimo) y $\sup(A) = 2$ (pero no existe máximo).
 - **B)** $\min(A) = 1$ y $\max(A) = 2$.
