@@ -71,12 +71,12 @@ En el examen de desarrollo de la UNED, para demostrar que dos conjuntos tienen e
 
 #### **Ejercicio 3: Identificación del Conjunto de las Partes y Funciones Características**
 
-**Enunciado:** Sea $A$ un conjunto no vacío arbitrario. Demostrar que el conjunto de las partes $\mathcal{P}(A)$ es equipotente al conjunto de aplicaciones ${0, 1}^A = \mathcal{F}(A, {0, 1})$.
+**Enunciado:** Sea $A$ un conjunto no vacío arbitrario. Demostrar que el conjunto de las partes $\mathcal{P}(A)$ es equipotente al conjunto de aplicaciones $\{0, 1\}^A = \mathcal{F}(A, \{0, 1\})$.
 
 - **Demostración Paso a Paso (Examen de Desarrollo UNED):**
     
     1. **Construcción de la Aplicación:**  
-        Definimos la aplicación $\Phi: \mathcal{P}(A) \to {0, 1}^A$ asignando a cada subconjunto $B \in \mathcal{P}(A)$ su **función característica $\chi_B: A \to {0, 1}$**: $$\Phi(B) = \chi_B \quad \text{donde } \chi_B(x) = \begin{cases} 1 & \text{si } x \in B \ 0 & \text{si } x \notin B \end{cases}$$
+        Definimos la aplicación $\Phi: \mathcal{P}(A) \to \{0, 1\}^A$ asignando a cada subconjunto $B \in \mathcal{P}(A)$ su **función característica $\chi_B: A \to \{0, 1\}$**: $$\Phi(B) = \chi_B \quad \text{donde } \chi_B(x) = \begin{cases} 1 & \text{si } x \in B \\ 0 & \text{si } x \notin B \end{cases}$$
         
     2. **Inyectividad de $\Phi$:**  
         Sean $B_1, B_2 \in \mathcal{P}(A)$ tales que $\Phi(B_1) = \Phi(B_2) \implies \chi_{B_1} = \chi_{B_2}$.  
@@ -85,9 +85,9 @@ En el examen de desarrollo de la UNED, para demostrar que dos conjuntos tienen e
         Por el Axioma de Extensionalidad, $B_1 = B_2$. **$\Phi$ es inyectiva**.
         
     3. **Sobreyectividad de $\Phi$:**  
-        Dada una aplicación arbitraria $f \in {0, 1}^A$, definimos el subconjunto antecedente $B_f \in \mathcal{P}(A)$ por: $$B_f = {x \in A \mid f(x) = 1}$$ Es evidente por definición que $\chi_{B_f}(x) = f(x)$ para todo $x \in A$, de donde $\Phi(B_f) = f$. **$\Phi$ es sobreyectiva**.
+        Dada una aplicación arbitraria $f \in \{0, 1\}^A$, definimos el subconjunto antecedente $B_f \in \mathcal{P}(A)$ por: $$B_f = \{x \in A \mid f(x) = 1\}$$ Es evidente por definición que $\chi_{B_f}(x) = f(x)$ para todo $x \in A$, de donde $\Phi(B_f) = f$. **$\Phi$ es sobreyectiva**.
         
-    4. **Conclusión:** La aplicación $\Phi$ es biyectiva, luego **$\mathcal{P}(A) \approx {0, 1}^A$** y **$\text{card}(\mathcal{P}(A)) = 2^{\text{card}(A)}$**. $\blacksquare$
+    4. **Conclusión:** La aplicación $\Phi$ es biyectiva, luego **$\mathcal{P}(A) \approx \{0, 1\}^A$** y **$\text{card}(\mathcal{P}(A)) = 2^{\text{card}(A)}$**. $\blacksquare$
         
 
 ---
@@ -100,10 +100,66 @@ A partir de la lista de ejercicios prioritarios seleccionados por la **Guía Com
 2. **Ejercicio 2 del Capítulo 3:** Demostrar que para cualesquiera dos conjuntos $A$ y $B$, el producto cartesiano $A \times B$ es equipotente a $B \times A$ exhibiendo la biyección explícita $f(a, b) = (b, a)$.
 
 ---
+#### Solución ejercicio 1
 
+1. **Hipótesis e Inicios:** Al ser $A \approx C$ y $B \approx D$, existen dos aplicaciones biyectivas: $$f: A \to C \quad \text{y} \quad g: B \to D$$
+2. **Construcción y Buena Definición de** $h$**:** Como $A \cap B = \varnothing$, para todo $x \in A \cup B$ se cumple que $x \in A$ o $x \in B$ de forma exclusiva. Por tanto, podemos definir la aplicación por ramas: $$h(x) = \begin{cases} f(x) & \text{si } x \in A \\ g(x) & \text{si } x \in B \end{cases}$$ Al no haber elementos en común entre $A$ y $B$, no hay ambigüedad y la función $h$ está **bien definida**.
+3. **Inyectividad:** Sean $x, x' \in A \cup B$ tales que $h(x) = h(x')$. Como $C \cap D = \varnothing$, la imagen común $h(x) = h(x')$ o bien pertenece a $C$, o bien a $D$:
+    - Si $h(x) \in C$, los antecedentes provienen de $A$, luego $f(x) = f(x')$. Como $f$ **es inyectiva**, $x = x'$.
+    - Si $h(x) \in D$, los antecedentes provienen de $B$, luego $g(x) = g(x')$. Como $g$ **es inyectiva**, $x = x'$. Por tanto, $h$ **es inyectiva**.
+4. **Sobreyectividad:** Sea $y \in C \cup D$. Por ser $C \cap D = \varnothing$:
+    - Si $y \in C$, como $f$ **es sobreyectiva**, existe un antecedente $x \in A$ tal que $h(x) = f(x) = y$.
+    - Si $y \in D$, como $g$ **es sobreyectiva**, existe un antecedente $x \in B$ tal que $h(x) = g(x) = y$. Por tanto, todo elemento de $C \cup D$ tiene antecedente en $A \cup B$, luego $h$ **es sobreyectiva**.
+5. **Conclusión:** Al ser $h$ biyectiva, concluimos que $(A \cup B) \approx (C \cup D)$. $\quad \blacksquare$
+
+#### Solución ejercicio 2
+
+**Enunciado:** Demostrar que para cualesquiera dos conjuntos $A$ y $B$, se cumple $A \times B \approx B \times A$.
+
+---
+
+**1. Definición de la Aplicación y Buena Definición**
+
+Consideramos la aplicación: $$f: A \times B \longrightarrow B \times A$$ $$f(a, b) = (b, a)$$
+
+- **Buena definición:** Para todo $(a, b) \in A \times B$, se tiene $a \in A$ y $b \in B$. Por la definición de producto cartesiano, el par $(b, a)$ pertenece a $B \times A$. Por tanto, la imagen cae en el codominio correcto y la función está bien definida.
+
+_(Nota de rigor: Si_ $A = \varnothing$ _o_ $B = \varnothing$_, entonces_ $A \times B = \varnothing$ _y_ $B \times A = \varnothing$_. La única relación posible es la aplicación vacía_ $f_{\varnothing}: \varnothing \to \varnothing$_, que es biyectiva por verdad vacua, concluyendo directamente_ $\varnothing \approx \varnothing$_)._
+
+---
+
+**2. Demostración de Inyectividad**
+
+Sean $(a_1, b_1), (a_2, b_2) \in A \times B$ dos elementos tales que sus imágenes por $f$ coinciden: $$f(a_1, b_1) = f(a_2, b_2)$$
+
+1. Por la definición por la que actúa la función $f$, esto equivale a: $$(b_1, a_1) = (b_2, a_2)$$
+2. Por la propiedad de **igualdad de pares ordenados**, dos pares son iguales si y solo si lo son sus componentes término a término: $$b_1 = b_2 \quad \text{y} \quad a_1 = a_2$$
+3. Reorganizando ambas igualdades, obtenemos: $$a_1 = a_2 \quad \text{y} \quad b_1 = b_2 \implies (a_1, b_1) = (a_2, b_2)$$
+
+Por lo tanto, $f(a_1, b_1) = f(a_2, b_2) \implies (a_1, b_1) = (a_2, b_2)$, lo que demuestra formalmente que $f$ **es inyectiva**.
+
+---
+
+**3. Demostración de Sobreyectividad**
+
+Sea $(y, x) \in B \times A$ un elemento arbitrario del codominio.
+
+1. Por definición de producto cartesiano $B \times A$, se cumple que $y \in B$ y $x \in A$.
+2. Por tanto, el par $(x, y)$ pertenece al dominio $A \times B$.
+3. Evaluando la función $f$ sobre este elemento antecedente: $$f(x, y) = (y, x)$$
+
+Dado que para todo elemento $(y, x) \in B \times A$ hemos exhibido un antecedente $(x, y) \in A \times B$ cuya imagen es $(y, x)$, concluimos que $f$ **es sobreyectiva**.
+
+---
+
+**4. Conclusión**
+
+Al ser $f: A \times B \longrightarrow B \times A$ una aplicación inyectiva y sobreyectiva, $f$ es una **biyección**, lo que demuestra por definición de equipotencia que: $$A \times B \approx B \times A$$
+
+$$\quad \blacksquare$$
 ### **4. Pregunta de Autoevaluación (Estilo PEC)**
 
-**Enunciado:** Queremos demostrar que el intervalo cerrado  es equipotente al intervalo abierto $(0, 1)$. Si construimos las aplicaciones $g: (0, 1) \to$ dada por $g(x) = x$ y $f: \ \to (0, 1)$ dada por $f(x) = \frac{x+1}{3}$, ¿qué teorema permite concluir la equipotencia sin necesidad de construir la biyección explícita?
+**Enunciado:** Queremos demostrar que el intervalo cerrado $[0,1]$ es equipotente al intervalo abierto $(0, 1)$. Si construimos las aplicaciones $g: (0, 1) \to [0,1]$ dada por $g(x) = x$ y $f:[0,1] \to (0, 1)$ dada por $f(x) = \frac{x+1}{3}$, ¿qué teorema permite concluir la equipotencia sin necesidad de construir la biyección explícita?
 
 - **A)** El Teorema de Cantor-Bernstein-Schröder, porque $f$ y $g$ son aplicaciones inyectivas en ambos sentidos.
 - **B)** El Teorema de Bolzano-Weierstrass sobre compacidad de intervalos en $\mathbb{R}$.

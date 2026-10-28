@@ -63,7 +63,7 @@ Una aplicación $f: A \to B$ admite **aplicación inversa** $f^{-1}: B \to A$ si
         - Es evidente que las expresiones algebraicas y los dominios difieren, por lo que **$g \circ f \neq f \circ g$**.
 
 - Imagen de la función f(x)
-![[Sesión33_2_1_f.png]]
+![[Sesión33_Composición_de_aplicaciones_2_1_f.png]]
 ---
 
 #### **Ejercicio 2: Prueba de Biyectividad y Cálculo de la Función Inversa**
