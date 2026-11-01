@@ -1,0 +1,14 @@
+Notebook[{Cell[
+CellGroupData[{Cell[
+BoxData[RowBox[{"FiniteGroupData","[",RowBox[
+{RowBox[{"{",RowBox[{"\"SymmetricGroup\"",","," ","3"}],"}"}],","," ","\"CayleyTable\""}],"]"}]],
+"Input",CellLabel -> "In[1]:= ",ExpressionUUID -> "6335d687-8444-4fa4-89de-58608d66add3"],Cell[
+BoxData[
+RowBox[{"{",RowBox[{RowBox[{"{",RowBox[{"1",",","2",",","3",",","4",",","5",",","6"}],"}"}],",",RowBox[
+{"{",RowBox[{"2",",","1",",","5",",","6",",","3",",","4"}],"}"}],",",RowBox[{"{",RowBox[
+{"3",",","4",",","1",",","2",",","6",",","5"}],"}"}],",",RowBox[{"{",RowBox[{"4",",","3",",","6",",","5",",","1",",","2"}],"}"}],",",RowBox[
+{"{",RowBox[{"5",",","6",",","2",",","1",",","4",",","3"}],"}"}],",",RowBox[{"{",RowBox[
+{"6",",","5",",","4",",","3",",","2",",","1"}],"}"}]}],"}"}],StandardForm],"Output",
+CellLabel -> "Out[1]= ",ExpressionUUID -> "e514b010-a45a-4b30-98a1-af5a89e4f8e5"]},
+Open],ExpressionUUID -> "654f0e90-2c73-49fc-a7a3-10052688d36e"]},StyleDefinitions -> "Default.nb",
+FrontEndVersion -> "15. for Wolfram Cloud 1.77.1 (August 27, 2026)"]

@@ -27,7 +27,5 @@ con la condición crucial de que **$0 \le r < b$**.
 
 ---
 **Material de apoyo generado:**
-*   **Presentación:** Una guía visual con las definiciones clave y ejemplos del algoritmo.
-![[Sesión01_Introducción_a_la_matemática_discreta_y_el_concepto_de_procesos_finitos. Definición_del_algoritmo_de_la_división_en_los_enteros.pptx]]
-*   **Resumen de audio:**: Un repaso rápido de 5 minutos sobre la importancia de lo discreto y la mecánica de la división.
-![[Sesión01_Introducción_a_la_matemática_discreta_y_el_concepto_de_procesos_finitos. Definición_del_algoritmo_de_la_división_en_los_enteros.m4a]]
+*   [**Presentación**](Presentaciones/Sesión01_Introducción_a_la_matemática_discreta.pptx): Una guía visual con las definiciones clave y ejemplos del algoritmo.
+*   [**Resumen de audio**](Audios/Sesión01_Introducción_a_la_matemática_discreta.m4a): Un repaso rápido de 5 minutos sobre la importancia de lo discreto y la mecánica de la división.

@@ -1,13 +1,13 @@
-![[Sesión03_Cálculo_del_MCD_e_Identidad_de_Bézout.pptx]]Para esta **Sesión 3 (Práctica)**, nos centraremos en la aplicación real del **Algoritmo de Euclides** y, fundamentalmente, en la **Identidad de Bézout**, que permite expresar el máximo común divisor (MCD) como una combinación lineal de los números originales.
+Para esta **Sesión 3 (Práctica)**, nos centraremos en la aplicación real del **Algoritmo de Euclides** y, fundamentalmente, en la **Identidad de Bézout**, que permite expresar el máximo común divisor (MCD) como una combinación lineal de los números originales.
 
 ---
-### Sesión 3: Cálculo del MCD e Identidad de Bézout
+# Sesión 3: Cálculo del MCD e Identidad de Bézout
 
-#### 1. La Identidad de Bézout: El Teorema
+## 1. La Identidad de Bézout: El Teorema
 
 El teorema fundamental establece que si $d = m.c.d.(a, b)$, entonces existen dos números enteros $x$ e $y$ tales que se cumple la igualdad: $$ax + by = d$$ Este valor $d$ es el entero positivo más pequeño que puede expresarse en esta forma de combinación lineal.
 
-#### 2. Procedimiento Práctico (Sustitución Inversa)
+## 2. Procedimiento Práctico (Sustitución Inversa)
 
 Para encontrar los coeficientes $x$ e $y$, seguimos estos pasos basados en los ejemplos de la UNED:
 
@@ -15,7 +15,7 @@ Para encontrar los coeficientes $x$ e $y$, seguimos estos pasos basados en los e
 2. **Fase Inversa:** Despejamos el resto de cada una de las ecuaciones de la fase directa.
 3. **Sustitución:** Sustituimos sucesivamente los restos anteriores en la ecuación del MCD hasta que solo queden los términos $a$ y $b$.
 
-#### 3. Ejemplo Detallado: $m.c.d.(3120, 270)$
+## 3. Ejemplo Detallado: $m.c.d.(3120, 270)$
 
 Siguiendo el esquema de la bibliografía básica:
 
@@ -32,9 +32,7 @@ Siguiendo el esquema de la bibliografía básica:
 
 ---
 
-### Materiales Generados
+## Materiales de apoyo
 
-- **Podcast de Sesión:** He creado un audio en formato de conversación entre dos expertos que analizan la importancia de esta identidad en la resolución de ecuaciones diofánticas y su mecánica paso a paso.
-![[Sesión03_Cálculo_del_MCD_e_Identidad_de_Bézout.m4a]]
-- **Presentación (Slide Deck):** Una guía visual que resume los pasos del algoritmo y presenta ejemplos resueltos de cálculo de MCD y combinaciones lineales.
-![[Sesión03_Cálculo_del_MCD_e_Identidad_de_Bézout.pptx]]
+- [**Presentación**](Presentaciones/Sesión03_Cálculo_del_MCD_e_Identidad_de_Bézout.pptx): Una guía visual que resume los pasos del algoritmo y presenta ejemplos resueltos de cálculo de MCD y combinaciones lineales.
+- [**Resumen de audio**](Audios/Sesión03_Cálculo_del_MCD_e_Identidad_de_Bézout.m4a): He creado un audio en formato de conversación entre dos expertos que analizan la importancia de esta identidad en la resolución de ecuaciones diofánticas y su mecánica paso a paso.
