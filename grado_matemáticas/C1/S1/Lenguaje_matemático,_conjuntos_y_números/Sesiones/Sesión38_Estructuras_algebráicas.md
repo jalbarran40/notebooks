@@ -54,7 +54,7 @@ $$\exists e \in E \text{ tal que } \forall a \in E, \quad a * e = e * a = a$$
 
 #### **Proposición 4.5 (Unicidad del Elemento Neutro)**
 
-_Si existe elemento neutro $e \in E$ para una operación interna $_$, este es **único**.*
+_Si existe elemento neutro $e \in E$ para una operación interna $*$, este es **único**.*
 
 - **Demostración Analítica Paso a Paso (Estándar UNED):**
     1. Supongamos por contradicción que existen dos elementos neutros $e, e' \in E$ para la operación $*$.
@@ -90,16 +90,16 @@ _Sea $_$ una operación interna **asociativa** en $E$ con elemento neutro $e \in
 
 ### **4. Batería de Ejemplos Emblemáticos del Texto Base (Delgado Pineda & Muñoz Bouzo)**
 
-|Conjunto $E$|Operación $*$|¿Asociativa?|¿Conmutativa?|Elemento Neutro $e$|Elementos con Simétrico $a'$|
-|:--|:--|:-:|:-:|:-:|:-:|
-|$\mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{R}$|Suma usual $+$|Sí|Sí|$0$|En $\mathbb{N}$: solo $0$. En $\mathbb{Z}, \mathbb{Q}, \mathbb{R}$: todos ($-a$).|
-|$\mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{R}$|Producto usual $\cdot$|Sí|Sí|$1$|En $\mathbb{Z}$: solo $1$ y $-1$. En $\mathbb{Q}^*, \mathbb{R}^*$: todos ($1/a$).|
-|$\mathbb{Z}, \mathbb{R}$|Resta $-$|**No** $(9-5)-1 \neq 9-(5-1)$|**No**|**No existe**|No aplica.|
-|$\mathcal{P}(\Omega)$|Intersección $\cap$|Sí|Sí|$\Omega$ (Universo)|Solo $\Omega$ (su simétrico es $\Omega$).|
-|$\mathcal{P}(\Omega)$|Unión $\cup$|Sí|Sí|$\varnothing$ (Vacío)|Solo $\varnothing$ (su simétrico es $\varnothing$).|
-|$\mathcal{P}(\Omega)$|Diferencia simétrica $\Delta$|Sí|Sí|$\varnothing$|**Todos** (cada conjunto es su propio simétrico: $A \Delta A = \varnothing$).|
-|$\mathcal{F}(\Omega)$|Composición $\circ$|Sí|**No**|$I_\Omega$ (Identidad)|Únicamente las **aplicaciones biyectivas** ($f^{-1}$).|
-|$M_n(\mathbb{R})$|Producto matricial|Sí|**No**|$I_n$ (Matriz Identidad)|Únicamente las **matrices invertibles** ($\det(A) \neq 0$).|
+| Conjunto $E$                                     | Operación $*$                 |         ¿Asociativa?          | ¿Conmutativa? |   Elemento Neutro $e$    |                           Elementos con Simétrico $a'$                            |
+| :----------------------------------------------- | :---------------------------- | :---------------------------: | :-----------: | :----------------------: | :-------------------------------------------------------------------------------: |
+| $\mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{R}$ | Suma usual $+$                |              Sí               |      Sí       |           $0$            | En $\mathbb{N}$: solo $0$. En $\mathbb{Z}, \mathbb{Q}, \mathbb{R}$: todos ($-a$). |
+| $\mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{R}$ | Producto usual $\cdot$        |              Sí               |      Sí       |           $1$            | En $\mathbb{Z}$: solo $1$ y $-1$. En $\mathbb{Q}^*, \mathbb{R}^*$: todos ($1/a$). |
+| $\mathbb{Z}, \mathbb{R}$                         | Resta $-$                     | **No** $(9-5)-1 \neq 9-(5-1)$ |    **No**     |      **No existe**       |                                    No aplica.                                     |
+| $\mathcal{P}(\Omega)$                            | Intersección $\cap$           |              Sí               |      Sí       |   $\Omega$ (Universo)    |                     Solo $\Omega$ (su simétrico es $\Omega$).                     |
+| $\mathcal{P}(\Omega)$                            | Unión $\cup$                  |              Sí               |      Sí       |  $\varnothing$ (Vacío)   |                Solo $\varnothing$ (su simétrico es $\varnothing$).                |
+| $\mathcal{P}(\Omega)$                            | Diferencia simétrica $\Delta$ |              Sí               |      Sí       |      $\varnothing$       |   **Todos** (cada conjunto es su propio simétrico: $A \Delta A = \varnothing$).   |
+| $\mathcal{F}(\Omega)$                            | Composición $\circ$           |              Sí               |    **No**     |  $I_\Omega$ (Identidad)  |              Únicamente las **aplicaciones biyectivas** ($f^{-1}$).               |
+| $M_n(\mathbb{R})$                                | Producto matricial            |              Sí               |    **No**     | $I_n$ (Matriz Identidad) |            Únicamente las **matrices invertibles** ($\det(A) \neq 0$).            |
 
 ---
 

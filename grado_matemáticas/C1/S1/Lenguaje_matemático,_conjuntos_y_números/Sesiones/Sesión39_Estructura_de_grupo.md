@@ -6,45 +6,45 @@
 
 ---
 
-### **1. Marco Teórico: Definición Axiomática de Grupo**
+## **1. Marco Teórico: Definición Axiomática de Grupo**
 
-#### **A. Definición de Grupo**
+### **A. Definición de Grupo**
 
-Un conjunto no vacío $G$ dotado de una operación interna $*: G \times G \to G$ tiene **estructura de grupo** (o el par $(G, _)$ es un **grupo**) si y solo si la operación $_$ satisface las siguientes tres propiedades axiomáticas:
+Un conjunto no vacío $G$ dotado de una operación interna $*: G \times G \to G$ tiene **estructura de grupo** (o el par $(G, *)$ es un **grupo**) si y solo si la operación $*$ satisface las siguientes tres propiedades axiomáticas:
 
-1. **Axioma (G1) — Asociatividad:** \[\forall a, b, c \in G, \quad (a * b) * c = a * (b * c)\]
+1. **Axioma (G1) — Asociatividad:** $$\forall a, b, c \in G, \quad (a * b) * c = a * (b * c)$$
 2. **Axioma (G2) — Existencia de Elemento Neutro:**  
-    Existe un elemento $e \in G$ tal que operado con cualquier elemento de $G$ por la izquierda y por la derecha lo deja invariable: \[\exists e \in G \text{ tal que } \forall a \in G, \quad a * e = e * a = a\]
+    Existe un elemento $e \in G$ tal que operado con cualquier elemento de $G$ por la izquierda y por la derecha lo deja invariable: $$\exists e \in G \text{ tal que } \forall a \in G, \quad a * e = e * a = a$$
 3. **Axioma (G3) — Existencia de Elemento Simétrico (o Inverso):**  
-    Para todo elemento $a \in G$, existe un elemento $a' \in G$ tal que al operarlos da como resultado el elemento neutro: \[\forall a \in G, \quad \exists a' \in G \text{ tal que } a * a' = a' * a = e\]
+    Para todo elemento $a \in G$, existe un elemento $a' \in G$ tal que al operarlos da como resultado el elemento neutro: $$\forall a \in G, \quad \exists a' \in G \text{ tal que } a * a' = a' * a = e$$
 
 ---
 
-#### **B. Grupo Conmutativo o Abeliano**
+### **B. Grupo Conmutativo o Abeliano**
 
 Un grupo $(G, *)$ es un **grupo conmutativo** (o **grupo abeliano**, en honor al matemático Niels Henrik Abel) si la operación interna satisface además el axioma de conmutatividad:
 
-\[\forall a, b \in G, \quad a * b = b * a\]
+$$\forall a, b \in G, \quad a * b = b * a$$
 
 - **Notación Aditiva:** Cuando la operación del grupo es conmutativa y se denota por $+$, el neutro se simboliza por $0$, el simétrico de $a$ por $-a$ (opuesto), y el producto compuesto $a + (-b)$ se escribe sencillamente $a - b$.
 - **Notación Multiplicativa:** Cuando la operación se denota por $\cdot$, el neutro se simboliza por $1$ o $e$, y el simétrico de $a$ por $a^{-1}$ (inverso).
 
 ---
 
-### **2. Propiedades Fundamentales Derivadas en un Grupo**
+## **2. Propiedades Fundamentales Derivadas en un Grupo**
 
 Sea $(G, *)$ un grupo de elemento neutro $e \in G$.
 
-#### **Proposición 4.12 / 3.2.2 (Propiedades Básicas de los Grupos):**
+### **Proposición 4.12 / 3.2.2 (Propiedades Básicas de los Grupos):**
 
 1. **Propiedad Cancelativa (o de Simplificación):**  
-    _Para cualesquiera $a, b, c \in G$:_ \[a * b = a * c \implies b = c \quad (\text{cancelación por la izquierda})\] \[b * a = c * a \implies b = c \quad (\text{cancelación por la derecha})\]
+    _Para cualesquiera $a, b, c \in G$:_ $$a * b = a * c \implies b = c \quad (\text{cancelación por la izquierda})$$ $$b * a = c * a \implies b = c \quad (\text{cancelación por la derecha})$$
     
     - **Demostración Analítica Paso a Paso (Estándar UNED):**
         1. Sea $a * b = a * c$. Dado que $G$ es un grupo, existe el simétrico $a^{-1} \in G$.
-        2. Componemos a la izquierda por $a^{-1}$: \[a^{-1} * (a * b) = a^{-1} * (a * c)\]
-        3. Aplicando la propiedad **asociativa (G1)**: \[(a^{-1} * a) * b = (a^{-1} * a) * c\]
-        4. Por la definición de **elemento simétrico (G3)**, $a^{-1} * a = e$: \[e * b = e * c\]
+        2. Componemos a la izquierda por $a^{-1}$: $$a^{-1} * (a * b) = a^{-1} * (a * c)$$
+        3. Aplicando la propiedad **asociativa (G1)**: $$(a^{-1} * a) * b = (a^{-1} * a) * c$$
+        4. Por la definición de **elemento simétrico (G3)**, $a^{-1} * a = e$: $$e * b = e * c$$
         5. Por la definición de **elemento neutro (G2)**, $e * b = b$ y $e * c = c$, de donde obtenemos **$b = c$**. $\blacksquare$
 
 ---
@@ -54,31 +54,34 @@ Sea $(G, *)$ un grupo de elemento neutro $e \in G$.
     
     - **Demostración Analítica:**
         - **Existencia:** Tomamos $x = a^{-1} * b \in G$. Sustituyendo:  
-            \[a * (a^{-1} * b) = (a * a^{-1}) * b = e * b = b\]
+            $$a * (a^{-1} * b) = (a * a^{-1}) * b = e * b = b$$
         - **Unicidad:** Si existieran dos soluciones $x_1, x_2 \in G$, tendríamos $a * x_1 = b$ y $a * x_2 = b \implies a * x_1 = a * x_2$. Por la propiedad cancelativa por la izquierda, **$x_1 = x_2$**. $\blacksquare$
 
 ---
 
 3. **Inverso del Producto (Simétrico de la Composición):**  
-    _Para todo $a, b \in G$, el simétrico del elemento compuesto $a * b$ invierte el orden de los simétricos:_ \[(a * b)^{-1} = b^{-1} * a^{-1}\]
+    _Para todo $a, b \in G$, el simétrico del elemento compuesto $a * b$ invierte el orden de los simétricos:_ $$(a * b)^{-1} = b^{-1} * a^{-1}$$
     
     - **Demostración Analítica:**  
-        Operamos $(a * b)$ con $(b^{-1} * a^{-1})$ usando la propiedad **asociativa**: \[(a * b) * (b^{-1} * a^{-1}) = a * (b * b^{-1}) * a^{-1} = a * e * a^{-1} = a * a^{-1} = e\] De igual forma: \[(b^{-1} * a^{-1}) * (a * b) = b^{-1} * (a^{-1} * a) * b = b^{-1} * e * b = b^{-1} * b = e\] Por la unicidad del elemento simétrico, concluimos que **$(a * b)^{-1} = b^{-1} * a^{-1}$**. $\blacksquare$
-3. **Involutividad del Simétrico:** $(a^{-1})^{-1} = a$ para todo $a \in G$.
+        Operamos $(a * b)$ con $(b^{-1} * a^{-1})$ usando la propiedad **asociativa**: $$(a * b) * (b^{-1} * a^{-1}) = a * (b * b^{-1}) * a^{-1} = a * e * a^{-1} = a * a^{-1} = e$$ De igual forma: $$(b^{-1} * a^{-1}) * (a * b) = b^{-1} * (a^{-1} * a) * b = b^{-1} * e * b = b^{-1} * b = e$$ Por la unicidad del elemento simétrico, concluimos que **$(a * b)^{-1} = b^{-1} * a^{-1}$**. $\blacksquare$
+
+---
+
+4. **Involutividad del Simétrico:** $(a^{-1})^{-1} = a$ para todo $a \in G$.
     
 
 ---
 
-### **3. Catálogo de Ejemplos Emblemáticos del Texto Base**
+## **3. Catálogo de Ejemplos Emblemáticos del Texto Base**
 
-#### **A. Grupos Abelianos (Conmutativos)**
+### **A. Grupos Abelianos (Conmutativos)**
 
 1. **Estructuras Numéricas Aditivas:**  
     $(\mathbb{Z}, +)$, $(\mathbb{Q}, +)$, $(\mathbb{R}, +)$ y $(\mathbb{C}, +)$ son grupos abelianos respecto de la suma usual.
     - Elemento neutro: $0$.
     - Simétrico de $a$: el opuesto $-a$.
 2. **Estructuras Numéricas Multiplicativas (sin el cero):**  
-    $(\mathbb{Q}^*, \cdot)$, $(\mathbb{R}^*, \cdot)$ y $(\mathbb{C}^*, \cdot)$ (donde $K^* = K \setminus {0}$) son grupos abelianos respecto del producto usual.
+    $(\mathbb{Q}^*, \cdot)$, $(\mathbb{R}^*, \cdot)$ y $(\mathbb{C}^*, \cdot)$ (donde $K^* = K \setminus \{0\}$) son grupos abelianos respecto del producto usual.
     - Elemento neutro: $1$.
     - Simétrico de $a$: el inverso $a^{-1} = \frac{1}{a}$.
 3. **Grupo Conjuntista de la Diferencia Simétrica $(\mathcal{P}(\Omega), \Delta)$:**  
@@ -90,7 +93,7 @@ Sea $(G, *)$ un grupo de elemento neutro $e \in G$.
 
 ---
 
-#### **B. Grupos NO Abelianos (No Conmutativos)**
+### **B. Grupos NO Abelianos (No Conmutativos)**
 
 1. **Grupo General Lineal $(GL_n(\mathbb{R}), \cdot)$:**  
     El conjunto de matrices cuadradas reales de orden $n$ con determinante no nulo ($GL_n(\mathbb{R}) = {A \in M_n(\mathbb{R}) \mid \det(A) \neq 0}$) con el producto matricial es un **grupo no abeliano** (para $n \ge 2$).
@@ -103,7 +106,7 @@ Sea $(G, *)$ un grupo de elemento neutro $e \in G$.
 
 ---
 
-#### **C. Estructuras que NO Tienen Estructura de Grupo**
+### **C. Estructuras que NO Tienen Estructura de Grupo**
 
 1. **$(\mathbb{N}, +)$:** La suma es interna y asociativa, el neutro es $0$, pero ningún elemento $a > 0$ posee opuesto en $\mathbb{N}$.
 2. **$(\mathbb{R}, \cdot)$:** El producto es interno, asociativo y con neutro $1$, pero **el número $0$ no posee inverso multiplicativo** (no existe $x \in \mathbb{R}$ tal que $0 \cdot x = 1$).
@@ -111,16 +114,74 @@ Sea $(G, *)$ un grupo de elemento neutro $e \in G$.
 
 ---
 
-### **4. Ejercicios Propuestos para Trabajo Personal (45 min)**
+## **4. Ejercicios Propuestos para Trabajo Personal (45 min)**
 
-1. **Ejercicio 1:** En el conjunto $G = \mathbb{R} \setminus {-1}$, se define la operación interna $a * b = a + b + ab$.  
+1. **Ejercicio 1:** En el conjunto $G = \mathbb{R} \setminus \{-1\}$, se define la operación interna $a * b = a + b + ab$.  
     a) Probar que $*$ es una ley de composición interna en $G$.  
     b) Demostrar que $(G, *)$ es un grupo abeliano indicando explícitamente su elemento neutro y el inverso de un elemento genérico $a \in G$ _(Solución: $e = 0$, $a^{-1} = \frac{-a}{1+a}$)_.
 2. **Ejercicio 2 (Ejercicio 4.10 del texto base):** Demostrar que en todo grupo $(G, *)$, si se cumple que $x^2 = x * x = e$ para todo $x \in G$, entonces el grupo es obligatoriamente **abeliano** _(Indicación: Usar que $x^{-1} = x$ y aplicar la fórmula del inverso del producto)_.
 
+### Solución ejercicio 2: **Demostración Formal (Ejercicio 4.10 del Texto Base)**
+
+**Hipótesis:** Sea $(G, *)$ un grupo con elemento neutro $e$ tal que para todo $x \in G$ se cumple $x^2 = x * x = e$.  
+**Tesis:** $(G, *)$ es un grupo abeliano (es decir, $\forall a, b \in G, \quad a * b = b * a$).
+
 ---
 
-### **5. Pregunta de Autoevaluación (Estilo PEC)**
+#### **Paso 1: Caracterización de los elementos inversos**
+
+Demostremos primero que en este grupo todo elemento es su propio inverso ($x^{-1} = x$).
+
+Sea $x \in G$ un elemento genérico. Por hipótesis: $$x * x = e$$
+
+Operando a la derecha por $x^{-1}$ en ambos miembros de la igualdad: $$(x * x) * x^{-1} = e * x^{-1}$$
+
+Aplicando la propiedad asociativa en el primer miembro y la propiedad del elemento neutro en el segundo: $$x * (x * x^{-1}) = x^{-1}$$
+
+Como por definición de elemento inverso $x * x^{-1} = e$: $$x * e = x^{-1} \implies x = x^{-1}$$
+
+Por lo tanto, en este grupo todo elemento coincide con su inverso: $$\forall x \in G, \quad x^{-1} = x \quad \text{(Igualdad 1)}$$
+
+---
+
+#### **Paso 2: Aplicación al producto $a * b$**
+
+Sean $a, b \in G$ dos elementos arbitrarios.
+
+1. Por ser $*$ una ley de composición interna, el producto $a * b \in G$.
+    
+2. Aplicando la **Igualdad 1** al elemento $(a * b) \in G$, tenemos: $$(a * b)^{-1} = a * b \quad \text{(Igualdad 2)}$$
+    
+3. Asimismo, aplicando la **Igualdad 1** a los elementos $a \in G$ y $b \in G$ por separado: $$a^{-1} = a \quad \text{y} \quad b^{-1} = b$$
+    
+
+---
+
+#### **Paso 3: Uso de la fórmula del inverso del producto**
+
+Por el Teorema fundamental de la estructura de grupo (Proposición 4.12 del texto base), sabemos que en todo grupo el inverso de un producto es igual al producto de los inversos en orden invertido: $$(a * b)^{-1} = b^{-1} * a^{-1}$$
+
+Sustituyendo en esta expresión los valores obtenidos previamente:
+
+- En el primer miembro, reemplazamos $(a * b)^{-1}$ por $a * b$ (según la **Igualdad 2**).
+- En el segundo miembro, reemplazamos $b^{-1}$ por $b$ y $a^{-1}$ por $a$.
+
+Obtenemos directamente: $$a * b = b * a$$
+
+---
+
+#### **Conclusión**
+
+Como $a * b = b * a$ se satisface para todo par de elementos $a, b \in G$, la operación $*$ es conmutativa y, por consiguiente, $(G, *)$ es un **grupo abeliano**. $\quad \blacksquare$
+
+---
+
+💡 **Nota histórica y curiosidad para tus apuntes:**  
+Un ejemplo clásico de grupo que cumple esta propiedad es el **Grupo de Klein** $V_4 = {e, a, b, c}$ (el grupo de simetrías de un rectángulo), donde todos sus elementos no nulos tienen orden $2$ (cumplen $x^2 = e$) y, por tanto, es un grupo abeliano.
+
+---
+
+## **5. Pregunta de Autoevaluación (Estilo PEC)**
 
 **Enunciado:** Sea $(G, *)$ un grupo arbitrario. Para dos elementos cualesquiera $a, b \in G$, se plantea la resolución de la ecuación $a * x * b = e$, donde $e$ representa el elemento neutro del grupo. ¿Cuál es la única solución $x \in G$ de dicha ecuación?
 
@@ -131,8 +192,8 @@ Sea $(G, *)$ un grupo de elemento neutro $e \in G$.
 > **Solución Explicada:**
 > 
 > - Partimos de la ecuación $a * x * b = e$.
-> - Multiplicamos por la izquierda por el elemento inverso $a^{-1}$: \[a^{-1} * (a * x * b) = a^{-1} * e \implies (a^{-1} * a) * x * b = a^{-1} \implies e * x * b = a^{-1} \implies x * b = a^{-1}\]
-> - Multiplicamos ahora por la derecha por el elemento inverso $b^{-1}$: \[(x * b) * b^{-1} = a^{-1} * b^{-1} \implies x * (b * b^{-1}) = a^{-1} * b^{-1} \implies x * e = a^{-1} * b^{-1} \implies x = a^{-1} * b^{-1}\]
+> - Multiplicamos por la izquierda por el elemento inverso $a^{-1}$: $$a^{-1} * (a * x * b) = a^{-1} * e \implies (a^{-1} * a) * x * b = a^{-1} \implies e * x * b = a^{-1} \implies x * b = a^{-1}$$
+> - Multiplicamos ahora por la derecha por el elemento inverso $b^{-1}$: $$(x * b) * b^{-1} = a^{-1} * b^{-1} \implies x * (b * b^{-1}) = a^{-1} * b^{-1} \implies x * e = a^{-1} * b^{-1} \implies x = a^{-1} * b^{-1}$$
 > - Por lo tanto, la solución única es **$x = a^{-1} * b^{-1}$**.
 > - La opción B sería la inversa de $a * b$, pero para despejar $x$ en la ecuación dada, $a^{-1}$ queda a la izquierda y $b^{-1}$ queda a la derecha.
 > - Por consiguiente, la opción **A** es la **correcta**.

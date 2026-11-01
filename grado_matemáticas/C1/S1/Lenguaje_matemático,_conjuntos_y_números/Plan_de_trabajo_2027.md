@@ -5,7 +5,7 @@
 ### **Aviso sobre la Nueva Forma de Examen y Evaluación (Curso 2026/2027)**
 
 1. **Examen Presencial de Desarrollo:** La prueba presencial final ya **no es un examen tipo test de 10 preguntas**, sino un **examen de desarrollo de 4 preguntas teóricas y/o prácticas** de 120 minutos de duración. Se evaluará el uso correcto del lenguaje matemático, la claridad, la justificación de cada paso y la estructura lógica de los argumentos.
-2. **Prueba de Evaluación Continua (PEC):** Se mantiene como un cuestionario en línea tipo test de 5 preguntas (temas 1 al 6), fijada para el **15 de diciembre**. La nota mínima en el examen presencial para sumar la PEC es de **4,5** y se aplicará la fórmula \(NF = \max(PP, 0,9 \cdot PP + 0,1 \cdot PEC)\) para garantizar que la PEC nunca perjudique la calificación final.
+2. **Prueba de Evaluación Continua (PEC):** Se mantiene como un cuestionario en línea tipo test de 5 preguntas (temas 1 al 6), fijada para el **15 de diciembre**. La nota mínima en el examen presencial para sumar la PEC es de **4,5** y se aplicará la fórmula $NF = \max(PP, 0,9 \cdot PP + 0,1 \cdot PEC)$ para garantizar que la PEC nunca perjudique la calificación final.
 
 ---
 
@@ -58,7 +58,7 @@ _Objetivo: Reconocer relaciones de equivalencia, de orden y propiedades de las a
 - **Sesión 27 (Práctica):** Ejercicios de identificación de clases de equivalencia.
 - **Sesión 28 (Teoría):** Relación de orden: orden parcial y total.
 - **Sesión 29 (Teoría):** Elementos notables de un conjunto ordenado: cotas, supremo, ínfimo, máximos y mínimos.
-- **Sesión 30 (Práctica):** Determinación de supremo e ínfimo en subconjuntos de \(\mathbb{R}\).
+- **Sesión 30 (Práctica):** Determinación de supremo e ínfimo en subconjuntos de $\mathbb{R}$.
 - **Sesión 31 (Teoría):** Aplicaciones entre conjuntos: dominio, imagen e imagen inversa.
 - **Sesión 32 (Teoría):** Tipos de aplicaciones: inyectiva, sobreyectiva y biyectiva.
 - **Sesión 33 (Práctica):** Composición de funciones y cálculo de la función inversa.
@@ -74,7 +74,7 @@ _Objetivo: Reconocer relaciones de equivalencia, de orden y propiedades de las a
 _Objetivo: Conocer nociones mínimas sobre grupos, anillos y cuerpos._
 
 - **Sesión 38 (Teoría):** Operaciones internas: asociatividad, conmutatividad y elementos neutro/simétrico.
-- **Sesión 39 (Teoría):** Estructura de Grupo: definición y ejemplos fundamentales (\(\mathbb{Z}, \mathbb{Q}, \mathbb{R}\) con la suma).
+- **Sesión 39 (Teoría):** Estructura de Grupo: definición y ejemplos fundamentales ($\mathbb{Z}, \mathbb{Q}, \mathbb{R}$ con la suma).
 - **Sesión 40 (Teoría):** Subgrupos y grupos abelianos.
 - **Sesión 41 (Práctica):** Verificación de estructuras de grupo usando WolframAlpha para tablas de operaciones.
 - **Sesión 42 (Teoría):** Homomorfismos de grupos: núcleo e imagen.
@@ -105,7 +105,7 @@ _Objetivo: Manejar los distintos conjuntos numéricos y sus propiedades específ
 - **Sesión 53 (Teoría):** Los números complejos: Definición, parte real e imaginaria.
 - **Sesión 54 (Teoría):** Representación geométrica y forma binómica de los complejos.
 - **Sesión 55 (Teoría):** Forma polar y exponencial. Operaciones en forma polar.
-- **Sesión 56 (Práctica):** Cálculo de raíces \(n\)-ésimas de números complejos con WolframAlpha.
+- **Sesión 56 (Práctica):** Cálculo de raíces $n$-ésimas de números complejos con WolframAlpha.
 - **Sesión 57 (Práctica):** Aplicaciones geométricas de los números complejos.
 
 ---
