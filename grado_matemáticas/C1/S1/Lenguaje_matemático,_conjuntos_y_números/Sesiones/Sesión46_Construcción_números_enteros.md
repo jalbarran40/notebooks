@@ -8,7 +8,7 @@
 
 ### **1. Marco Teórico: Motivación e Insuficiencia de los Números Naturales**
 
-En el semianillo aditivo de los números naturales $(\mathbb{N}, +)$, para cualesquiera dos elementos $a, b \in \mathbb{N}$, podemos plantear la ecuación lineal básica:
+En el semigrupo aditivo (monoide aditivo conmutativo) de los números naturales $(\mathbb{N}, +)$, para cualesquiera dos elementos $a, b \in \mathbb{N}$, podemos plantear la ecuación lineal básica:
 
 $$b + x = a$$
 
@@ -59,13 +59,13 @@ _La relación $\mathcal{E}$ es una **relación de equivalencia** en $\mathbb{N} 
 
 Se define el conjunto de los **números enteros $\mathbb{Z}$** como el conjunto cociente obtenido al clasificar $\mathbb{N} \times \mathbb{N}$ mediante la relación de equivalencia $\mathcal{E}$:
 
-$$\mathbb{Z} = (\mathbb{N} \times \mathbb{N}) / \mathcal{E} = {[(a, b)] \mid (a, b) \in \mathbb{N} \times \mathbb{N}}$$
+$$\mathbb{Z} = (\mathbb{N} \times \mathbb{N}) / \mathcal{E} = \{[(a, b)] \mid (a, b) \in \mathbb{N} \times \mathbb{N}\}$$
 
 #### **B. Interpretación Geométrica de las Clases de Equivalencia**
 
 Si representamos el producto cartesiano $\mathbb{N} \times \mathbb{N}$ como una rejilla de puntos de coordenadas enteras en el plano cartesiano:
 
-- La clase de equivalencia $[(a, b)] = {(x, y) \in \mathbb{N} \times \mathbb{N} \mid x + b = y + a}$ está formada por todos los puntos que pertenecen a la **recta de pendiente 1** paralela a la diagonal principal que pasa por el punto $(a, b)$.
+- La clase de equivalencia $[(a, b)] = \{(x, y) \in \mathbb{N} \times \mathbb{N} \mid x + b = y + a\}$ está formada por todos los puntos que pertenecen a la **recta de pendiente 1** paralela a la diagonal principal que pasa por el punto $(a, b)$.
 
 ```
    y ^
@@ -85,7 +85,7 @@ Para cualquier clase de equivalencia $\alpha = [(a, b)] \in \mathbb{Z}$, existe 
 2. Si $a < b \implies \exists n \in \mathbb{N}^*$ tal que $b = a + n \implies (a, b) \mathcal{E} (0, n)$.  
     La clase se denota abreviadamente por el entero estrictamente negativo **$-n = [(0, n)] \in \mathbb{Z}_-$**.
 
-$$\mathbb{Z} = \mathbb{Z}_+ \cup \mathbb{Z}_- = {\dots, -3, -2, -1, 0, 1, 2, 3, \dots}$$
+$$\mathbb{Z} = \mathbb{Z}_+ \cup \mathbb{Z}_- = \{\dots, -3, -2, -1, 0, 1, 2, 3, \dots\}$$
 
 ---
 
@@ -138,7 +138,7 @@ La aplicación $f: \mathbb{N} \to \mathbb{Z}$ definida por:
 
 $$f(n) = [(n, 0)]$$
 
-es un **monomorfismo inyectivo de semianillos ordenados** que establece un **isomorfismo estructural entre $\mathbb{N}$ y el subconjunto $\mathbb{Z}_+ = {[(m, 0)] \mid m \in \mathbb{N}}$**.
+es un **monomorfismo inyectivo de semianillos ordenados** que establece un **isomorfismo estructural entre $\mathbb{N}$ y el subconjunto $\mathbb{Z}_+ = \{[(m, 0)] \mid m \in \mathbb{N}\}$**.
 
 - **Inyectividad:** $f(n) = f(m) \implies [(n, 0)] = [(m, 0)] \implies n + 0 = m + 0 \implies n = m$.
 - **Conservación de Operaciones:**
@@ -175,6 +175,9 @@ es un **monomorfismo inyectivo de semianillos ordenados** que establece un **iso
 ## Materiales de apoyo
 
 - [**Presentación**](Presentaciones/Sesión46_Construcción_números_enteros.pptx): Maquetada conforme al _AAA_Manual_de_Estilo_Presentaciones_, con la jerarquía del Bloque 5, recuadros normativos para las definiciones axiomáticas, el escape estricto de llaves `\{` y `\}`, la notación oficial `\varnothing` para el conjunto vacío, la representación gráfica de clases en el plano $\mathbb{N} \times \mathbb{N}$, las pruebas de consistencia de operaciones y la pregunta de autoevaluación.
+
+	NOTA: La imagen de la diapositiva 6 tiene mal colocadas las flecha
+
 - [**Resumen de audio**](Audios/Sesión46_Construcción_números_enteros.m4a): Enfocado en la necesidad algebraica de ampliar el semianillo $\mathbb{N}$ para dotar de solución universal a la ecuación $b + x = a$, la formalización de la relación de equivalencia $(a, b) \mathcal{E} (c, d) \iff a + d = b + c$, la interpretación geométrica del conjunto cociente $\mathbb{Z} = (\mathbb{N} \times \mathbb{N})/\mathcal{E}$, la prueba de que la suma y el producto están bien definidos, y el isomorfismo $\mathbb{N} \cong \mathbb{Z}_+$.
 
 ---

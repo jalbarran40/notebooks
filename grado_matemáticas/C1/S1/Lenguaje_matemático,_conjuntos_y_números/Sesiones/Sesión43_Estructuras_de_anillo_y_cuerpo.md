@@ -75,7 +75,7 @@ Un subconjunto no vacío $H \subseteq A$ de un anillo $(A, +, \cdot)$ es un **su
 > 
 > 1. $a - b \in H$ _(asegura que $(H, +)$ es subgrupo aditivo)_.
 > 2. $a \cdot b \in H$ _(asegura clausura respecto del producto)_.
-> 3. Si $A$ es unitario, $1 \in H$.
+> ~~3. Si $A$ es unitario, $1 \in H$~~.
 
 ---
 
@@ -86,7 +86,7 @@ Sea $(A, +, \cdot)$ un anillo conmutativo. Un subconjunto no vacío $I \subseteq
 1. **Subgrupo Aditivo:** $\forall a, b \in I, \quad a - b \in I$.
 2. **Propiedad de Absorción del Producto:** La multiplicación de cualquier elemento del ideal por _cualquier elemento del anillo completo_ vuelve a caer dentro del ideal: $$\forall a \in I, \quad \forall c \in A, \quad a \cdot c \in I$$
 
-- **Ideal Principal (Definición 4.29):** Para un elemento fijo $a \in A$, el conjunto de todos sus múltiplos en $A$ forma un ideal denominado **ideal principal generado por $a$**, denotado por **$(a)$** o **$aA$**: $$(a) = aA = {a \cdot k \mid k \in A}$$
+- **Ideal Principal (Definición 4.29):** Para un elemento fijo $a \in A$, el conjunto de todos sus múltiplos en $A$ forma un ideal denominado **ideal principal generado por $a$**, denotado por **$(a)$** o **$aA$**: $$(a) = aA = \{a \cdot k \mid k \in A\}$$
 
 ---
 
@@ -96,14 +96,14 @@ Sea $(A, +, \cdot)$ un anillo conmutativo. Un subconjunto no vacío $I \subseteq
 
 Un conjunto no vacío $\mathbb{K}$ dotado de dos operaciones internas $+$ y $\cdot$ es un **cuerpo** si es un **anillo conmutativo unitario en el que todo elemento no nulo es invertible respecto del producto**:
 
-$$(\mathbb{K}, +, \cdot) \text{ es un cuerpo} \iff (\mathbb{K}, +, \cdot) \text{ es anillo conmutativo unitario} \quad \land \quad (\forall a \in \mathbb{K} \setminus {0}, \exists a^{-1} \in \mathbb{K})$$
+$$(\mathbb{K}, +, \cdot) \text{ es un cuerpo} \iff (\mathbb{K}, +, \cdot) \text{ es anillo conmutativo unitario} \quad \land \quad (\forall a \in \mathbb{K} \setminus \{0\}, \exists a^{-1} \in \mathbb{K})$$
 
 #### **B. Proposición 4.33 (Caracterización Equivalente de Cuerpo)**
 
 _La terna $(\mathbb{K}, +, \cdot)$ es un **cuerpo** si y solo si:_
 
 1. **$(\mathbb{K}, +)$ es un grupo abeliano** (con neutro $0$).
-2. $(\mathbb{K}^*, \cdot)$ **es un grupo abeliano** (donde $\mathbb{K}^* = \mathbb{K} \setminus {0}$, con neutro $1$).
+2. $(\mathbb{K}^*, \cdot)$ **es un grupo abeliano** (donde $\mathbb{K}^* = \mathbb{K} \setminus \{0\}$, con neutro $1$).
 3. **El producto $\cdot$ es distributivo respecto de la suma $+$**.
 
 > **Propiedad Esencial:** Como todos los elementos no nulos de un cuerpo son invertibles, por la Proposición probada previamente **ningún cuerpo posee divisores de cero**. Todo cuerpo es un **dominio de integridad (anillo íntegro)**.
@@ -116,10 +116,10 @@ _La terna $(\mathbb{K}, +, \cdot)$ es un **cuerpo** si y solo si:_
     Es un **anillo conmutativo unitario íntegro** (sin divisores de cero).
     - **¿Es cuerpo?:** **NO**, porque los únicos elementos invertibles en $\mathbb{Z}$ son $1$ y $-1$ (por ejemplo, $2 \in \mathbb{Z}$ no posee inverso multiplicativo entero).
 2. **Los Cuerpos Numéricos $(\mathbb{Q}, +, \cdot)$, $(\mathbb{R}, +, \cdot)$ y $(\mathbb{C}, +, \cdot)$:**  
-    Son **cuerpos conmutativos** (todo número racional, real o complejo no nulo admite inverso).
+    Son **cuerpos** (todo número racional, real o complejo no nulo admite inverso).
 3. **El Anillo de Restos Módulo $n$ $(\mathbb{Z}/n\mathbb{Z}, +, \cdot)$:**
-    - Si $n$ es un **número primo $p$** (ej. $\mathbb{Z}/3\mathbb{Z} = {,,}$): **es un cuerpo** (cada clase no nula es invertible).
-    - Si $n$ es un **número compuesto** (ej. $\mathbb{Z}/4\mathbb{Z} = {,,,}$): **NO es un cuerpo**, pues contiene divisores de cero (ej. $ \cdot = = $ con $ \neq $).
+    - Si $n$ es un **número primo $p$** (ej. $\mathbb{Z}/3\mathbb{Z} = \{[0],[1],[2]\}$): **es un cuerpo** (cada clase no nula es invertible).
+    - Si $n$ es un **número compuesto** (ej. $\mathbb{Z}/4\mathbb{Z} = \{[0],[1],[2],[3]\}$): **NO es un cuerpo**, pues contiene divisores de cero (ej. $[2] \cdot [2] = [4] = [0]$ con $[2] \neq [0]$).
 4. **El Anillo Conjuntista $(\mathcal{P}(\Omega), \Delta, \cap)$:**  
     Es un **anillo conmutativo unitario** donde la "suma" es la diferencia simétrica $\Delta$ (neutro $\varnothing$) y el "producto" es la intersección $\cap$ (unidad $\Omega$).
     - **Divisores de Cero:** Si $A \subset \Omega$ con $A \neq \varnothing$ y $A \neq \Omega$, tomando su complementario $A^c \neq \varnothing$ tenemos $A \cap A^c = \varnothing$. Por tanto, **posee divisores de cero**.
@@ -130,11 +130,67 @@ _La terna $(\mathbb{K}, +, \cdot)$ es un **cuerpo** si y solo si:_
 
 ### **6. Ejercicios Propuestos para Trabajo Personal (45 min)**
 
-1. **Ejercicio 1 (Ejercicio 4.25 del texto base):** Demostrar que el conjunto $\mathbb{Z}[\sqrt{2}] = {a + b\sqrt{2} \mid a, b \in \mathbb{Z}}$ con la suma y producto usuales de números reales es un **subanillo unitario de $\mathbb{R}$**.
-2. **Ejercicio 2 (Ejercicio 4.26 del libro base):** Probar que para $n \ge 2$, el conjunto de los múltiplos $n\mathbb{Z} = {kn \mid k \in \mathbb{Z}}$ es un subanillo del anillo $\mathbb{Z}$, pero **NO es unitario**.
-3. **Ejercicio 3 (Ejercicio 15 de los ejercicios del Capítulo 4):** Sea $\mathbb{K} = {a + b\sqrt{2} \mid a, b \in \mathbb{Q}}$. Demostrar que $(\mathbb{K}, +, \cdot)$ es un **subcuerpo de $\mathbb{R}$** calculando explícitamente el inverso de cualquier elemento no nulo $a + b\sqrt{2} \neq 0$.
+1. **Ejercicio 1 (Ejercicio 4.25 del texto base):** Demostrar que el conjunto $\mathbb{Z}[\sqrt{2}] = \{a + b\sqrt{2} \mid a, b \in \mathbb{Z}\}$ con la suma y producto usuales de números reales es un **subanillo unitario de $\mathbb{R}$**.
+2. **Ejercicio 2 (Ejercicio 4.26 del libro base):** Probar que para $n \ge 2$, el conjunto de los múltiplos $n\mathbb{Z} = \{kn \mid k \in \mathbb{Z}\}$ es un subanillo del anillo $\mathbb{Z}$, pero **NO es unitario**.
+3. **Ejercicio 3 (Ejercicio 15 de los ejercicios del Capítulo 4):** Sea $\mathbb{K} = \{a + b\sqrt{2} \mid a, b \in \mathbb{Q}\}$. Demostrar que $(\mathbb{K}, +, \cdot)$ es un **subcuerpo de $\mathbb{R}$** calculando explícitamente el inverso de cualquier elemento no nulo $a + b\sqrt{2} \neq 0$.
+
+#### Solución ejercicio 1
+**Enunciado**:** Demostrar que $\mathbb{Z}[\sqrt{2}] = \{a + b\sqrt{2} \mid a, b \in \mathbb{Z}\}$ con la suma y producto usuales de números reales es un **subanillo unitario de** $\mathbb{R}$.
+
+**Demostración:**
+
+1. **Pertenencia y subconjunto no vacío:** Para todo $a, b \in \mathbb{Z} \subset \mathbb{R}$, como $\sqrt{2} \in \mathbb{R}$, la combinación $a + b\sqrt{2} \in \mathbb{R}$. Por tanto, $\mathbb{Z}[\sqrt{2}] \subseteq \mathbb{R}$. Además, $\mathbb{Z}[\sqrt{2}] \neq \varnothing$ pues $0 = 0 + 0\sqrt{2} \in \mathbb{Z}[\sqrt{2}]$.
+2. **Subgrupo aditivo (Resta interna):** Sean $x, y \in \mathbb{Z}[\sqrt{2}]$ con $x = a_1 + a_2\sqrt{2}$ y $y = b_1 + b_2\sqrt{2}$, donde $a_1, a_2, b_1, b_2 \in \mathbb{Z}$. Calculamos la diferencia: $$x - y = (a_1 + a_2\sqrt{2}) - (b_1 + b_2\sqrt{2}) = (a_1 - b_1) + (a_2 - b_2)\sqrt{2}$$ Como $\mathbb{Z}$ es cerrado bajo la resta, $c_1 = (a_1 - b_1) \in \mathbb{Z}$ y $c_2 = (a_2 - b_2) \in \mathbb{Z}$. Luego $x - y = c_1 + c_2\sqrt{2} \in \mathbb{Z}[\sqrt{2}]$.
+3. **Clausura del producto:** Multiplicamos ambos elementos aplicando la propiedad distributiva y asociativa en $\mathbb{R}$: $$x \cdot y = (a_1 + a_2\sqrt{2}) \cdot (b_1 + b_2\sqrt{2}) = a_1 b_1 + a_1 b_2\sqrt{2} + a_2 b_1\sqrt{2} + a_2 b_2 (\sqrt{2})^2$$ $$x \cdot y = (a_1 b_1 + 2 a_2 b_2) + (a_1 b_2 + a_2 b_1)\sqrt{2}$$ Puesto que $a_1, a_2, b_1, b_2 \in \mathbb{Z}$ y el producto y la suma en $\mathbb{Z}$ son internos: $$k_1 = (a_1 b_1 + 2 a_2 b_2) \in \mathbb{Z}, \quad k_2 = (a_1 b_2 + a_2 b_1) \in \mathbb{Z}$$ Por lo tanto, $x \cdot y = k_1 + k_2\sqrt{2} \in \mathbb{Z}[\sqrt{2}]$.
+4. **Carácter unitario:** El neutro del producto en $\mathbb{R}$ es el $1$. Tomando $a = 1 \in \mathbb{Z}$ y $b = 0 \in \mathbb{Z}$: $$1 = 1 + 0\sqrt{2} \in \mathbb{Z}[\sqrt{2}]$$
+Por las condiciones (1), (2), (3) y (4), concluimos que $(\mathbb{Z}[\sqrt{2}], +, \cdot)$ es un **subanillo unitario** del anillo de los números reales $(\mathbb{R}, +, \cdot)$. $\quad \blacksquare$
+
+#### Solución ejercicio 3
+
+**Enunciado:** Sea $\mathbb{K} = \{a + b\sqrt{2} \mid a, b \in \mathbb{Q}\}$. Demostrar que $(\mathbb{K}, +, \cdot)$ es un **subcuerpo de** $\mathbb{R}$ calculando explícitamente el inverso de cualquier elemento no nulo $a + b\sqrt{2} \neq 0$.
+
+**Paso 1: Demostrar que** $\mathbb{K}$ **es un subanillo de** $\mathbb{R}$
+
+Tomamos dos elementos genéricos $x, y \in \mathbb{K}$ tales que $x = a_1 + b_1\sqrt{2}$ e $y = a_2 + b_2\sqrt{2}$, con $a_1, b_1, a_2, b_2 \in \mathbb{Q}$.
+
+1. **Resta interna (**$x - y \in \mathbb{K}$**):** $$x - y = (a_1 - a_2) + (b_1 - b_2)\sqrt{2}$$ Como $\mathbb{Q}$ es un cuerpo (y por tanto subgrupo aditivo), $(a_1 - a_2) \in \mathbb{Q}$ y $(b_1 - b_2) \in \mathbb{Q}$. Luego $x - y \in \mathbb{K}$.
+2. **Producto interno (**$x \cdot y \in \mathbb{K}$**):** $$x \cdot y = (a_1 + b_1\sqrt{2})(a_2 + b_2\sqrt{2}) = (a_1 a_2 + 2b_1 b_2) + (a_1 b_2 + a_2 b_1)\sqrt{2}$$ Como $a_1, b_1, a_2, b_2 \in \mathbb{Q}$, las combinaciones $k_1 = a_1 a_2 + 2b_1 b_2 \in \mathbb{Q}$ y $k_2 = a_1 b_2 + a_2 b_1 \in \mathbb{Q}$. Luego $x \cdot y \in \mathbb{K}$.
 
 ---
+
+**Paso 2: Cálculo explícito del inverso multiplicativo**
+
+Sea $x = a + b\sqrt{2} \in \mathbb{K}$ un elemento no nulo ($x \neq 0$, lo que significa que $a$ y $b$ no son ambos cero). Queremos hallar $x^{-1} \in \mathbb{R}$ y comprobar que pertenece a $\mathbb{K}$.
+
+En $\mathbb{R}$, el inverso de $x$ es: $$x^{-1} = \frac{1}{a + b\sqrt{2}}$$
+
+Racionalizamos multiplicando numerador y denominador por el conjugado $(a - b\sqrt{2})$: $$x^{-1} = \frac{a - b\sqrt{2}}{(a + b\sqrt{2})(a - b\sqrt{2})} = \frac{a - b\sqrt{2}}{a^2 - 2b^2}$$
+
+$$x^{-1} = \left(\frac{a}{a^2 - 2b^2}\right) + \left(\frac{-b}{a^2 - 2b^2}\right)\sqrt{2}$$
+
+---
+
+**Paso 3: Justificación clave de examen (¿Por qué el denominador** $a^2 - 2b^2 \neq 0$**?):**
+
+Para que la expresión anterior esté bien definida, debemos demostrar formalmente que el denominador $a^2 - 2b^2$ nunca se anula para un elemento no nulo $a + b\sqrt{2} \neq 0$.
+
+Razonamos por **reducción al absurdo**:
+
+- Supongamos que $a^2 - 2b^2 = 0 \implies a^2 = 2b^2$.
+- Si $b = 0 \implies a^2 = 0 \implies a = 0$, lo que contradice la hipótesis de que $a + b\sqrt{2} \neq 0$.
+- Si $b \neq 0$, podemos despejar: $$\frac{a^2}{b^2} = 2 \implies \left|\frac{a}{b}\right| = \sqrt{2}$$ Pero como $a, b \in \mathbb{Q}$, esto significaría que $\sqrt{2} \in \mathbb{Q}$ (racional), lo cual es **falso** (puesto que $\sqrt{2}$ es irracional).
+
+Por lo tanto, **necesariamente** $a^2 - 2b^2 \neq 0$.
+
+---
+
+**Conclusión del ejercicio:**
+
+Como $a, b \in \mathbb{Q}$ y $a^2 - 2b^2 \neq 0 \in \mathbb{Q}$, se cumple que: $$a' = \frac{a}{a^2 - 2b^2} \in \mathbb{Q} \quad \text{y} \quad b' = \frac{-b}{a^2 - 2b^2} \in \mathbb{Q}$$
+
+Por lo tanto: $$x^{-1} = a' + b'\sqrt{2} \in \mathbb{K}$$
+ Al ser $\mathbb{K}$ un subanillo de $\mathbb{R}$ y poseer inverso multiplicativo dentro de $\mathbb{K}$ para todo elemento no nulo, concluimos que $(\mathbb{K}, +, \cdot)$ es un **subcuerpo de** $\mathbb{R}$. $\quad \blacksquare$
+
 
 ### **7. Pregunta de Autoevaluación (Estilo PEC)**
 

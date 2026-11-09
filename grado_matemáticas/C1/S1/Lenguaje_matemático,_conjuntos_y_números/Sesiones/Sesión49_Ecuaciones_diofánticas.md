@@ -79,7 +79,7 @@ Una **ecuación diofántica lineal** en dos variables es una ecuación algebraic
 - **Resolución Paso a Paso (Ejemplo F del libro base Dorronsoro & Hernández):**
     
     1. **Planteamiento:**  
-        Sean $x$ la cantidad de cheques de $20 y $y$ la cantidad de cheques de $50. Se exige hallar soluciones **enteras y no negativas** ($x \ge 0, y \ge 0$) de la ecuación: $$20 x + 50 y = 430 \iff 2 x + 5 y = 43$$
+        Sean $x$ la cantidad de cheques de $20 y $y$ la cantidad de cheques de \$50. Se exige hallar soluciones **enteras y no negativas** ($x \ge 0, y \ge 0$) de la ecuación: $$20 x + 50 y = 430 \iff 2 x + 5 y = 43$$
         
     2. **Cálculo del m.c.d. y Solvencia:**  
         $d = \text{mcd}(2, 5) = 1$. Como $1 \mid 43$, existen soluciones.
@@ -95,14 +95,14 @@ Una **ecuación diofántica lineal** en dos variables es una ecuación algebraic
         $$\begin{cases} -86 + 5k \ge 0 \implies 5k \ge 86 \implies k \ge \frac{86}{5} = 17,2 \ 43 - 2k \ge 0 \implies 2k \le 43 \implies k \le \frac{43}{2} = 21,5 \end{cases}$$ Como $k \in \mathbb{Z}$, los únicos valores enteros posibles para $k$ son: **$k \in {18, 19, 20, 21}$**.
         
     6. **Listado de Soluciones Válidas para el Problema:**
-        
     
-    | Valor de $k$ | Cheques de $20 ($x = -86 + 5k$) | Cheques de $50 ($y = 43 - 2k$) | Comprobación ($20x + 50y$) | | :---: | :---: | :---: | :---: | | **$k = 18$** | $x = -86 + 90 = \mathbf{4}$ | $y = 43 - 36 = \mathbf{7}$ | $20(4) + 50(7) = 80 + 350 = 430$ | | **$k = 19$** | $x = -86 + 95 = \mathbf{9}$ | $y = 43 - 38 = \mathbf{5}$ | $20(9) + 50(5) = 180 + 250 = 430$ | | **$k = 20$** | $x = -86 + 100 = \mathbf{14}$ | $y = 43 - 40 = \mathbf{3}$ | $20(14) + 50(3) = 280 + 150 = 430$ | | **$k = 21$** | $x = -86 + 105 = \mathbf{19}$ | $y = 43 - 42 = \mathbf{1}$ | $20(19) + 50(1) = 380 + 50 = 430$ |
-    
-    Existen exactamente **4 combinaciones posibles de cheques**.
-    
-
----
+| Valor de $k$ | Cheques de \$20 ($x = -86 + 5k$) | Cheques de \$50 ($y = 43 - 2k$) | Comprobación ($20x + 50y$)         |
+| ------------ | -------------------------------- | ------------------------------- | ---------------------------------- |
+| **$k = 18$** | $x = -86 + 90 = \mathbf{4}$      | $y = 43 - 36 = \mathbf{7}$      | $20(4) + 50(7) = 80 + 350 = 430$   |
+| **$k = 19$** | $x = -86 + 95 = \mathbf{9}$      | $y = 43 - 38 = \mathbf{5}$      | $20(9) + 50(5) = 180 + 250 = 430$  |
+| **$k = 20$** | $x = -86 + 100 = \mathbf{14}$    | $y = 43 - 40 = \mathbf{3}$      | $20(14) + 50(3) = 280 + 150 = 430$ |
+| **$k = 21$** | $x = -86 + 105 = \mathbf{19}$    | $y = 43 - 42 = \mathbf{1}$      | $20(19) + 50(1) = 380 + 50 = 430$  |
+Existen exactamente **4 combinaciones posibles de cheques**.
 
 ### **3. Ejercicios Propuestos para Trabajo Personal (45 min)**
 
@@ -130,7 +130,7 @@ Una **ecuación diofántica lineal** en dos variables es una ecuación algebraic
 
 ## Material de apoyo
 
-- [**Presentación**](Presentaciones/Sesión49_Cálculo_del_mcd.pptx): Maquetada conforme al _AAA_Manual_de_Estilo_Presentaciones_, con la jerarquía del Bloque 5, recuadros normativos para el Teorema de Solvencia de Ecuaciones Diofánticas, la Identidad de Bézout, el escape estricto de llaves `\{` y `\}`, la notación oficial `\varnothing` para el conjunto vacío, la resolución paso a paso del Algoritmo de Euclides y la pregunta de autoevaluación.
-- [**Resumen de audio**](Audios/Sesión49_Cálculo_del_mcd.m4a): Enfocado en la transición de la teoría de divisibilidad a la resolución práctica de ecuaciones diofánticas lineales $ax + by = c$, la justificación del criterio de solvencia $d \mid c$, la obtención de soluciones particulares mediante el despeje regresivo en el Algoritmo de Euclides, la parametrización general $x = x_0 + \frac{b}{d}k$ e $y = y_0 - \frac{a}{d}k$, la búsqueda de soluciones no negativas para problemas aplicados y las recomendaciones de redacción formal para el examen de la UNED.
+- [**Presentación**](Presentaciones/Sesión49_Ecuaciones_diofánticas.pptx): Maquetada conforme al _AAA_Manual_de_Estilo_Presentaciones_, con la jerarquía del Bloque 5, recuadros normativos para el Teorema de Solvencia de Ecuaciones Diofánticas, la Identidad de Bézout, el escape estricto de llaves `\{` y `\}`, la notación oficial `\varnothing` para el conjunto vacío, la resolución paso a paso del Algoritmo de Euclides y la pregunta de autoevaluación.
+- [**Resumen de audio**](Audios/Sesión49_Ecuaciones_diofánticas.m4a): Enfocado en la transición de la teoría de divisibilidad a la resolución práctica de ecuaciones diofánticas lineales $ax + by = c$, la justificación del criterio de solvencia $d \mid c$, la obtención de soluciones particulares mediante el despeje regresivo en el Algoritmo de Euclides, la parametrización general $x = x_0 + \frac{b}{d}k$ e $y = y_0 - \frac{a}{d}k$, la búsqueda de soluciones no negativas para problemas aplicados y las recomendaciones de redacción formal para el examen de la UNED.
 
 ---

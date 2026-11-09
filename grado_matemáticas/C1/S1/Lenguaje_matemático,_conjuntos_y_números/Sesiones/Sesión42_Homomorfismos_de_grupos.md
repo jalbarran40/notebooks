@@ -2,17 +2,17 @@
 
 **Duración:** 45 minutos  
 **Bloque:** BLOQUE 4: OPERACIONES INTERNAS Y ESTRUCTURAS ALGEBRAICAS (Capítulo 4)  
-**Objetivo:** Definir formalmente la noción de *_homomorfismo entre grupos $f: (G, _) \to (G', \circ)$__ como una aplicación que conserva la operación estructural, clasificar los homomorfismos (**endomorfismo, monomorfismo, epimorfismo, isomorfismo y automorfismo**), demostrar las propiedades de **conservación del elemento neutro y de los simétricos**, definir el **núcleo $\text{Ker}(f)$** y la **imagen $\text{Im}(f)$** demostrando que son subgrupos, y probar el teorema fundamental de **caracterización de inyectividad via $\text{Ker}(f) = {e_G}$**.
+**Objetivo:** Definir formalmente la noción de *_homomorfismo entre grupos $f: (G, *) \to (G', \circ)$ como una aplicación que conserva la operación estructural, clasificar los homomorfismos (**endomorfismo, monomorfismo, epimorfismo, isomorfismo y automorfismo**), demostrar las propiedades de **conservación del elemento neutro y de los simétricos**, definir el **núcleo $\text{Ker}(f)$** y la **imagen $\text{Im}(f)$** demostrando que son subgrupos, y probar el teorema fundamental de **caracterización de inyectividad via $\text{Ker}(f) = {e_G}$**.
 
 ---
 
 ### **1. Marco Teórico: Concepto Formal de Homomorfismo de Grupos**
 
-#### **A. Definición de Homomorfismo**
+#### **A. Definición de Homomorfismo de grupo** 
 
 Sean $(G, *)$ y $(G', \circ)$ dos grupos con elementos neutros $e_G \in G$ y $e_{G'} \in G'$ respectivamente. Una aplicación $f: G \to G'$ es un **homomorfismo de grupos** si y solo si la imagen del producto de dos elementos de $G$ es igual al producto de sus imágenes en $G'$:
 
-$$\forall a, b \in G, \quad f(a * b) = f(a) \circ f(b)$$
+	$$\forall a, b \in G, \quad f(a * b) = f(a) \circ f(b)$$
 
 - **Interpretación Algebraica:** Un homomorfismo es una aplicación que _"respeta"_ o _"traslada"_ la estructura algebraica del grupo origen al grupo destino. Permite operar antes de aplicar la función o aplicar la función antes de operar obteniendo idéntico resultado.
 - **Notación Aditiva:** Cuando ambos grupos se expresan en notación aditiva ($+$), la condición se escribe: $$f(a + b) = f(a) + f(b)$$
@@ -35,7 +35,7 @@ Dada una aplicación $f: G \to G'$ que es un homomorfismo de grupos:
 
 #### **Proposición 4.39 / Teorema 4.40 (Propiedades de Consolidación):**
 
-*Sea $f: (G, _) \to (G', \circ)$ un homomorfismo de grupos. Se verifican las siguientes propiedades:_
+*Sea $f: (G, *) \to (G', \circ)$ un homomorfismo de grupos. Se verifican las siguientes propiedades:_
 
 1. **Conservación del Elemento Neutro:**  
     La imagen del elemento neutro de $G$ es el elemento neutro de $G'$: $$f(e_G) = e_{G'}$$
@@ -59,7 +59,7 @@ Dada una aplicación $f: G \to G'$ que es un homomorfismo de grupos:
 ---
 
 3. **Conservación de Subgrupos (Imagen y Antiimagen):**
-    - Si $H \le G$ es un subgrupo de $G$, su imagen $f(H) = {f(h) \mid h \in H}$ es un **subgrupo de $G'$** ($f(H) \le G'$).
+    - Si $H \le G$ es un subgrupo de $G$, su imagen $f(H) = \{f(h) \mid h \in H\}$ es un **subgrupo de $G'$** ($f(H) \le G'$).
     - Si $H' \le G'$ es un subgrupo de $G'$, su imagen inversa $f^{-1}(H') = {x \in G \mid f(x) \in H'}$ es un **subgrupo de $G$** ($f^{-1}(H') \le G$).
 
 ---
@@ -70,7 +70,7 @@ Dado un homomorfismo de grupos $f: G \to G'$:
 
 #### **A. Conjunto Imagen ($\text{Im}(f)$)**
 
-Es el subconjunto de $G'$ formado por los elementos que son imagen de al menos un elemento de $G$: $$\text{Im}(f) = f(G) = {y \in G' \mid \exists x \in G, f(x) = y} \le G'$$
+Es el subconjunto de $G'$ formado por los elementos que son imagen de al menos un elemento de $G$: $$\text{Im}(f) = f(G) = \{y \in G' \mid \exists x \in G, f(x) = y\} \le G'$$
 
 - **Criterio de Sobreyectividad:** $f$ es un **epimorfismo** (sobreyectivo) si y solo si **$\text{Im}(f) = G'$**.
 
@@ -78,7 +78,7 @@ Es el subconjunto de $G'$ formado por los elementos que son imagen de al menos u
 
 Es el subconjunto de $G$ formado por todos los elementos cuya imagen mediante $f$ es el elemento neutro $e_{G'}$ de $G'$:
 
-$$\text{Ker}(f) = {x \in G \mid f(x) = e_{G'}} = f^{-1}({e_{G'}}) \le G$$
+$$\text{Ker}(f) = \{x \in G \mid f(x) = e_{G'}\} = f^{-1}(\{e_{G'}\}) \le G$$
 
 - **Propiedad de Subgrupo Normal:** $\text{Ker}(f)$ no solo es un subgrupo de $G$, sino que es un **subgrupo normal** (o invariante) de $G$ (es decir, $\forall g \in G, g * \text{Ker}(f) * g^{-1} \subseteq \text{Ker}(f)$).
 
@@ -87,7 +87,7 @@ $$\text{Ker}(f) = {x \in G \mid f(x) = e_{G'}} = f^{-1}({e_{G'}}) \le G$$
 ### **4. Teorema de Caracterización de Inyectividad**
 
 > **Teorema 4.40.3 (Caracterización de Monomorfismos):**  
-> _Un homomorfismo de grupos $f: G \to G'$ es **inyectivo** (monomorfismo) si y solo si su núcleo consta únicamente del elemento neutro de $G$:_ $$f \text{ es inyectivo} \iff \text{Ker}(f) = {e_G}$$
+> _Un homomorfismo de grupos $f: G \to G'$ es **inyectivo** (monomorfismo) si y solo si su núcleo consta únicamente del elemento neutro de $G$:_ $$f \text{ es inyectivo} \iff \text{Ker}(f) = \{e_G\}$$
 
 - **Demostración Analítica Paso a Paso (Examen de Desarrollo UNED):**
     
@@ -100,7 +100,7 @@ $$\text{Ker}(f) = {x \in G \mid f(x) = e_{G'}} = f^{-1}({e_{G'}}) \le G$$
         Luego **$\text{Ker}(f) = {e_G}$**.
         
     2. **Implicación Recíproca ($\impliedby$):**  
-        Supongamos que $\text{Ker}(f) = {e_G}$.  
+        Supongamos que $\text{Ker}(f) = \{e_G\}$.  
         Sean $a, b \in G$ tales que $f(a) = f(b)$.  
         Operando en $G'$ con el simétrico $(f(b))^{-1} = f(b^{-1})$: $$f(a) \circ (f(b))^{-1} = e_{G'} \implies f(a) \circ f(b^{-1}) = e_{G'}$$ Como $f$ es un homomorfismo de grupos: $$f(a * b^{-1}) = e_{G'}$$ Esto significa por definición que $a * b^{-1} \in \text{Ker}(f)$.  
         Como por hipótesis $\text{Ker}(f) = {e_G}$, se concluye que: $$a * b^{-1} = e_G \implies a = b$$ Por consiguiente, **$f$ es inyectivo**. $\blacksquare$
@@ -117,7 +117,7 @@ $$\text{Ker}(f) = {x \in G \mid f(x) = e_{G'}} = f^{-1}({e_{G'}}) \le G$$
 Consideramos la función exponencial $f(x) = e^x$ entre el grupo aditivo $(\mathbb{R}, +)$ y el grupo multiplicativo $(\mathbb{R}^*, \cdot)$.
 
 - **Homomorfismo:** $f(x + y) = e^{x+y} = e^x \cdot e^y = f(x) \cdot f(y)$. Es un homomorfismo de grupos.
-- **Cálculo del Núcleo:** $$\text{Ker}(f) = {x \in \mathbb{R} \mid f(x) = 1} = {x \in \mathbb{R} \mid e^x = 1} = {0}$$ Como $\text{Ker}(f) = {0}$, la función exponencial es **inyectiva (monomorfismo)**.
+- **Cálculo del Núcleo:** $$\text{Ker}(f) = \{x \in \mathbb{R} \mid f(x) = 1\} = \{x \in \mathbb{R} \mid e^x = 1\} = \{0\}$$ Como $\text{Ker}(f) = {0}$, la función exponencial es **inyectiva (monomorfismo)**.
 - **Imagen e Isomorfismo:** $\text{Im}(f) = (0, +\infty) = \mathbb{R}^+$. Al restringir el codominio a $\mathbb{R}^+$, $f: (\mathbb{R}, +) \to (\mathbb{R}^+, \cdot)$ es un **isomorfismo de grupos**, cuya inversa es el logaritmo neperiano $f^{-1}(y) = \ln(y)$.
 
 ---
@@ -127,7 +127,7 @@ Consideramos la función exponencial $f(x) = e^x$ entre el grupo aditivo $(\math
 Consideramos la aplicación determinante sobre el grupo general lineal de matrices invertibles.
 
 - **Homomorfismo:** Por el Teorema de Binet, $\det(A \cdot B) = \det(A) \cdot \det(B)$.
-- **Cálculo del Núcleo:** $$\text{Ker}(\det) = {A \in GL_n(\mathbb{R}) \mid \det(A) = 1} = SL_n(\mathbb{R})$$ El núcleo es el **Grupo Especial Lineal $SL_n(\mathbb{R})$** (matrices cuadradas de determinante igual a 1). No es inyectivo pues existen infinitas matrices con determinante 1 distintas de la identidad.
+- **Cálculo del Núcleo:** $$\text{Ker}(\det) = \{A \in GL_n(\mathbb{R}) \mid \det(A) = 1\} = SL_n(\mathbb{R})$$ El núcleo es el **Grupo Especial Lineal $SL_n(\mathbb{R})$** (matrices cuadradas de determinante igual a 1). No es inyectivo pues existen infinitas matrices con determinante 1 distintas de la identidad.
 
 ---
 
@@ -136,7 +136,7 @@ Consideramos la aplicación determinante sobre el grupo general lineal de matric
 Sea la aplicación $f: (\mathbb{R}^2, +) \to (\mathbb{R}^2, +)$ definida por $f(x, y) = (x + y, 3x + 5y)$.
 
 - **Demostración de Inyectividad mediante el Núcleo:**  
-    Buscamos el conjunto de elementos $(x, y) \in \mathbb{R}^2$ tales que $f(x, y) = (0, 0)$: $$\begin{cases} x + y = 0 \ 3x + 5y = 0 \end{cases}$$ De la primera ecuación, $y = -x$. Sustituyendo en la segunda: $$3x + 5(-x) = 0 \implies -2x = 0 \implies x = 0 \implies y = 0$$ Por consiguiente, **$\text{Ker}(f) = {(0, 0)}$**.  
+    Buscamos el conjunto de elementos $(x, y) \in \mathbb{R}^2$ tales que $f(x, y) = (0, 0)$: $$\begin{cases} x + y = 0 \\ 3x + 5y = 0 \end{cases}$$ De la primera ecuación, $y = -x$. Sustituyendo en la segunda: $$3x + 5(-x) = 0 \implies -2x = 0 \implies x = 0 \implies y = 0$$ Por consiguiente, **$\text{Ker}(f) = {(0, 0)}$**.  
     Por el Teorema 4.40.3, la aplicación **$f$ es inyectiva (monomorfismo)**.
 
 ---
@@ -146,19 +146,133 @@ Sea la aplicación $f: (\mathbb{R}^2, +) \to (\mathbb{R}^2, +)$ definida por $f(
 1. **Ejercicio 1 (Ejercicio 4.41.3 del texto base):** Sea $(G, +)$ un grupo aditivo y $a \in G$ un elemento fijo. Demostrar que la aplicación $f: (\mathbb{Z}, +) \to (G, +)$ dada por $f(n) = na$ es un homomorfismo de grupos. Determinar su conjunto imagen $\text{Im}(f)$ y su núcleo $\text{Ker}(f)$.
 2. **Ejercicio 2 (Ejercicio 5 del Capítulo 4 del texto base):** Sea $(G, +)$ un grupo aditivo y $f: G \to G$ la aplicación dada por $f(a) = 2a = a + a$. Demostrar que $f$ es un homomorfismo de grupos si y solo si $(G, +)$ es un **grupo abeliano**.
 
+
+#### Solución ejercicio 1
+
+
+1. **Demostración de Homomorfismo:** Sean $c, d \in \mathbb{Z}$. Aplicando la definición de $f$ y la propiedad distributiva de la multiplicación por un entero en el grupo aditivo $(G, +)$: $$f(c + d) = (c + d)a = ca + da = f(c) + f(d)$$ Luego $f$ conserva las operaciones y es un **homomorfismo de grupos**. $\quad \blacksquare$
+2. **Cálculo de la Imagen:** $$\text{Im}(f) = \{f(n) \mid n \in \mathbb{Z}\} = \{na \mid n \in \mathbb{Z}\} = \langle a \rangle \le G$$ La imagen es el subgrupo cíclico de $G$ generado por $a$.
+3. **Cálculo del Núcleo:** $$\text{Ker}(f) = \{n \in \mathbb{Z} \mid f(n) = 0_G\} = \{n \in \mathbb{Z} \mid na = 0_G\}$$
+    - Si $\text{ord}(a) = \infty$, entonces $\text{Ker}(f) = \{0\}$ (y $f$ es un monomorfismo).
+    - Si $\text{ord}(a) = m < \infty$, entonces $\text{Ker}(f) = m\mathbb{Z}$.
+
+4. **Ejemplo**: Vamos a resolver paso a paso siguiente ejemplo: la aplicación $f: (\mathbb{Z}, +) \to (\mathbb{Z}_6, +)$ definida por **$f(n) = n \cdot [a]$**, donde elegimos como grupo $G = \mathbb{Z}_6$ y fijamos el elemento $a = [2]\in \mathbb{Z}_6$.
+
+	1. **Planteamiento de la aplicación**
+
+		La función $f$ toma un número entero $n \in \mathbb{Z}$ y devuelve la suma de la clase $[2]$ consigo misma $n$ veces dentro de $\mathbb{Z}_6$:
+
+		$$f(n) = n \cdot [2] = [(2n) \pmod 6]$$
+
+	2. **Comprobación de Homomorfismo**
+
+		Sean $c, d \in \mathbb{Z}$ dos enteros cualesquiera. Aplicamos la definición de $f$:
+
+		$$f(c + d) = (c + d) \cdot = c \cdot + d \cdot = f(c) + f(d)$$
+
+		- El $+$ dentro de $f(c+d)$ es la suma usual en los números enteros $\mathbb{Z}$.
+		- El $+$ entre $f(c)$ y $f(d)$ es la suma modular en $\mathbb{Z}_6$.
+
+		Como se conserva la operación estructural, **$f$ es un homomorfismo de grupos**.
+	3. **Cálculo de la Imagen $\text{Im}(f)$**
+
+		Evaluamos la aplicación para los primeros valores de $n \in \mathbb{Z}$:
+
+		- $f(0) = 0 \cdot [2]=[0]$
+		- $f(1) = 1 \cdot [2]=[2]$
+		- $f(2) = 2 \cdot [2]=[4]$
+		- $f(3) = 3 \cdot [2]= [6]= [0]$
+		- $f(4) = 4 \cdot [2]= [8]=[2]$
+		- $f(5) = 5 \cdot [2]= [10]=[4]$
+
+		Vemos que los resultados se repiten cíclicamente cada 3 pasos. Por lo tanto:
+
+		$$\text{Im}(f) = \{[0],[2],[4]\} = \langle [2]\rangle \le \mathbb{Z}_6$$
+
+		La imagen es el **subgrupo de los elementos pares de $\mathbb{Z}_6$**, generado por la clase $[2]$, que tiene **3 elementos**.
+
+	4. Determinación del Núcleo $\text{Ker}(f)$ y Orden del Elemento**
+
+		Buscamos todos los enteros $n \in \mathbb{Z}$ cuya imagen sea el neutro del grupo codominio, que en $(\mathbb{Z}_6, +)$ es $[0]$:
+
+$$\text{Ker}(f) = \{n \in \mathbb{Z} \mid f(n) =[0]\} = \{n \in \mathbb{Z} \mid n \cdot [2]=[0]\}$$
+
+		Para que $n \cdot [2]=[0]$ en $\mathbb{Z}_6$, se debe cumplir que el entero $2n$ sea múltiplo de $6$:
+
+$$2n \equiv 0 \pmod 6 \iff 6 \mid 2n \iff 3 \mid n$$
+
+		Por lo tanto, $n$ debe ser un múltiplo entero de $3$:
+
+$$\text{Ker}(f) = 3\mathbb{Z} = \{\dots, -6, -3, 0, 3, 6, 9, \dots\}$$
+
+	5. **Conclusión y conexión con el Primer Teorema de Isomorfismo**
+
+Fíjate en lo bien que encaja todo:
+
+1. **Orden del elemento:** El orden de $[2]$ en $\mathbb{Z}_6$ es $m = \text{ord}([2]) = 3$, porque $3 \cdot = =$.
+2. **Núcleo:** Confirmamos que $\text{Ker}(f) = m\mathbb{Z} = 3\mathbb{Z} \neq \{0\}$.
+3. **Inyectividad:** Como $\text{Ker}(f) \neq \{0\}$, la aplicación **no es inyectiva** (por ejemplo, $f(0) = f(3) =[0]$).
+4. **Isomorfismo cociente:** Por el Primer Teorema de Isomorfismo (que verás en profundidad en la Sesión 42), el conjunto cociente $\mathbb{Z}/\text{Ker}(f) = \mathbb{Z}/3\mathbb{Z}$ es isomorfo a la imagen $\text{Im}(f) = \{[0],[2],[4]\}$. ¡Ambos tienen exactamente **3 elementos**!
+
+#### Solución ejercicio 2
+
+**Enunciado:** Sea $(G, +)$ un grupo aditivo y $f: G \to G$ la aplicación dada por $f(a) = 2a = a + a$. Demostrar que $f$ es un homomorfismo de grupos si y solo si $(G, +)$ es un grupo abeliano.
+
+
+**1. Suficiencia (**$\Leftarrow$**): Si** $(G, +)$ **es abeliano** $\implies f$ **es un homomorfismo**
+
+- **Hipótesis:** $(G, +)$ es abeliano (es decir, $\forall x, y \in G, \quad x + y = y + x$).
+- **Tesis:** $f(a + b) = f(a) + f(b) \quad \forall a, b \in G$.
+
+**Demostración:** Sean $a, b \in G$ dos elementos cualesquiera. Por la definición de la aplicación $f$: $$f(a + b) = (a + b) + (a + b)$$
+Por la propiedad asociativa de la suma en el grupo $G$: $$(a + b) + (a + b) = a + (b + a) + b$$
+
+Aplicando la **hipótesis de conmutatividad** en el término central ($b + a = a + b$): $$a + (b + a) + b = a + (a + b) + b$$
+
+Reagrupando nuevamente por asociatividad: $$a + (a + b) + b = (a + a) + (b + b)$$
+
+Por la definición de $f(a) = a + a$ y $f(b) = b + b$, obtenemos: $$f(a + b) = f(a) + f(b)$$
+
+Por tanto, $f$ es un **homomorfismo de grupos**. $\quad \blacksquare$
+
+---
+
+**2. Necesidad (**$\Rightarrow$**): Si** $f$ **es un homomorfismo** $\implies (G, +)$ **es abeliano**
+
+- **Hipótesis:** $f(a + b) = f(a) + f(b) \quad \forall a, b \in G$.
+- **Tesis:** $a + b = b + a \quad \forall a, b \in G$.
+
+**Demostración:** Sean $a, b \in G$ arbitrarios.
+
+Por ser $f$ un homomorfismo (por hipótesis): $$f(a + b) = f(a) + f(b)$$
+
+Sustituyendo la definición de $f(x) = x + x$ en ambos miembros: $$(a + b) + (a + b) = (a + a) + (b + b)$$
+
+Desarrollando los paréntesis por la propiedad asociativa: $$a + b + a + b = a + a + b + b$$
+
+Sumamos a la izquierda por el elemento opuesto $-a \in G$: $$-a + (a + b + a + b) = -a + (a + a + b + b)$$ $$(-a + a) + b + a + b = (-a + a) + a + b + b$$ $$0_G + b + a + b = 0_G + a + b + b \implies b + a + b = a + b + b$$
+
+_(Nota: Este paso equivale a aplicar la propiedad cancelativa por la izquierda sobre el elemento_ $a$_)._
+
+Ahora sumamos a la derecha por el elemento opuesto $-b \in G$: $$(b + a + b) + (-b) = (a + b + b) + (-b)$$ $$b + a + (b - b) = a + b + (b - b)$$ $$b + a + 0_G = a + b + 0_G \implies b + a = a + b$$
+
+_(Nota: Equivale a aplicar la propiedad cancelativa por la derecha sobre el elemento_ $b$_)._
+
+Como $b + a = a + b$ se cumple para todo par de elementos $a, b \in G$, concluimos que $(G, +)$ es un **grupo abeliano**. $\quad \blacksquare$
+
 ---
 
 ### **7. Pregunta de Autoevaluación (Estilo PEC)**
 
 **Enunciado:** Sea $f: (G, *) \to (G', \circ)$ un homomorfismo de grupos entre dos grupos de elementos neutros $e_G$ y $e_{G'}$ respectivamente. ¿Cuál de las siguientes afirmaciones sobre el núcleo $\text{Ker}(f)$ es **verdadera**?
 
-- **A)** $\text{Ker}(f)$ es siempre un subgrupo de $G$, y el homomorfismo $f$ es inyectivo si y solo si $\text{Ker}(f) = {e_G}$.
+- **A)** $\text{Ker}(f)$ es siempre un subgrupo de $G$, y el homomorfismo $f$ es inyectivo si y solo si $\text{Ker}(f) = \{e_G\}$.
 - **B)** $\text{Ker}(f)$ es un subgrupo de $G'$, y el homomorfismo $f$ es sobreyectivo si y solo si $\text{Ker}(f) = G'$.
 - **C)** Ninguna de las anteriores.
 
 > **Solución Explicada:**
 > 
-> - Por el Teorema 4.40 del libro de texto base, el núcleo $\text{Ker}(f) = {x \in G \mid f(x) = e_{G'}}$ es un subgrupo del conjunto **origen** $G$.
+> - Por el Teorema 4.40 del libro de texto base, el núcleo $\text{Ker}(f) = \{x \in G \mid f(x) = e_{G'}\}$ es un subgrupo del conjunto **origen** $G$.
 > - Además, el punto 3 de dicho teorema demuestra analíticamente que la inyectividad de $f$ equivale exactamente a que el núcleo sea el conjunto unitario formado únicamente por el elemento neutro del origen: $\text{Ker}(f) = {e_G}$.
 > - La opción B es falsa porque confunde el dominio de definición del núcleo y atribuye la propiedad de sobreyectividad al núcleo en lugar de a la imagen $\text{Im}(f)$.
 > - Por lo tanto, la opción **A** es la **correcta**.
