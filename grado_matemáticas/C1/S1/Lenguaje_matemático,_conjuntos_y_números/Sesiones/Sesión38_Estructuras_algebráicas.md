@@ -77,7 +77,7 @@ $$a * a' = a' * a = e$$
 
 #### **Proposición 4.7 (Unicidad del Elemento Simétrico)**
 
-_Sea $_$ una operación interna **asociativa** en $E$ con elemento neutro $e \in E$. Si un elemento $a \in E$ admite elemento simétrico, este es **único**.*
+_Sea $*$ una operación interna **asociativa** en $E$ con elemento neutro $e \in E$. Si un elemento $a \in E$ admite elemento simétrico, este es **único**.*
 
 - **Demostración Analítica Paso a Paso (Estándar UNED):**
     1. Supongamos que $a'$ y $a''$ son dos elementos simétricos de $a \in E$.

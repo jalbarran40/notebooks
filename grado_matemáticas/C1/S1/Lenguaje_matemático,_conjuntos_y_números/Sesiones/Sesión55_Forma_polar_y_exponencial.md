@@ -14,7 +14,7 @@ Dado un número complejo no nulo $z = a + bi \in \mathbb{C}^*$ (con $a, b \in \m
     
 2. **Argumento ($\theta = \text{arg}(z)$):** Es el ángulo (medido en radianes) que forma el vector de posición $\vec{OP} = (a, b)$ con el semieje real positivo $OX^+$.
     
-    - Puesto que las funciones seno y coseno son periódicas de período $2\pi$, todo número complejo no nulo admite **infinitos argumentos**, que difieren entre sí en múltiplos enteros de $2\pi$: $$\text{arg}(z) = {\theta_0 + 2k\pi \mid k \in \mathbb{Z}}$$
+    - Puesto que las funciones seno y coseno son periódicas de período $2\pi$, todo número complejo no nulo admite **infinitos argumentos**, que difieren entre sí en múltiplos enteros de $2\pi$: $$\text{arg}(z) = \{\theta_0 + 2k\pi \mid k \in \mathbb{Z}\}$$
 3. **Argumento Principal ($\text{Arg}(z)$):** Para evitar la multiplicidad de argumentos y definir una función unívoca, se selecciona el único ángulo $\theta \in (-\pi, \pi]$ (o en $[0, 2\pi)$ según el convenio del texto base) que satisface las ecuaciones trigonométricas: $$\cos \theta = \frac{a}{r} = \frac{a}{\sqrt{a^2 + b^2}}, \quad \sin \theta = \frac{b}{r} = \frac{b}{\sqrt{a^2 + b^2}}$$ Se denota mediante mayúscula: **$\text{Arg}(z) \in (-\pi, \pi]$**.
     
 
@@ -130,6 +130,8 @@ Desarrollando el miembro izquierdo de $(\cos \theta + i \sin \theta)^n$ mediante
     - b) $z_2 = -2 - 2i$
     - c) $z_3 = -5i$
 2. **Ejercicio 2:** Calcular en forma exponencial y dar el resultado final en forma binómica: $$z = \frac{(-1 + i\sqrt{3})^{10}}{(1 - i)^6}$$
+((-1+sqrt(3)i)^10)/((1-i)^6)
+
 3. **Ejercicio 3 (Ejercicio 10 del Capítulo 7 del texto base):** Obtener $\cos(5\alpha)$ y $\sin(5\alpha)$ en función de $\cos \alpha$ y $\sin \alpha$ aplicando la fórmula de De Moivre. Deducir a partir del resultado el valor exacto de $\cos\left(\frac{\pi}{10}\right)$.
 
 ---

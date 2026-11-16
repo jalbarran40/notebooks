@@ -110,6 +110,91 @@ _La terna $(\mathbb{K}, +, \cdot)$ es un **cuerpo** si y solo si:_
 
 ---
 
+Aquí tienes la redacción formal completa y estructurada del apartado **«Orden y Operaciones en Anillos y Cuerpos Ordenados»** (Sección 4.5 del texto base de _Delgado Pineda & Muñoz Bouzo_), lista para que la incorpores directamente a tus notas de la **Sesión 43**.
+
+---
+
+### **5. Orden y Operaciones en Anillos y Cuerpos Ordenados**
+
+#### **1. Axiomática de las Estructuras Algebraicas Ordenadas**
+
+##### **Definición 1: Grupo Abeliano Ordenado**
+
+Sea $(G, +, \le)$ un grupo abeliano dotado de una relación de orden total $\le$. Decimos que $(G, +, \le)$ es un **grupo abeliano ordenado** si la relación de orden es **compatible con la suma**:
+
+$$\forall a, b, c \in G, \quad a \le b \implies a + c \le b + c$$
+
+#### **Definición 2: Anillo / Cuerpo Ordenado**
+
+Sea $(K, +, \cdot, \le)$ un anillo (o cuerpo) conmutativo con elemento unidad $1 \neq 0$, dotado de una relación de orden total $\le$. Decimos que $(K, +, \cdot, \le)$ es un **anillo (o cuerpo) ordenado** si satisface los dos axiomas de compatibilidad siguientes:
+
+1. **Compatibilidad con la suma:** $(K, +, \le)$ es un grupo abeliano ordenado.
+2. **Compatibilidad del producto con elementos no negativos:**
+
+$$\forall a, b \in K, \quad (0 \le a \land 0 \le b) \implies 0 \le a \cdot b$$
+
+---
+
+#### **2. El Conjunto de Elementos Positivos $K^+$**
+
+En todo cuerpo ordenado $(K, +, \cdot, \le)$, se define el **conjunto de elementos no negativos** como:
+
+$$K^+ = \{x \in K \mid 0 \le x\}$$
+
+Los elementos del conjunto $K^+ \setminus \{0\} = {x \in K \mid 0 < x}$ se denominan **estrictamente positivos**.
+
+##### **Propiedad de Tricotomía:**
+
+Por ser $\le$ una relación de orden total, todo elemento $x \in K$ cumple **exactamente una** de las siguientes tres condiciones:
+
+1. $x > 0$ ($x$ es estrictamente positivo).
+2. $x = 0$.
+3. $x < 0 \iff -x > 0$ ($x$ es strictly negativo, lo que equivale a que su opuesto $-x$ sea estrictamente positivo).
+
+---
+
+#### **3. Propiedades Fundamentales del Orden (Proposiciones 4.35 y 4.37)**
+
+A partir de los axiomas de compatibilidad se derivan las propiedades usuales del cálculo con desigualdades en $\mathbb{Q}$ y $\mathbb{R}$:
+
+1. **Caracterización por el opuesto:**  
+    $$\forall a, b \in K, \quad a \le b \iff 0 \le b - a$$
+    
+2. **Inversión de desigualdades por el opuesto:**  
+    $$\forall a, b \in K, \quad a \le b \iff -b \le -a$$
+    
+3. **Multiplicación por un elemento positivo:**  
+    $$\forall a, b, c \in K, \quad (a \le b \land c > 0) \implies a \cdot c \le b \cdot c$$
+    
+4. **Multiplicación por un elemento negativo (Inversión del sentido de la desigualdad):**  
+    $$\forall a, b, c \in K, \quad (a \le b \land c < 0) \implies a \cdot c \ge b \cdot c$$
+    
+5. **Regla de los Signos:**
+    
+    - Si $a > 0$ y $b > 0 \implies a \cdot b > 0$.
+    - Si $a < 0$ y $b < 0 \implies a \cdot b > 0$.
+    - Si $a > 0$ y $b < 0 \implies a \cdot b < 0$.
+6. **El cuadrado de todo elemento no nulo es estrictamente positivo:**  
+    $$\forall x \in K, \quad x \neq 0 \implies x^2 > 0$$
+    
+    - **Corolario directo:** Como el elemento neutro del producto cumple $1 \neq 0$, se deduce que: $$1 = 1^2 > 0$$ _(El elemento unidad de todo cuerpo ordenado es estrictamente positivo)_.
+7. **Inversos multiplicativos:**  
+    $$\forall a \in K \setminus {0}, \quad a > 0 \implies a^{-1} > 0$$ $$\forall a, b \in K \setminus {0}, \quad (0 < a \le b) \implies 0 < b^{-1} \le a^{-1}$$
+    
+
+---
+
+#### **4. Esquema de Demostración: $x \neq 0 \implies x^2 > 0$**
+
+_(Útil para las preguntas de desarrollo de examen)_
+
+- **Caso $x > 0$:**  
+    Como $0 \le x$, aplicando la compatibilidad del producto con $a = x \ge 0$ y $b = x \ge 0$: $$(0 \le x \land 0 \le x) \implies 0 \le x \cdot x = x^2$$ Al ser $x \neq 0$, $x^2 \neq 0$, luego $x^2 > 0$.
+    
+- **Caso $x < 0$:**  
+    Sumando $-x$ a ambos lados de $x < 0$, se obtiene $0 < -x$.  
+    Aplicando la compatibilidad del producto con $a = -x \ge 0$ y $b = -x \ge 0$: $$0 \le (-x) \cdot (-x) = x^2 \implies x^2 > 0 \quad \blacksquare$$
+    
 ### **5. Catálogo de Ejemplos Emblemáticos del Texto Base**
 
 1. **El Anillo de los Enteros $(\mathbb{Z}, +, \cdot)$:**  
